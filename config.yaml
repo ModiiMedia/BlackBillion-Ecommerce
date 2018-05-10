@@ -1,0 +1,25 @@
+baseURL: "https://blackbillionclothing.com"
+languageCode: "en-us"
+title: "Black Billion Clothing"
+
+menu:
+    main:
+      - identifier: "home"
+        name: "Go Home"
+        url: "/"
+      - identifier: "All Products"
+        name: "Shop All Products"
+        emphasize: true
+        url: "/all"
+      - identifier: "Tops"
+        name: "Shop Shirts, Blouses, and More"
+        url: ""
+      - identifier: "Accessories"
+        name: "Shop Accessories"
+        url: ""
+      - identifier: "Explore"
+        name: "Explore"
+      - identifier: "Explore"
+        parent: "Explore"
+        name: "About"
+        url: "/about"
