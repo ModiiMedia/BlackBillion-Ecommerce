@@ -1,0 +1,204 @@
+<footer class="footer">
+    <div class="container">
+      <div class="flex-row">
+        <div class="footer-column">
+          <div class="footer-heading">Links:</div>
+          <div class="footer-section">
+            <a href="#" class="footer-link w-inline-block">
+              <div>My Account</div>
+            </a>
+            <a href="#" class="footer-link w-inline-block">
+              <div>FAQ / Help</div>
+            </a>
+            <a href="#" class="footer-link w-inline-block">
+              <div>Blog</div>
+            </a>
+            <a href="#" class="footer-link w-inline-block">
+              <div>Who We Are</div>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-heading">Contact Us:</div>
+          <div class="footer-section">
+            <a href="#" class="footer-link w-inline-block">
+              <div>210-111-1111</div>
+            </a>
+            <a href="#" class="footer-link w-inline-block">
+              <div>blackbillion@yahoo.com</div>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column social">
+          <div class="footer-heading">Social Media</div>
+          <div class="social-link-wrap">
+            <a href="#" class="social-link w-inline-block">
+              <div></div>
+            </a>
+            <a href="#" class="social-link w-inline-block">
+              <div></div>
+            </a>
+            <a href="#" class="social-link w-inline-block">
+              <div></div>
+            </a>
+          </div><a href="#" class="about-wrap w-inline-block"></a></div>
+      </div>
+      <div class="copyright-bar">
+        <div>Copyright 2018 Black Billion Apparel. All Rights Reserved.  |  <a href="https://www.modiimedia.com" target="_blank" class="credit-link">Website by <strong xmlns="http://www.w3.org/1999/xhtml">Modii</strong></a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://uploads-ssl.webflow.com/5ad0111263a6e8d7f3630b1e/js/webflow.5efee0f7a.js" type="text/javascript"></script>
+  <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  <style>
+    @keyframes cartBackground {
+      from {
+        background: rgba(255, 255, 255, 0);
+      }
+      to {
+        background: rgba(255, 255, 255, 0.75);
+      }
+    }
+
+    @keyframes cartLocation {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0%);
+      }
+    }
+
+    .snipcart-user-logout {
+      display: none;
+    }
+
+    #snipcart-footer {
+      background: white;
+      flex-grow: 2;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .snip-layout {
+      background: rgba(255, 255, 255, 0.75)!important;
+    }
+
+    .snip-layout .snip-layout__close {
+      font-size: 30px;
+      color: #fff;
+      background: #000;
+      right: auto;
+      left: -34px;
+      padding: 0px 10px;
+      top: 30px;
+    }
+
+    .snip-layout.snip-active {
+      background: rgba(255, 255, 255, 0.75);
+      animation-name: cartBackground;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-out;
+    }
+
+    #snipcart-header {
+      background: none;
+      color: #333!Important;
+      padding: 20px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      min-height: 75px;
+    }
+
+    #snipcart-title {
+      position: relative;
+      left: 0px;
+      line-height: 40px;
+      display: block;
+      margin-right: 20px;
+      padding-bottom: 3px;
+    }
+
+    #snipcart-header-total {
+      margin-top: 0px;
+      display: block;
+    }
+
+    .snip-layout .snip-header__total {
+      background: none;
+      border-radius: 0px;
+    }
+
+    .snip-layout {
+      background: rgba(0, 0, 0, 0.75);
+      font-family: inherit;
+      padding: 0px;
+    }
+
+    .snip-layout .snip-header__user {
+      min-height: 41px
+    }
+
+    #snipcart-main-content {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 2;
+    }
+
+    #snipcart-sub-content {
+      flex-grow: 1;
+      background: white;
+      padding-bottom: 30px;
+    }
+
+    .snip-layout .snip-layout__main-container {
+      max-width: 850px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: auto 0px 0px auto;
+      transform: translateX(0);
+      animation-name: cartLocation;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-out;
+      box-shadow: 0px 0px 20px #00000040;
+    }
+
+    .snip-layout.snip-active .snip-layout__main-container {
+      transform: translateX(0%);
+    }
+
+    .snip-product__thumbnail {
+      display: block!important;
+    }
+
+    @media only screen and (win-width: 48em) {
+      .snip-layout .snip-layout__close {
+        font-size: 30px;
+        color: #000;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .snip-layout .snip-layout__close {
+        left: auto;
+        right: 0px;
+        top: 0px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      #snipcart-header {
+        background: #00000012;
+        color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      #snipcart-amount {
+        color: #258f7e;
+      }
+    }
+  </style>
+</body>
+</html>
