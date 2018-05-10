@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+{{ $url := .RelPermalink }}
+<div class="main-section page">
+    <div class="container center-page">
+        <h1 class="faq-heading">{{ .Title }}</h1>
+        {{ range .Params.questions }}
+        <h2 id="{{ .question | urlize }}">
+            {{ .question }}
+            <a href="{{ $url }}#{{ .question | urlize }}" style="font-size: 20px; font-family: 'fa solid 900', sans-serif; text-decoration: none;">
+              <sup></sup>
+            </a>
+        </h2>
+        {{ .answer | markdownify }}
+        {{ end }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

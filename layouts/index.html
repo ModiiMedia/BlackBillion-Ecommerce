@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <div data-delay="4000" data-animation="cross" data-autoplay="1" data-duration="500" data-infinite="1" class="slider w-slider">
     <div class="slider-mask w-slider-mask">
-        {{ range .Params.Slides }}
+        {{ range .Params.sliderSlides }}
             <div class="slider-slide w-slide" style="background-image:URL({{.photo}})">
                 <div class="slide-content-wrap">
                     <div class="slide-content">
@@ -23,7 +23,7 @@
 </div>
 <div class="section">
     <div class="feature-grid">
-        {{ range .Params.linkBlocks }}
+        {{ range .Params.featuredBlocks }}
         <div class="feature-grid-item">
             <a href="{{ .link }}" class="featured-block w-inline-block" style="background-image:URL({{ .photo }})">
                 <h1 class="featured-block-heading">{{ .text }}</h1>

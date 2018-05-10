@@ -1403,6 +1403,9 @@ img {
 }
 
 @media (max-width: 991px) {
+  .dropdown-text {
+    color: #333
+  }
   .container {
     padding-right: 20px;
     padding-left: 20px;
