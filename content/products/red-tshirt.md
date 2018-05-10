@@ -1,5 +1,6 @@
 ---
 title: "Red Tshirt"
+metaDescription: It's a red shirt
 date: 2018-05-10T15:58:11-05:00
 draft: true
 price: 150.00
@@ -11,5 +12,7 @@ variations:
     priceChange: 0
   - name: long sleeve
     priceChange: +2.00
+sku: 
+
 ---
 
