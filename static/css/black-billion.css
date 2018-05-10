@@ -1,6 +1,6 @@
 body {
-  background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, .5)), url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0693d1d8156fd0476a176_funky-lines.png");
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, .5)), url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0693d1d8156fd0476a176_funky-lines.png");
+  background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, .5)), url('../images/funky-lines.png');
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, .5)), url('../images/funky-lines.png');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, 200px;
   direction: ltr;
@@ -270,7 +270,7 @@ img {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");
+  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ img {
   position: relative;
   overflow: hidden;
   min-height: 450px;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");
+  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -376,7 +376,7 @@ img {
   margin: 5px;
   padding: 0px;
   background-color: transparent;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");
+  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -384,7 +384,7 @@ img {
 }
 
 .tab-link.w--current {
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");
+  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -479,8 +479,8 @@ img {
   margin-right: auto;
   margin-left: auto;
   background-color: #000;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .97), rgba(0, 0, 0, .97)), url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0693d1d8156fd0476a176_funky-lines.png");
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, .97), rgba(0, 0, 0, .97)), url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0693d1d8156fd0476a176_funky-lines.png");
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .97), rgba(0, 0, 0, .97)), url('../images/funky-lines.png');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .97), rgba(0, 0, 0, .97)), url('../images/funky-lines.png');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, 200px;
 }
@@ -504,13 +504,13 @@ img {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-  background-image: url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1).jpg");
+  background-image: url('../images/hipster-mum-236831-unsplash-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .slider-slide._2 {
-  background-image: url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad06e2019637c1876dad62a_ian-dooley-347962-unsplash%20(1).jpg");
+  background-image: url('../images/ian-dooley-347962-unsplash-1.jpg');
 }
 
 .feature-grid {
@@ -554,7 +554,7 @@ img {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  background-image: url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707f0b59732af6bb4dd5_pete-bellis-256701-unsplash%20(1).jpg");
+  background-image: url('../images/pete-bellis-256701-unsplash-1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #333;
@@ -562,7 +562,7 @@ img {
 }
 
 .featured-block._2 {
-  background-image: url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad559573d5f839c1c0b1076_alex-holyoake-361916-unsplash%20(1).jpg");
+  background-image: url('../images/alex-holyoake-361916-unsplash-1.jpg');
   background-position: 50% 50%;
 }
 
@@ -596,7 +596,7 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");
+  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -917,7 +917,7 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707f0b59732af6bb4dd5_pete-bellis-256701-unsplash%20(1).jpg");
+  background-image: url('../images/pete-bellis-256701-unsplash-1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -933,7 +933,7 @@ img {
 }
 
 .banner-image.center._2 {
-  background-image: url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1).jpg");
+  background-image: url('../images/hipster-mum-236831-unsplash-1.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -999,7 +999,7 @@ img {
   bottom: 0px;
   margin-right: 20px;
   margin-left: 20px;
-  background-image: url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad06e2019637c1876dad62a_ian-dooley-347962-unsplash%20(1).jpg");
+  background-image: url('../images/ian-dooley-347962-unsplash-1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1035,7 +1035,7 @@ img {
 
 .gallery-thumbnail-inner {
   padding-top: 100%;
-  background-image: url("http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707f0b59732af6bb4dd5_pete-bellis-256701-unsplash%20(1).jpg");
+  background-image: url('../images/pete-bellis-256701-unsplash-1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1118,6 +1118,7 @@ img {
   padding: 10px 15px;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .collection-link {
@@ -1165,7 +1166,7 @@ img {
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");
+  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1368,7 +1369,7 @@ img {
 .blog-product-image {
   width: 250px;
   height: 250px;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");
+  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2027,21 +2028,22 @@ img {
     margin-bottom: 50px;
   }
 }
+
 @font-face {
   font-family: 'Fa 400';
-  src: url('https://uploads-ssl.webflow.com/5ad0111263a6e8d7f3630b1e/5ad17dd40f7efdc6ddf19fc6_fa-regular-400.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ad0111263a6e8d7f3630b1e/5ad17dd40f7efd29d7f19fc5_fa-regular-400.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ad0111263a6e8d7f3630b1e/5ad17dd41dee897d7c73850e_fa-regular-400.woff') format('woff');
+  src: url('../fonts/fa-regular-400.woff2') format('woff2'), url('../fonts/fa-regular-400.eot') format('embedded-opentype'), url('../fonts/fa-regular-400.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fa solid 900';
-  src: url('https://uploads-ssl.webflow.com/5ad0111263a6e8d7f3630b1e/5ad17dd4d923b9520fc5a47b_fa-solid-900.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ad0111263a6e8d7f3630b1e/5ad17dd43b9e2b270a9ef953_fa-solid-900.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ad0111263a6e8d7f3630b1e/5ad17dd43b9e2b3ee29ef952_fa-solid-900.woff') format('woff');
+  src: url('../fonts/fa-solid-900.woff2') format('woff2'), url('../fonts/fa-solid-900.eot') format('embedded-opentype'), url('../fonts/fa-solid-900.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fa brands 400';
-  src: url('https://uploads-ssl.webflow.com/5ad0111263a6e8d7f3630b1e/5af142b6d5e19313fe8b56f3_fa-brands-400.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ad0111263a6e8d7f3630b1e/5af142b6074950458f204620_fa-brands-400.woff') format('woff');
+  src: url('../fonts/fa-brands-400.woff2') format('woff2'), url('../fonts/fa-brands-400.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }

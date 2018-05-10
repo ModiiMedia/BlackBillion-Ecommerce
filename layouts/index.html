@@ -1,0 +1,96 @@
+{{ partial "header.html" . }}
+<div data-delay="4000" data-animation="cross" data-autoplay="1" data-duration="500" data-infinite="1" class="slider w-slider">
+    <div class="slider-mask w-slider-mask">
+        {{ range .Params.Slides }}
+            <div class="slider-slide w-slide" style="background-image:URL({{.photo}})">
+                <div class="slide-content-wrap">
+                    <div class="slide-content">
+                        <h1 class="hero-heading">{{ .heading }}</h1>
+                        <p class="hero-text">{{ .text }}</p>
+                        <a href="{{ .buttonLink }}" class="hero-button w-button">{{ .buttonText }}</a>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+    <div class="arrow-wrap w-slider-arrow-left">
+        <div class="arrow left w-icon-slider-left"></div>
+    </div>
+    <div class="arrow-wrap w-slider-arrow-right">
+        <div class="arrow right w-icon-slider-right"></div>
+    </div>
+    <div class="w-slider-nav w-slider-nav-invert w-round"></div>
+</div>
+<div class="section">
+    <div class="feature-grid">
+        {{ range .Params.linkBlocks }}
+        <div class="feature-grid-item">
+            <a href="{{ .link }}" class="featured-block w-inline-block" style="background-image:URL({{ .photo }})">
+                <h1 class="featured-block-heading">{{ .text }}</h1>
+            </a>
+        </div>
+        {{ end }}
+    </div>
+    <h1 class="block-header">Recent Styles</h1>
+    <div class="w-dyn-list">
+        <div class="product-grid-wrap w-dyn-items">
+            <div class="grid-item w-dyn-item">
+                <a href="/apparel/oversized-plaid-sweater" class="grid-link w-inline-block">
+                    <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04afa91f6b275e9e12af5_pete-bellis-579482-unsplash.jpg&quot;)"
+                        class="grid-photo-main homepage">
+                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04af51d8156d9c1768452_pete-bellis-580698-unsplash.jpg&quot;)"
+                            class="grid-photo-hover"></div>
+                    </div>
+                    <div class="grid-content">
+                        <h1 class="grid-title">Oversized Plaid Sweater</h1>
+                        <div class="price-text">$ </div>
+                        <div class="price-text">60.00</div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-item w-dyn-item">
+                <a href="/apparel/red-sweater" class="grid-link w-inline-block">
+                    <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04ac59f356a1e1e11dd1f_pete-bellis-549843-unsplash.jpg&quot;)"
+                        class="grid-photo-main homepage">
+                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04ac063a6e80884632afb_pete-bellis-552522-unsplash.jpg&quot;)"
+                            class="grid-photo-hover"></div>
+                    </div>
+                    <div class="grid-content">
+                        <h1 class="grid-title">Red Sweater</h1>
+                        <div class="price-text">$ </div>
+                        <div class="price-text">50.00</div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-item w-dyn-item">
+                <a href="/apparel/pretty-red-dress" class="grid-link w-inline-block">
+                    <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad048f80b597361a8bb2fea_pete-bellis-423577-unsplash.jpg&quot;)"
+                        class="grid-photo-main homepage">
+                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad048f391f6b25d69e12a27_pete-bellis-422421-unsplash.jpg&quot;)"
+                            class="grid-photo-hover"></div>
+                    </div>
+                    <div class="grid-content">
+                        <h1 class="grid-title">Pretty Red Dress</h1>
+                        <div class="price-text">$ </div>
+                        <div class="price-text">250.00</div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-item w-dyn-item">
+                <a href="/apparel/gray-outfit-thing" class="grid-link w-inline-block">
+                    <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad0486e63a6e892d0632974_pete-bellis-406811-unsplash.jpg&quot;)"
+                        class="grid-photo-main homepage">
+                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad048721d8156f7f776836f_pete-bellis-406807-unsplash.jpg&quot;)"
+                            class="grid-photo-hover"></div>
+                    </div>
+                    <div class="grid-content">
+                        <h1 class="grid-title">Gray Outfit Thing</h1>
+                        <div class="price-text">$ </div>
+                        <div class="price-text">150.00</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{{ partial "footer.html" . }}
