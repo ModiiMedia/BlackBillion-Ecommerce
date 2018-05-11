@@ -12,11 +12,12 @@ contact_info:
   state: "Texas"
   phone: ""
   email: "blackbillion@yahoo.com"
-  social_media:
-    - platform: "Facebook"
-      url: "https://www.instagram.com/blackbillionapparel/"
-    - plateform: "Instagram"
-      url: "https://www.instagram.com/blackbillionapparel/"
+
+social_media:
+  - platform: "Facebook"
+    url: "https://www.instagram.com/blackbillionapparel/"
+  - platform: "Instagram"
+    url: "https://www.instagram.com/blackbillionapparel/"
 
 annoucement_bar:
   show_bar: false
