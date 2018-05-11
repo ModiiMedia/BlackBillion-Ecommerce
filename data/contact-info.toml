@@ -1,9 +1,9 @@
-"Company Name" = "Black Billion Apparel"
-"Street Address" = ""
-"City" = "Houston"
-"State" = "Texas"
-"Phone" = ""
-"Email" = "blackbillion@yahoo.com"
+company_name = "Black Billion Apparel"
+street_address = ""
+city = "Houston"
+state = "Texas"
+phone = ""
+email = "blackbillion@yahoo.com"
 
 [[socialMedia]]
     platform = "facebook"
