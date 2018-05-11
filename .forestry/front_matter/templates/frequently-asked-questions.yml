@@ -23,11 +23,18 @@ fields:
     type: text
     hidden: false
     default: ''
-  - name: answer
+    config:
+      required: true
+    description: Type the question here
+  - type: textarea
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+      required: true
     label: Answer
-    type: text
-    hidden: false
-    default: ''
+    name: answer
+    description: Type your asnwer here
   hidden: false
   default: ''
   config:
