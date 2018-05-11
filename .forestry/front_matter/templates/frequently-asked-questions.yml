@@ -54,3 +54,7 @@ fields:
   default: faq
   config:
     required: true
+- type: file
+  name: social_image
+  label: Social Image
+  description: Image for appearance on social media
