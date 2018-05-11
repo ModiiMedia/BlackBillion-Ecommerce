@@ -1,5 +1,5 @@
 ---
-title: Shirts for Men and Women
+title: Tops
 label: Tops List Page
 meta_title: Shirts, Blouses, and More
 meta_description: Hand printed men and women's shirts from Black Billion Apparel.
