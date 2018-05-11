@@ -1,5 +1,5 @@
 {
-    "showBar" : true,
+    "show_Bar" : true,
     "message" : "All shipping orders are 50% off for a limited time!",
     "url" : ""
 }

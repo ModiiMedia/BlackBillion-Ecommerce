@@ -1,9 +1,9 @@
-companyName = "Black Billion Apparel"
-streetAddress = ""
-city = "Houston"
-state = "Texas"
-phone = ""
-email = "blackbillion@yahoo.com"
+"Company Name" = "Black Billion Apparel"
+"Street Address" = ""
+"City" = "Houston"
+"State" = "Texas"
+"Phone" = ""
+"Email" = "blackbillion@yahoo.com"
 
 [[socialMedia]]
     platform = "facebook"
