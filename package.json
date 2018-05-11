@@ -1,0 +1,20 @@
+{
+  "name": "black-billion-clothing-website",
+  "version": "1.0.0",
+  "description": "Ecommerce website for Black Billion Clothing using Hugo + Snipcart, with Forestry.io as a CMS, and Netlify CMS for hosting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshmossas/BlackBillion-Ecommerce.git"
+  },
+  "author": "Josh Michaels",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshmossas/BlackBillion-Ecommerce/issues"
+  },
+  "homepage": "https://github.com/joshmossas/BlackBillion-Ecommerce#readme",
+  "dependencies": {}
+}
