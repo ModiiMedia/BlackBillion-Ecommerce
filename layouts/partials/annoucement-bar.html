@@ -1,0 +1,19 @@
+{{ $aBar := $.Site.Data.settings.announcement_bar.show_bar }}
+{{ $aBarLink := $.Site.Data.settings.announcement_bar.announcement_link }}
+{{ $aBarMessage := $.Site.Data.settings.announcement_bar.message }}
+
+{{ if eq $aBar true }}
+<div class="announcement-bar">
+  <div class="container">
+    {{ if $aBarLink }}
+        <a href="#" class="announcement-content w-inline-block">
+        <div>{{ $aBarMessage }}</div>
+        </a>
+    {{ else }}
+        <div href="#" class="announcement-content w-inline-block">
+            <div>{{ $aBarMessage }}</div>
+        </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -2,8 +2,9 @@ general:
   website_title: "Black Billion Clothing"
   slogan: ""
   website_description: "We are a totally rad clothing company"
-  logo_dark: "/images/black-billion-logo-transparent-background-white-p-500.png"
-  logo_white: "/images/favicon-32x32.png"
+  logo_dark: "/images/black-billion-logo-transparent-background-p-500.png"
+  logo_white: "/images/black-billion-logo-transparent-background-white-p-500.png"
+  favicon: "/images/favicon-32x32.png"
 
 contact_info: 
   company_name: "Black Billion Apparel"
@@ -19,7 +20,7 @@ social_media:
   - platform: "Instagram"
     url: "https://www.instagram.com/blackbillionapparel/"
 
-annoucement_bar:
+announcement_bar:
   show_bar: false
   message: "All shipping orders are 50% off for a limited time!"
-  annoucement_link: ""
+  announcement_link: ""

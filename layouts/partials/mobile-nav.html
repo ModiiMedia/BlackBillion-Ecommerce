@@ -1,0 +1,55 @@
+<div class="mobile-menu-wrap">
+        <div data-w-id="2a437da8-ee1d-f90f-6838-8779e626cc43" class="mobile-nav">
+          <div class="mobile-login">
+            <div class="login-link w-embed">
+              <a href="#" class="snipcart-user-profile sign-in">
+                <span class="snipcart-user-email">Login</span>
+              </a>
+            </div>
+            <div class="login-link w-embed">
+              <a href="#" class="snipcart-user-logout sign-in">
+                <span>Logout</span>
+              </a>
+            </div>
+          </div>
+          <div class="mobile-menu-header">
+            <a href="#" data-w-id="4b854a90-c939-d001-740f-827a35fe3f89" class="close-mobile-icon w-inline-block">
+              <div></div>
+            </a>
+            <a href="/" class="mobile-logo w-inline-block">
+              <img src="{{ $.Site.Data.settings.general.logo_white }}"
+                width="347" />
+            </a>
+            <div class="mobile-icon w-embed">
+              <a href="#" class="snipcart-checkout" style="color: white">
+                
+                <div class="cart-number snipcart-summary">
+                  <span class="snipcart-total-items"></span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="nav-menu-wrap">
+            <div class="m-nav">
+              {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                  <div class="nav-link dropdown">
+                    <div class="dropdown-text">{{ .Name }} &nbsp;<span style="font-family: 'Fa solid 900', sans-serif; font-size: 12px;"></span></div>
+                    <div class="dropdown-menu">
+                      {{ range .Children }}
+                      <a href="{{ .URL }}" class="nav-link w-inline-block">
+                        <div>{{ .Name }}</div>
+                      </a>
+                      {{ end }}
+                    </div>
+                  </div>
+                {{ else }}
+                <a href="{{ .URL }}" class="nav-link w-inline-block">
+                  <div>{{ .Name }}</div>
+                </a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
