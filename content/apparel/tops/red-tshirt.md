@@ -1,8 +1,9 @@
 ---
 title: "Red Tshirt"
+slug: "/red-tshirt"
 metaDescription: It's a red shirt
 date: 2018-05-10T15:58:11-05:00
-draft: true
+draft: false
 price: 150.00
 sizes: ['XS', 'S', 'M', 'L', 'XL']
 variations:
@@ -18,4 +19,3 @@ hoverImage: "/images/hipster-mum-236831-unsplash-1.jpg"
 productGallery: ["/images/pete-bellis-256701-unsplash-1.jpg", "/images/hipster-mum-236831-unsplash-1.jpg"]
 
 ---
-
