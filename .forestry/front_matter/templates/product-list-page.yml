@@ -6,30 +6,26 @@ is_partial: false
 fields:
 - type: text
   name: title
-  label: Navigation Title
+  label: Admin Label
   config:
     required: true
-- name: label
-  label: Admin Label
+  description: Label for website admin area
+  default: List Page
+- name: name
+  label: Navigation Title
   type: text
   hidden: false
   default: ''
-  description: Label for the Admin section
-  config:
-    required: true
-- name: type
-  label: Type
-  type: text
-  hidden: true
-  default: products
+  description: Text that appears in the sorting fields, breadcrumbs, and page navigation
   config:
     required: true
 - type: text
   name: meta_title
   label: Meta Title
-  description: Page title in website
+  description: Page title to appear in website and search engines
   config:
     required: true
+  default: ''
 - type: text
   name: meta_description
   label: Meta Description
@@ -39,3 +35,10 @@ fields:
   label: main Image
   description: Image for search engines and for preview to appear on social media
     sites
+- name: type
+  label: Type
+  type: text
+  hidden: true
+  default: products
+  config:
+    required: true
