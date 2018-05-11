@@ -1,0 +1,14 @@
+companyName = "Black Billion Apparel"
+streetAddress = ""
+city = "Houston"
+state = "Texas"
+phone = ""
+email = "blackbillion@yahoo.com"
+
+[[socialMedia]]
+    platform = "facebook"
+    url = "https://facebook.com/somethingsomething"
+
+[[socialMedia]]
+    platform = "instagram"
+    url = "https://www.instagram.com/blackbillionapparel/"
