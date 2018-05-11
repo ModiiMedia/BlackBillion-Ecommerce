@@ -1,5 +1,6 @@
 ---
 pages:
+- products/outerwear/_index.md
 - products/bottoms/_index.md
 - products/tops/_index.md
 hide_body: true
