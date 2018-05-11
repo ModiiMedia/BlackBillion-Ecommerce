@@ -1,5 +1,6 @@
 ---
 pages:
+- products/_index.md
 - products/accessories/_index.md
 - products/hats/_index.md
 - products/outerwear/_index.md
