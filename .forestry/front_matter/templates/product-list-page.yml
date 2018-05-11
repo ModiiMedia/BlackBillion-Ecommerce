@@ -1,0 +1,34 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- name: label
+  label: Admin Label
+  type: text
+  hidden: false
+  default: ''
+  description: Label for the Admin section
+  config:
+    required: true
+- name: type
+  label: Type
+  type: text
+  hidden: true
+  default: products
+  config:
+    required: true
+- type: text
+  name: meta_title
+  label: Meta Title
+  description: Page title in website
+  config:
+    required: true
+- type: text
+  name: meta_description
+  label: Meta Description
+  description: Description for search engines
+- type: file
+  name: main_image
+  label: main Image
+  description: Image for search engines and for preview to appear on social media
+    sites
