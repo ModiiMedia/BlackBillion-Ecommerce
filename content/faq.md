@@ -1,6 +1,7 @@
 ---
 title: Frequently Asked Questions
 metaDescription: 
+url: /faq
 questions:
   - question: Do I have to wash these clothes? 
     answer: |
@@ -12,4 +13,5 @@ questions:
     answer: |
         ### this answer is to be determined
         so I'm not really sure what to tell you __hello__.
+layout: faq
 ---

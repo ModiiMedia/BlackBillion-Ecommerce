@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+
+<div class="main-section">
+    <div class="container">
+        <div class="div-block-21">
+            <h1 class="heading-4">{{ .Title }}</h1>
+            <p>{{ .Params.Snippet }}</p>
+            <a href="{{ .Params.rssFeed }}" class="w-inline-block">
+                <div>Rss Blog Feed</div>
+            </a>
+        </div>
+        <div class="w-dyn-list">
+            <div class="flex-row collection-grid w-dyn-items">
+                {{ range .Data.Pages }}
+                <div class="collection-item w-dyn-item">
+                    <a href="/news/sed" class="collection-link w-inline-block">
+                        {{ if .Params.FeaturedImage}}
+                            <div style="background-image:url({{ .Params.FeaturedImage }})"class="collection-image"></div>
+                        {{ end }}
+                        <div class="collection-content">
+                            <div class="collection-date">{{ .Date.Format "Jan 02, 2006" }}</div>
+                            <h1 class="collection-heading">{{ .Title }}</h1>
+                            <p class="collection-p">{{ .Params.Snippet }}</p>
+                            <div class="read-article">READ ARTICLE &gt;</div>
+                        </div>
+                    </a> 
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ partial "footer.html" . }}
