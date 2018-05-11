@@ -4,6 +4,11 @@ pages:
 hide_body: true
 is_partial: false
 fields:
+- type: text
+  name: name
+  label: Navigation Title
+  config:
+    required: true
 - name: label
   label: Admin Label
   type: text
