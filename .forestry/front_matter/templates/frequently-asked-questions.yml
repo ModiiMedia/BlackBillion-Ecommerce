@@ -1,0 +1,40 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: ''
+- name: url
+  label: Url
+  type: text
+  hidden: false
+  default: ''
+- name: questions
+  label: Questions
+  type: field_group_list
+  fields:
+  - name: question
+    label: Question
+    type: text
+    hidden: false
+    default: ''
+  - name: answer
+    label: Answer
+    type: text
+    hidden: false
+    default: ''
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
