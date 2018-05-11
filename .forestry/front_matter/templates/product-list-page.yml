@@ -16,6 +16,7 @@ fields:
     required: true
   description: Label for website admin area
   default: List Page
+  hidden: true
 - name: name
   label: Navigation Title
   type: text
@@ -23,7 +24,7 @@ fields:
   default: ''
   description: Text that appears in the sorting fields, breadcrumbs, and page navigation
   config:
-    required: true
+    required: false
 - type: text
   name: meta_title
   label: Meta Title
