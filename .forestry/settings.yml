@@ -5,6 +5,6 @@ body_file_url_template: "/images/:year:/:month:/"
 new_page_extension: md
 auto_deploy: false
 admin_path: 
-webhook_url: ''
+webhook_url: 
 sections: 
 version: 0.38.1
