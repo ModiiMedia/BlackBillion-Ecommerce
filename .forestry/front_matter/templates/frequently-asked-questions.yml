@@ -7,18 +7,13 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: type
-  label: Type
-  type: text
-  hidden: true
-  default: page
-  config:
-    required: true
 - name: url
-  label: Url
+  label: Slug
   type: text
   hidden: false
   default: ''
+  description: slug for where to find this on the website. For example typing "/my-page"
+    will put this page at "www.blackbillionclothing.com/mypage"
 - name: questions
   label: Questions
   type: field_group_list
@@ -38,8 +33,17 @@ fields:
   config:
     labelField: question
   description: Add your Questions and Answers Here
+- name: type
+  label: Type
+  type: text
+  hidden: true
+  default: page
+  config:
+    required: true
 - name: layout
   label: Layout
   type: text
-  hidden: false
+  hidden: true
   default: faq
+  config:
+    required: true
