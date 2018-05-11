@@ -5,7 +5,7 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  name: name
+  name: title
   label: Navigation Title
   config:
     required: true
