@@ -1,5 +1,5 @@
 ---
 title: Black Billion Blog
 snippet: News, annoucements, and other articles from Black Billion Apparel
-rssFeed: 
+rssFeed: /posts/index.xml
 ---

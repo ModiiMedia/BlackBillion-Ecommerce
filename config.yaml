@@ -38,8 +38,8 @@ menu:
       - identifier: "Blog"
         parent: "Explore"
         name: "Blog"
-        url: "/blog/"
-        weight: 2x`
+        url: "/posts/"
+        weight: 2
       - identifier: "FAQ"
         parent: "Explore"
         name: "FAQ / Help"

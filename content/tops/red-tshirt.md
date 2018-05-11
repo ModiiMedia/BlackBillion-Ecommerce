@@ -13,6 +13,9 @@ variations:
   - name: long sleeve
     priceChange: +2.00
 sku: 
+mainImage: "/images/pete-bellis-256701-unsplash-1.jpg"
+hoverImage: "/images/hipster-mum-236831-unsplash-1.jpg"
+productGallery: ["/images/pete-bellis-256701-unsplash-1.jpg", "/images/hipster-mum-236831-unsplash-1.jpg"]
 
 ---
 
