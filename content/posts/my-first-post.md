@@ -1,10 +1,10 @@
 ---
 title: "My First Post"
-metaDescription: 
+meta_description: 
 snippet: "It's my first ever Hugo post it's so exciting."
 date: 2018-05-10T19:45:38-05:00
 draft: false
-mainImage: "/images/hipster-mum-236831-unsplash-1.jpg"
+main_image: "/images/hipster-mum-236831-unsplash-1.jpg"
 ---
 Lorem markdownum Philomela hostem arvis, en, est, quod Aenean plangoris tremens
 et. Bisulco institerant, *ad illuc* esse; recepit et **busta simul tenentem**

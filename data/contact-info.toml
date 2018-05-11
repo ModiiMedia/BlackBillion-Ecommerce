@@ -5,10 +5,10 @@ state = "Texas"
 phone = ""
 email = "blackbillion@yahoo.com"
 
-[[socialMedia]]
+[[social_media]]
     platform = "facebook"
     url = "https://facebook.com/somethingsomething"
 
-[[socialMedia]]
+[[social_media]]
     platform = "instagram"
     url = "https://www.instagram.com/blackbillionapparel/"

@@ -5,7 +5,7 @@
         <div class="div-block-21">
             <h1 class="heading-4">{{ .Title }}</h1>
             <p>{{ .Params.Snippet }}</p>
-            <a href="{{ .Params.rssFeed }}" class="w-inline-block">
+            <a href="{{ .Params.rss_feed }}" class="w-inline-block">
                 <div>Rss Blog Feed</div>
             </a>
         </div>
@@ -14,8 +14,8 @@
                 {{ range .Data.Pages }}
                 <div class="collection-item w-dyn-item">
                     <a href="{{ .RelPermalink }}" class="collection-link w-inline-block">
-                        {{ if .Params.mainImage}}
-                            <div style="background-image:url({{ .Params.mainImage }})"class="collection-image"></div>
+                        {{ if .Params.main_image}}
+                            <div style="background-image:url({{ .Params.main_image }})"class="collection-image"></div>
                         {{ end }}
                         <div class="collection-content">
                             <div class="collection-date">{{ .Date.Format "Jan 02, 2006" }}</div>

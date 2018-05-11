@@ -1,0 +1,3 @@
+---
+title: Pants and Shorts
+---

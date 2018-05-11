@@ -1,7 +1,7 @@
 ---
 title: Home
 metaTitle: Black Billion Clothing
-metaDescription: 
+meta_description: 
 sliderSlides:
   - heading: "Free Shipping On All Orders!"
     text: "Use coupon code: 123shipping!"

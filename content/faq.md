@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions
-metaDescription: 
+meta_description: 
 url: /faq
 questions:
   - question: Do I have to wash these clothes? 

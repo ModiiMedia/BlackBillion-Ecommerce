@@ -1,3 +1,55 @@
 {{ partial "header.html" . }}
-Hi
+<div class="main-section">
+    <div class="container grid">
+        <div class="breadcrumbs-wrap">
+            <div class="breadcrumbs">
+                {{ if ne .Title "All Products" }}
+                <a href="/{{.Section | urlize }}">{{ .Section | title }}</a> / 
+                {{ end }}
+                <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+            </div>
+        </div>
+        <div class="w-dyn-list">
+            <div class="product-grid-wrap w-dyn-items">
+                {{ if eq .Title "All Products"}}
+                    {{ range where .Site.RegularPages "Section" "products" }}
+                    {{ $price := .Params.price }}
+                        <div class="grid-item w-dyn-item">
+                            <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
+                                <div style="background-image:url({{ .Params.main_image }})"
+                                    class="grid-photo-main">
+                                    <div style="background-image:url({{ .Params.hover_image }})"
+                                        class="grid-photo-hover"></div>
+                                </div>
+                                <div class="grid-content">
+                                    <h1 class="grid-title">{{ .Title }}</h1>
+                                    <div class="price-text">$ </div>
+                                    <div class="price-text">{{ lang.NumFmt 2 $price }}</div>
+                                </div>
+                            </a>
+                        </div>
+                    {{ end }}
+                {{ else }}
+                    {{ range .Data.Pages }}
+                    {{ $price := .Params.price }}
+                    <div class="grid-item w-dyn-item">
+                        <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
+                            <div style="background-image:url({{ .Params.main_image }})"
+                                class="grid-photo-main">
+                                <div style="background-image:url({{ .Params.hover_image }})"
+                                    class="grid-photo-hover"></div>
+                            </div>
+                            <div class="grid-content">
+                                <h1 class="grid-title">{{ .Title }}</h1>
+                                <div class="price-text">$ </div>
+                                <div class="price-text">{{ lang.NumFmt 2 $price }}</div>
+                            </div>
+                        </a>
+                    </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
 {{ partial "footer.html" . }}

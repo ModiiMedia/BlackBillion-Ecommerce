@@ -16,15 +16,15 @@ menu:
       - identifier: "All"
         name: "All Products"
         emphasize: true
-        url: "/all/"
+        url: "/products/"
         weight: 2
       - identifier: "Tops"
         name: "Tops"
-        url: ""
+        url: "/products/tops/"
         weight: 3
       - identifier: "Accessories"
         name: "Accessories"
-        url: ""
+        url: "/products/accessories/"
         weight: 4
       - identifier: "Explore"
         name: "Explore"
