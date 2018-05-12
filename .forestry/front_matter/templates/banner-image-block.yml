@@ -19,6 +19,9 @@ fields:
   label: Button Settings
   description: Settings for the button on your banner
   fields:
+  - type: boolean
+    name: hide_button
+    label: Hide Button
   - type: text
     name: button_text
     label: Button Text
