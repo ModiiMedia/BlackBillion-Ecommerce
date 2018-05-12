@@ -3,11 +3,6 @@ hide_body: false
 is_partial: true
 fields:
 - type: text
-  label: Grid Name
-  name: name
-  config:
-    required: true
-- type: text
   label: Heading
   name: heading
   description: Text to appear above the grid. Leave blank to hide the heading.
