@@ -4,20 +4,26 @@ meta_description: ''
 url: "/faq"
 questions:
 - question: Do I have to wash these clothes?
-  answer: Yes, or else you it will begin to smell.
+  answer: |-
+    Yes, or else you it will begin to smell.
+
+    ### so do it now
 - question: How soon will I get my order?
   answer: |-
-    We make every item to order
+    Here we goooo! It's **super** cool.
 
-    ### so it will take a couple days
-
-    > but fret not young comrade
-
-    here have a video!
+    ##### yes here's a video
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/xeNb7v2ElAQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 - question: Can I make the answers WYSIWYG?
-  answer: "Yes you can make the answer WYSIWYG! \n\nIt's **really cool**!"
+  answer: |-
+    Yes it seems you can!
+
+    > "and it's really cool"
+    >
+    > -Joshua Sosso
+
+    _neato!_
 layout: faq
 type: page
 social_image: ''
