@@ -5,18 +5,17 @@ meta_description: It's a red shirt
 date: 2018-05-10 15:58:11 -0500
 price: 150
 sizes:
-- XS
-- S
-- M
-- L
-- XL
-variations:
-- name: sleeveless
+- price_change: 0
+  size: Extra Small
+- size: Small
   price_change: 0
-- name: short sleeve
+- size: Medium
   price_change: 0
-- name: long sleeve
-  price_change: 2
+- size: Large
+  price_change: 0
+- size: Extra Large
+  price_change: '3.00'
+variations: []
 sku: ''
 main_image: "/images/2018/05/enis-yavuz-375324-unsplash.jpg"
 hover_image: "/images/2018/05/raul-varzar-589748-unsplash.jpg"
@@ -28,5 +27,10 @@ color_tags:
 - white
 - red
 - black
+weight: 5
+description: It's a totally rad red shirt
+category: t-shirts
+id: ''
+details: ''
 
 ---

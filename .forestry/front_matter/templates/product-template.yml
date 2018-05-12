@@ -1,4 +1,6 @@
 ---
+pages:
+- products/tops/red-tshirt.md
 hide_body: true
 is_partial: false
 fields:
