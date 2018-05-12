@@ -1,5 +1,5 @@
 ---
-title: Bottoms Main Page
+title: Bottoms List Page
 name: bottoms
 meta_title: Pants, Shorts, and More
 meta_description: Get bottoms from Black Billion Apparel.

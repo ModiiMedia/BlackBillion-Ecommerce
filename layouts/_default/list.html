@@ -3,15 +3,17 @@
     <div class="container grid">
         <div class="breadcrumbs-wrap">
             <div class="breadcrumbs">
-                {{ if ne .Title "All Products" }}
-                <a href="/{{.Section | urlize }}">{{ .Section | title }}</a> / 
+                {{ if eq .Params.List_All true }}
+                <a href="{{ .RelPermalink }}"><strong>{{ .Params.Name }}</strong></a>
+                {{ else }}
+                <a href="/{{.Section | urlize }}">{{ .Section | title }}</a> /
+                <a href="{{ .RelPermalink }}"><strong>{{ .Params.Name }}</strong></a>                
                 {{ end }}
-                <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
             </div>
         </div>
         <div class="w-dyn-list">
             <div class="product-grid-wrap w-dyn-items">
-                {{ if eq .Title "All Products"}}
+                {{ if eq .Params.List_All true }}
                     {{ range where .Site.RegularPages "Section" "products" }}
                     {{ $price := .Params.price }}
                         <div class="grid-item w-dyn-item">
@@ -24,7 +26,7 @@
                                 <div class="grid-content">
                                     <h1 class="grid-title">{{ .Title }}</h1>
                                     <div class="price-text">$ </div>
-                                    <div class="price-text">{{ lang.NumFmt 2 $price }}</div>
+                                    {{ if $price}}<div class="price-text">{{ lang.NumFmt 2 $price }}</div>{{ end }}
                                 </div>
                             </a>
                         </div>
@@ -42,7 +44,7 @@
                             <div class="grid-content">
                                 <h1 class="grid-title">{{ .Title }}</h1>
                                 <div class="price-text">$ </div>
-                                <div class="price-text">{{ lang.NumFmt 2 $price }}</div>
+                                {{ if $price }}<div class="price-text">{{ lang.NumFmt 2 $price }}</div>{{ end }}
                             </div>
                         </a>
                     </div>

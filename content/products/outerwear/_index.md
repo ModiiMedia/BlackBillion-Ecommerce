@@ -1,5 +1,5 @@
 ---
-title: Outerwear Main Page
+title: Outerwear List Page
 name: outerwear
 meta_title: Jackets & Hoodies
 meta_description: Jackets, hoodies, & sweaters from Black Billion Apparel
