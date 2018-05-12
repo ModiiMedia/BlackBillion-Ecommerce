@@ -1,7 +1,6 @@
 ---
 pages:
-- products/tops/my-cool-new-product.md
-- products/tops/red-tshirt.md
+- products/red-tshirt.md
 hide_body: true
 is_partial: false
 fields:
@@ -140,8 +139,3 @@ fields:
   hidden: false
   default: ''
   description: Photo gallery for viewing on the product page
-- name: color_tags
-  label: Color tags
-  type: list
-  hidden: false
-  default: ''
