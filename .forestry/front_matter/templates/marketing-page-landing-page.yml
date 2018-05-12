@@ -16,11 +16,11 @@ fields:
     this page to appear at "www.blackbillionclothing.com/my-page"
 - type: blocks
   template_types:
-  - 2-column
-  - content-block
   - banner-image
-  - product-grid
   - gallery
+  - product-grid
+  - 1-column-content
+  - 2-column-content
   label: Blocks
   name: blocks
 - type: textarea
