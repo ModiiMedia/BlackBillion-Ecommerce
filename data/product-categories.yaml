@@ -1,0 +1,8 @@
+tops:
+  - name: "t-shirts"
+  - name: "blouses"
+  - name: "tank tops"
+bottoms: ["pants", "shirts", "skirts", "leggings"]
+outerwear: ["jackets", "hoodies"]
+hats: [""]
+accessories: [""]
