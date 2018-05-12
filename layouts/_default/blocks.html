@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+
+{{ range .Params.Blocks }}
+    {{ if eq .template "banner-image-block" }}
+        {{ partial "blocks/banner-image.html" . }}
+    {{ end }}
+<div class="section">
+hi
+</div>
+{{ end }}
+
+{{ partial "footer.html" . }}

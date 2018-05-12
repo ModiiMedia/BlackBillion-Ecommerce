@@ -1,0 +1,11 @@
+<div class="section">
+    <div class="banner-image" style="background-image:URL({{ .image }})">
+        <div class="slide-content page">
+            <h1 class="banner-image-heading">{{ .heading }}</h1>
+            <p>{{ if .text }}{{ .text | markdownify }}{{ end }}</p>
+            {{ if ne .button.hide_button true }}
+                <a href="#" class="hero-button w-button">{{ .button.button_text }}</a>
+            {{ end }}
+        </div>
+    </div>
+</div>

@@ -3,6 +3,8 @@ date = "2018-05-12T21:35:22+00:00"
 meta_description = "Black Billion Clothing is a clothing company based out of Houston TX."
 social_image = "/images/2018/05/allef-vinicius-147517-unsplash.jpg"
 title = "About us"
+type = "page"
+layout = "blocks"
 url = ""
 [[blocks]]
 heading = "About Black Billion"
@@ -11,7 +13,7 @@ template = "banner-image-block"
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.  "
 [blocks.button]
 button_text = "Learn More"
-hide_button = true
+hide_button = false
 link_settings = "Internal Page Link"
 [blocks.formatting]
 align_container = "left"
