@@ -1,4 +1,4 @@
-product-categories: 
+Product_Categories: 
   tops: ["t-shirts", "blouses", "tank tops"]
   bottoms: ["pants", "shorts", "skirts"]
   outerwear: ["jackets", "hoodies"]
@@ -6,4 +6,4 @@ product-categories:
   accessories: []
   shoes: []
   dresses: []
-product-color-tags: ["blue", "purple", "red", "orange", "yellow", "gray", "white", "black"]
+product_color_tags: ["blue", "purple", "red", "orange", "yellow", "gray", "white", "black"]
