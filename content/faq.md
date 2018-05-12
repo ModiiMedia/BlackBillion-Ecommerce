@@ -15,7 +15,7 @@ questions:
 
     here have a video!
 
-    <iframe width="560" height="315" src="[https://www.youtube.com/embed/xeNb7v2ElAQ](https://www.youtube.com/embed/xeNb7v2ElAQ "https://www.youtube.com/embed/xeNb7v2ElAQ")" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xeNb7v2ElAQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 - question: Can I make the answers WYSIWYG?
   answer: "Yes you can make the answer WYSIWYG! \n\nIt's **really cool**!"
 layout: faq
