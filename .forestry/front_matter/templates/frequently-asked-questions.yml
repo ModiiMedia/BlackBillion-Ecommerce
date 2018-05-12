@@ -36,7 +36,7 @@ fields:
     config:
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
       required: true
     label: Answer
     name: answer
