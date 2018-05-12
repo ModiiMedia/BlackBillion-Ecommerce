@@ -139,8 +139,3 @@ fields:
   hidden: false
   default: ''
   description: Photo gallery for viewing on the product page
-- name: color_tags
-  label: Color tags
-  type: list
-  hidden: false
-  default: ''
