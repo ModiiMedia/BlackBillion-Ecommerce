@@ -1,6 +1,5 @@
 +++
 date = "2018-05-12T21:35:22+00:00"
-draft = true
 meta_description = "Black Billion Clothing is a clothing company based out of Houston TX."
 social_image = "/images/2018/05/allef-vinicius-147517-unsplash.jpg"
 title = "About us"
