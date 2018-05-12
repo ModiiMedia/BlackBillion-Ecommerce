@@ -1,10 +1,21 @@
+{{ $doc := .button.internal_link }}
 <div class="section">
     <div class="banner-image" style="background-image:URL({{ .image }})">
         <div class="slide-content page">
             <h1 class="banner-image-heading">{{ .heading }}</h1>
             <p>{{ if .text }}{{ .text | markdownify }}{{ end }}</p>
             {{ if ne .button.hide_button true }}
-                <a href="#" class="hero-button w-button">{{ .button.button_text }}</a>
+                {{ if eq .button.link_settings "Internal Page Link" }}
+                    <a href="/{{ trim $doc "/_index.md" }}"
+                        {{ if eq .button.open_in_new_tab true }} target="_blank" {{ end }}
+                        class="hero-button w-button">{{ .button.button_text }}
+                    </a>
+                {{ else }}
+                    <a href="{{ .button.external_link }}"
+                        {{ if eq .button.open_in_new_tab true }} target="_blank" {{ end }}
+                        class="hero-button w-button">{{ .button.button_text }}
+                    </a>
+                {{ end }}
             {{ end }}
         </div>
     </div>

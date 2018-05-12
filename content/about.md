@@ -16,7 +16,7 @@ button_text = "Shop Now"
 external_link = "https://www.google.com"
 hide_button = false
 internal_link = "products/_index.md"
-link_settings = "Internal Page Link"
+link_settings = "External Page Link"
 [blocks.formatting]
 align_container = "left"
 align_text = "left"
