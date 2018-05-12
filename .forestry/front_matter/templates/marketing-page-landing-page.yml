@@ -1,0 +1,28 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: url
+  label: URL Slug
+  description: Type the slug for this page. For example typing "my-page" will cause
+    this page to appear at "www.blackbillionclothing.com/my-page"
+- type: blocks
+  template_types:
+  - gallery-block
+  - product-grid-block
+- type: textarea
+  name: meta_description
+  label: meta description
+  description: Description for search engines and social media
+  config:
+    required: true
+- type: file
+  name: social_image
+  label: social Image
+  description: Image for social media
