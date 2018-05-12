@@ -1,6 +1,11 @@
 {{ $doc := .button.internal_link }}
+{{ $alignC := .formatting.align_container }}
 <div class="section">
-    <div class="banner-image" style="background-image:URL({{ .image }})">
+    <div class="banner-image" 
+    style="background-image:URL({{ .image }}); text-align: {{ .formatting.align_text }};
+    {{ if eq $alignC "left" }}justify-content: flex-start{{end}}
+    {{ if eq $alignC "center" }}justify-content: center{{end}}
+    {{ if eq $alignC "right" }}justify-content: flex-end{{end}}">
         <div class="slide-content page">
             <h1 class="banner-image-heading">{{ .heading }}</h1>
             <p>{{ if .text }}{{ .text | markdownify }}{{ end }}</p>

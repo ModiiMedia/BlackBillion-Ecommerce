@@ -19,7 +19,7 @@ internal_link = "products/_index.md"
 link_settings = "Internal Page Link"
 open_in_new_tab = true
 [blocks.formatting]
-align_container = "left"
+align_container = "center"
 align_text = "left"
 [[blocks]]
 column_height = "Image Priority"
