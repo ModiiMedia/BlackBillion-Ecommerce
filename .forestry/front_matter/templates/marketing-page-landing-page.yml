@@ -14,9 +14,12 @@ fields:
     this page to appear at "www.blackbillionclothing.com/my-page"
 - type: blocks
   template_types:
+  - content-block
   - banner-image-block
   - product-grid-block
   - gallery-block
+  label: Blocks
+  name: blocks
 - type: textarea
   name: meta_description
   label: meta description
