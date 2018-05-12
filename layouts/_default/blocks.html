@@ -1,10 +1,9 @@
 {{ partial "header.html" . }}
 
 {{ range .Params.Blocks }}
-    {{ if eq .template "banner-image-block" }}
+    {{ if eq .template "banner-image" }}
         {{ partial "blocks/banner-image.html" . }}
     {{ end }}
-    {{ if eq .template ""}}
 {{ end }}
 
 {{ partial "footer.html" . }}
