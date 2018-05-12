@@ -1,0 +1,98 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: slug
+  label: Slug
+  type: text
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: true
+  default: products
+  config:
+    required: true
+- name: meta_description
+  label: Meta description
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: main_image
+  label: Main image
+  type: file
+  hidden: false
+  default: ''
+- name: hover_image
+  label: Hover image
+  type: file
+  hidden: false
+  default: ''
+- name: price
+  label: Price
+  type: text
+  hidden: false
+  default: ''
+- name: sizes
+  label: Sizes
+  type: list
+  hidden: false
+  default: ''
+- name: variations
+  label: Variations
+  type: field_group_list
+  fields:
+  - type: text
+    label: variant group name
+    name: variant_name
+    description: for example you can put "Colors" and then list all of the color options
+      under "Options"
+    config:
+      required: true
+  - type: field_group_list
+    label: options
+    name: options
+    fields:
+    - type: text
+      name: option_name
+      label: Option Name
+      config:
+        required: true
+    - type: number
+      name: price_change
+      label: Price Change
+      description: Indicates whether this option increases or decreases the price.
+        For example typing -1.50 will DECREASE the price by $1.50 and typing +1.50
+        will INCREASE the price by $1.50. Type 0 for no change.
+      config:
+        step: '0.01'
+        required: true
+      default: '0'
+  hidden: false
+  default: ''
+- name: sku
+  label: Sku
+  type: text
+  hidden: false
+  default: ''
+- name: product_gallery
+  label: Product gallery
+  type: image_gallery
+  hidden: false
+  default: ''
+- name: color_tags
+  label: Color tags
+  type: list
+  hidden: false
+  default: ''
