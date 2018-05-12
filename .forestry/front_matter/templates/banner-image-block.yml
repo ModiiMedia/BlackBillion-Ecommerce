@@ -54,6 +54,9 @@ fields:
     label: External Page Link
     description: Copy and paste a link to another website here. If "External Page
       Link" is selected above this link will be used.
+  - type: boolean
+    name: open_in_new_tab
+    label: Open Link In New Tab
 - type: field_group
   label: Formatting & Alignment
   name: formatting
