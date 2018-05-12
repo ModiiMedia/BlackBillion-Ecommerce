@@ -44,11 +44,25 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: sizes
+- type: field_group_list
+  name: sizes
   label: Sizes
-  type: list
-  hidden: false
-  default: ''
+  fields:
+  - type: text
+    name: size
+    label: size
+    config:
+      required: true
+  - type: number
+    name: price_change
+    label: Price change
+    description: Indicates whether this option increases or decreases the price. For
+      example typing -1.50 will DECREASE the price by $1.50 and typing +1.50 will
+      INCREASE the price by $1.50. Type 0 for no change.
+    config:
+      required: true
+      step: '0.01'
+    default: '0'
 - name: variations
   label: Variations
   type: field_group_list
@@ -79,6 +93,13 @@ fields:
         step: '0.01'
         required: true
       default: '0'
+  - type: boolean
+    name: required
+    label: Required?
+    hidden: false
+    description: Keeping this on will require the customer to select one of these
+      options. Switching it off will allow them to skip making a decision.
+    default: true
   hidden: false
   default: ''
 - name: sku
