@@ -9,11 +9,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: slug
-  label: Slug
-  type: text
-  hidden: false
-  default: ''
 - name: id
   label: Product ID
   type: text
@@ -139,3 +134,39 @@ fields:
   hidden: false
   default: ''
   description: Photo gallery for viewing on the product page
+- type: select
+  config:
+    source:
+      type: datafiles
+      file: product_categories-yaml
+    required: true
+  default: tops
+  label: Main category
+  name: category
+  hidden: true
+- type: select
+  name: subcategory
+  config:
+    source:
+      type: datafiles
+      file: product_categories-yaml
+      path: tops
+    required: false
+  label: Category
+  description: Choose a category for this product. If the category you want isn't
+    listed here add it using the "product categories" in the menu.
+- type: select
+  name: gender
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - mens
+    - womens
+    - unisex (adults)
+    - boys
+    - girls
+    - unisex (kids)
+  label: Gender
+  default: mens
