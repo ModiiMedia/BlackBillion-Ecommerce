@@ -1,5 +1,5 @@
 ---
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - name: title
@@ -12,6 +12,18 @@ fields:
   type: text
   hidden: false
   default: ''
+- name: id
+  label: Product ID
+  type: text
+  hidden: false
+  default: ''
+  description: Create a unique product id for Snipcart. If you leave this blank one
+    will be generated based on the product TITLE above.
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
 - name: type
   label: Type
   type: text
@@ -19,31 +31,34 @@ fields:
   default: products
   config:
     required: true
-- name: meta_description
-  label: Meta description
-  type: text
-  hidden: false
-  default: ''
-- name: date
-  label: Date
-  type: datetime
-  hidden: false
-  default: ''
-- name: main_image
-  label: Main image
-  type: file
-  hidden: false
-  default: ''
-- name: hover_image
-  label: Hover image
-  type: file
-  hidden: false
-  default: ''
 - name: price
   label: Price
   type: text
   hidden: false
   default: ''
+- type: number
+  name: weight
+  label: Weight
+  description: Product weight in grams. (Required for shipping.)
+  config:
+    required: true
+- name: description
+  label: short description
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- type: textarea
+  name: details
+  label: Detailed description
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  description: More detailed description of the product. You can specify washing instructions,
+    include a pricing chart, specify the clothing material, or anything else that
+    you think is relevant for you customers to know.
 - type: field_group_list
   name: sizes
   label: Sizes
@@ -102,16 +117,26 @@ fields:
     default: true
   hidden: false
   default: ''
-- name: sku
-  label: Sku
-  type: text
+- name: main_image
+  label: Main image
+  type: file
   hidden: false
   default: ''
+  description: Main product image that will show on product grids and on social media
+    when shared
+- name: hover_image
+  label: Hover image
+  type: file
+  hidden: false
+  default: ''
+  description: Image that appears when people hover over a product in the product
+    grid.
 - name: product_gallery
   label: Product gallery
   type: image_gallery
   hidden: false
   default: ''
+  description: Photo gallery for viewing on the product page
 - name: color_tags
   label: Color tags
   type: list
