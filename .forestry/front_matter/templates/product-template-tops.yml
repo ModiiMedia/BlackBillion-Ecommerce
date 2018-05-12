@@ -164,9 +164,9 @@ fields:
     options:
     - mens
     - womens
-    - unisex (adults)
+    - unisex (adult)
     - boys
     - girls
     - unisex (kids)
   label: Gender
-  default: mens
+  default: ''
