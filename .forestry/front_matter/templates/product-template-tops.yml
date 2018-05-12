@@ -1,7 +1,7 @@
 ---
 pages:
+- products/red-tshirt.md
 - products/tops/my-cool-new-product.md
-- products/tops/red-tshirt.md
 hide_body: true
 is_partial: false
 fields:
