@@ -1,0 +1,144 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: slug
+  label: Slug
+  type: text
+  hidden: false
+  default: ''
+- name: id
+  label: Product ID
+  type: text
+  hidden: false
+  default: ''
+  description: Create a unique product id for Snipcart. If you leave this blank one
+    will be generated based on the product TITLE above.
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: true
+  default: products
+  config:
+    required: true
+- name: price
+  label: Price
+  type: text
+  hidden: false
+  default: ''
+- type: number
+  name: weight
+  label: Weight
+  description: Product weight in grams. (Required for shipping.)
+  config:
+    required: true
+- name: description
+  label: short description
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- type: textarea
+  name: details
+  label: Detailed description
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  description: More detailed description of the product. You can specify washing instructions,
+    include a pricing chart, specify the clothing material, or anything else that
+    you think is relevant for you customers to know.
+- type: field_group_list
+  name: sizes
+  label: Sizes
+  fields:
+  - type: text
+    name: size
+    label: size
+    config:
+      required: true
+  - type: number
+    name: price_change
+    label: Price change
+    description: Indicates whether this option increases or decreases the price. For
+      example typing -1.50 will DECREASE the price by $1.50 and typing +1.50 will
+      INCREASE the price by $1.50. Type 0 for no change.
+    config:
+      required: true
+      step: '0.01'
+    default: '0'
+- name: variations
+  label: Variations
+  type: field_group_list
+  fields:
+  - type: text
+    label: variant group name
+    name: variant_name
+    description: for example you can put "Colors" and then list all of the color options
+      under "Options"
+    config:
+      required: true
+  - type: field_group_list
+    label: options
+    name: options
+    fields:
+    - type: text
+      name: option_name
+      label: Option Name
+      config:
+        required: true
+    - type: number
+      name: price_change
+      label: Price Change
+      description: Indicates whether this option increases or decreases the price.
+        For example typing -1.50 will DECREASE the price by $1.50 and typing +1.50
+        will INCREASE the price by $1.50. Type 0 for no change.
+      config:
+        step: '0.01'
+        required: true
+      default: '0'
+  - type: boolean
+    name: required
+    label: Required?
+    hidden: false
+    description: Keeping this on will require the customer to select one of these
+      options. Switching it off will allow them to skip making a decision.
+    default: true
+  hidden: false
+  default: ''
+- name: main_image
+  label: Main image
+  type: file
+  hidden: false
+  default: ''
+  description: Main product image that will show on product grids and on social media
+    when shared
+- name: hover_image
+  label: Hover image
+  type: file
+  hidden: false
+  default: ''
+  description: Image that appears when people hover over a product in the product
+    grid.
+- name: product_gallery
+  label: Product gallery
+  type: image_gallery
+  hidden: false
+  default: ''
+  description: Photo gallery for viewing on the product page
+- name: color_tags
+  label: Color tags
+  type: list
+  hidden: false
+  default: ''
