@@ -145,12 +145,3 @@ fields:
   type: list
   hidden: false
   default: ''
-- type: select
-  config:
-    source:
-      type: datafiles
-      file: product-categories-yaml
-      path: tops
-  default: 
-  label: Category
-  name: category
