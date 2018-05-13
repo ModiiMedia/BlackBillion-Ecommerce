@@ -28,14 +28,16 @@ fields:
   name: align_grid
   default: left
 - type: select
-  name: grid_size
+  name: photos_per_row
   config:
     source:
       type: simple
     required: true
     options:
-    - 5 Per Row
-    - 4 Per Row
-    - 3 Per Row
-  label: Grid Size
+    - '5'
+    - '4'
+    - '3'
+  label: Photos Per Row
   default: 5 Per Row
+  description: How many photos will appear on each row. Bigger numbers will lead to
+    smaller photos and vice versa for smaller numbers.
