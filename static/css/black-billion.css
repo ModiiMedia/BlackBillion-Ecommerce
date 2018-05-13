@@ -1030,6 +1030,12 @@ img {
   -webkit-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
 }
+.gallery-thumbnail.four {
+  min-width: 25%
+}
+.gallery-thumbnail.three {
+  min-width: 33.33%
+}
 
 .gallery-thumbnail:hover {
   opacity: 0.5;
@@ -1676,6 +1682,12 @@ img {
   .gallery-thumbnail {
     min-width: 25%;
   }
+  .gallery-thumbnail.four {
+    min-width: 33.33%
+  }
+  .gallery-thumbnail.three {
+    min-width: 50%
+  }
   .div-block-17 {
     display: none;
   }
@@ -1840,6 +1852,12 @@ img {
   }
   .gallery-thumbnail {
     min-width: 33.33%;
+  }
+  .gallery-thumbnail.four {
+    min-width: 50%;
+  }
+  .gallery-thumbnail.three {
+    min-width: 100%;
   }
   .collection-link {
     -webkit-box-orient: horizontal;

@@ -4,8 +4,9 @@
       <div class="flex-row gallery"
       {{ if eq .align_grid "right" }}style="justify-content: flex-end"{{ end }}{{ if eq .align_grid "center" }}style="justify-content: center"{{ end }}>
         {{ $gallery := .gallery_name }}
+        {{ $row := .photos_per_row }}
         {{ range .images }}
-        <a href="#" class="gallery-thumbnail w-lightbox">
+        <a href="#" class="gallery-thumbnail w-lightbox {{ $row }}">
           <div class="gallery-thumbnail-inner" style="background-image:URL({{ . }})"></div>
           <script type="application/json" class="w-json">
             {
