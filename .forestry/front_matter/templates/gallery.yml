@@ -3,6 +3,12 @@ hide_body: false
 is_partial: true
 fields:
 - type: text
+  label: Gallery Name
+  name: gallery_name
+  description: ''
+  config:
+    required: true
+- type: text
   name: heading
   label: Heading
   description: Heading text to appear above gallery. Leave blank to not show heading.

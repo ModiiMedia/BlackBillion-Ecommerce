@@ -4,8 +4,6 @@ meta_description: It's a red shirt
 date: 2018-05-10 15:58:11 -0500
 price: 150
 sizes:
-- price_change: 0
-  size: Extra Small
 - size: Small
   price_change: 0
 - size: Medium
@@ -13,15 +11,18 @@ sizes:
 - size: Large
   price_change: 0
 - size: Extra Large
-  price_change: '3.00'
+  price_change: 2
+- size: Extra Extra Large
+  price_change: 5
 variations: []
 sku: ''
-main_image: "/images/2018/05/enis-yavuz-375324-unsplash.jpg"
-hover_image: "/images/2018/05/raul-varzar-589748-unsplash.jpg"
+main_image: "/images/enis-yavuz-375324-unsplash.jpg"
+hover_image: "/images/raul-varzar-589748-unsplash.jpg"
 product_gallery:
-- "/images/2018/05/enis-yavuz-375324-unsplash.jpg"
-- "/images/2018/05/raul-varzar-589748-unsplash.jpg"
-- "/images/2018/05/louis-blythe-199659-unsplash.jpg"
+- "/images/enis-yavuz-375324-unsplash.jpg"
+- "/images/pete-bellis-549843-unsplash.jpg"
+- "/images/pete-bellis-549843-unsplash-p-800.jpeg"
+- "/images/raul-varzar-589748-unsplash.jpg"
 color_tags:
 - white
 - red
@@ -31,5 +32,7 @@ description: It's a totally rad red shirt
 category: t-shirts
 id: ''
 details: ''
+gender: mens
+subcategory: t-shirts
 
 ---
