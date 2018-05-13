@@ -179,3 +179,11 @@ fields:
     - unisex (kids)
   label: Gender
   default: mens
+- type: list
+  name: related_products
+  label: Related Products
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: products
