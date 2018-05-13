@@ -21,7 +21,7 @@ menu:
         weight: 2
       - identifier: "Tops"
         name: "Tops"
-        url: "/products/tops/"
+        url: "/categories/tops/"
         weight: 3
       - identifier: "Accessories"
         name: "Accessories"
