@@ -1,0 +1,23 @@
+<div class="main-section page">
+    <div class="container">
+      {{ if .heading }}<h1 class="gallery-heading">{{ .heading }}</h1>{{ end }}
+      <div class="flex-row gallery">
+        {{ range .images }}
+        <a href="#" class="gallery-thumbnail w-inline-block w-lightbox">
+          <div class="gallery-thumbnail-inner" style="background-image:URL({{ . }})"></div>
+          <script type="application/json" class="w-json">
+            {
+              "items": [{
+                "type": "image",
+                "_id": "{{ . }}",
+                "origFileName": "{{ . }}",
+                "url": "{{ . }}"
+              }],
+              "group": "new summer styles"
+            }
+          </script>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>

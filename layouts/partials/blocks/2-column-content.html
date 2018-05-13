@@ -1,0 +1,36 @@
+<div class="main-section page">
+    <div class="container">
+        <div class="flex-row">
+            <div class="column-left flex">
+                {{ if eq .column_order "Image First" }}
+                    {{ if eq .column_height "Image Priority" }}
+                        <img src="http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1).jpg"
+                        srcset="http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1)-p-500.jpeg 500w, http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1)-p-800.jpeg 800w, http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1)-p-1080.jpeg 1080w, http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1)-p-2000.jpeg 2000w, http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1).jpg 2001w"
+                        sizes="(max-width: 479px) 83vw, 45vw">
+                    {{ else }}
+                        <div class="column-image"></div>
+                    {{ end }}
+                {{ else }}
+                    <div class="rich-text-page w-richtext">
+                        {{ .content | markdownify }}
+                    </div>
+                {{ end }}
+            </div>
+            <div class="column-right flex">
+                {{ if eq .column_order "Image First"}}
+                    <div class="rich-text-page w-richtext">
+                        {{ .content | markdownify }}
+                    </div>
+                {{ else }}
+                    {{ if eq .column_height "Image Priority" }}
+                        <img src="http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1).jpg"
+                        srcset="http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1)-p-500.jpeg 500w, http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1)-p-800.jpeg 800w, http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1)-p-1080.jpeg 1080w, http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1)-p-2000.jpeg 2000w, http://uploads.webflow.com/5ad0111263a6e8d7f3630b1e/5ad0707119637c34b4dad6cb_hipster-mum-236831-unsplash%20(1).jpg 2001w"
+                        sizes="(max-width: 479px) 83vw, 45vw">
+                    {{ else }}
+                        <div class="column-image"></div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>

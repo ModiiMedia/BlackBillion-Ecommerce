@@ -1,6 +1,5 @@
 ---
 title: Red Plaid Shirt
-slug: "/red-tshirt"
 meta_description: It's a red shirt
 date: 2018-05-10 15:58:11 -0500
 price: 150

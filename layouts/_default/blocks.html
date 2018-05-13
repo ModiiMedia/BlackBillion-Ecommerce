@@ -4,6 +4,47 @@
     {{ if eq .template "banner-image" }}
         {{ partial "blocks/banner-image.html" . }}
     {{ end }}
+    {{ if eq .template "2-column-content" }}
+        {{ partial "blocks/2-column-content.html" . }}
+    {{ end }}
+    {{ if eq .template "gallery"}}
+        {{ partial "blocks/gallery.html" . }}
+    {{ end }}
+    {{ if eq .template "product-grid" }}
+        <div class="main-section page">
+            <div class="container">
+                {{ if .heading }}<h1 class="gallery-heading">{{ .heading }}</h1>{{ end }}
+                <div class="w-dyn-list">
+                    <div class="product-grid-wrap page w-dyn-items">
+                        {{ range .products }}
+                        {{ $1 := replace . ".md" "/" }}
+                        {{ $2 := replace $1 "products/" "/products/" }}
+                            {{ range $.Site.RegularPages }}
+                                {{ if eq .RelPermalink $2 }}
+                                {{ $price := .Params.Price }}
+                                    <div class="grid-item page w-dyn-item">
+                                        <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
+                                            <div style="background-image:url({{ .Params.Main_Image }})"
+                                                class="grid-photo-main homepage">
+                                                <div style="background-image:url({{ .Params.Hover_Image }})"
+                                                    class="grid-photo-hover">
+                                                </div>
+                                            </div>
+                                            <div class="grid-content">
+                                                <h1 class="grid-title">{{ .Title }}</h1>
+                                                {{ if $price }}<div class="price-text">$&nbsp;</div>
+                                                <div class="price-text">{{ lang.NumFmt 2 $price }}</div>{{ end }}
+                                            </div>
+                                        </a>
+                                    </div>
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div> 
+        </div>       
+    {{ end }}
 {{ end }}
 
 {{ partial "footer.html" . }}
