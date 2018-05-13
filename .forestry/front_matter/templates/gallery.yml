@@ -34,10 +34,10 @@ fields:
       type: simple
     required: true
     options:
-    - '5'
-    - '4'
-    - '3'
+    - five
+    - four
+    - three
   label: Photos Per Row
-  default: 5 Per Row
+  default: five
   description: How many photos will appear on each row. Bigger numbers will lead to
     smaller photos and vice versa for smaller numbers.
