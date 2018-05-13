@@ -1,7 +1,9 @@
 <div class="main-section page">
     <div class="container">
       {{ if .heading }}<h1 class="gallery-heading">{{ .heading }}</h1>{{ end }}
-      <div class="flex-row gallery">
+      <div class="flex-row gallery"
+      {{ if eq .align_grid "right" }}style="justify-content: flex-end"{{ end }}{{ if eq .align_grid "center" }}style="justify-content: center"{{ end }}>
+        {{ $gallery := .gallery_name }}
         {{ range .images }}
         <a href="#" class="gallery-thumbnail w-lightbox">
           <div class="gallery-thumbnail-inner" style="background-image:URL({{ . }})"></div>
@@ -13,7 +15,7 @@
                 "origFileName": "{{ . }}",
                 "url": "{{ . }}"
               }],
-              "group": "new summer styles"
+              "group": "{{ $gallery }}"
             }
           </script>
         </a>
