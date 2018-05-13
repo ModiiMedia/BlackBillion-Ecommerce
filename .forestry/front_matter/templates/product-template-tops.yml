@@ -34,6 +34,14 @@ fields:
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
+- type: number
+  config:
+    step: '0.01'
+  label: Sales Price
+  name: sales_price
+  description: Setting a sales price will override the original price
 - type: number
   name: weight
   label: Weight
