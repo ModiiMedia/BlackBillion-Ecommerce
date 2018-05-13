@@ -15,3 +15,27 @@ fields:
 - type: image_gallery
   name: images
   label: Images
+- type: select
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - left
+    - right
+    - center
+  label: Align Grid Items
+  name: align_grid
+  default: left
+- type: select
+  name: grid_size
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - 5 Per Row
+    - 4 Per Row
+    - 3 Per Row
+  label: Grid Size
+  default: 5 Per Row
