@@ -3,7 +3,7 @@ date = "2018-05-12T21:35:22Z"
 layout = "blocks"
 meta_description = "Black Billion Clothing is a clothing company based out of Houston TX."
 social_image = "/images/pete-bellis-256701-unsplash-1-p-1080.jpeg"
-title = "About us"
+title = "About Us"
 type = "page"
 url = ""
 [[blocks]]
@@ -28,9 +28,11 @@ content = "## Reinventing Fashion\n\nLorem ipsum dolor sit amet, consectetur adi
 image = "/images/ian-dooley-347962-unsplash-1.jpg"
 template = "2-column-content"
 [[blocks]]
+align_grid = "left"
 gallery_name = "Cool Gallery"
 heading = "Us At Work"
 images = ["/images/hipster-mum-236831-unsplash-1-p-500.jpeg", "/images/ian-dooley-347962-unsplash-1.jpg", "/images/louis-blythe-199659-unsplash.jpg", "/images/pete-bellis-256701-unsplash-1.jpg", "/images/pete-bellis-549843-unsplash-p-800.jpeg", "/images/raul-varzar-589748-unsplash.jpg", "/images/the_red_path.jpg"]
+photos_per_row = "5"
 template = "gallery"
 [[blocks]]
 content_section = "# Lorem ipsum \n\ndolor sit amet, consectetur adipiscing elit. In facilisis quam nibh, eget placerat arcu interdum ac. Sed viverra consectetur orci, sit amet sollicitudin libero tristique ut. Maecenas at nulla blandit, venenatis ipsum non, gravida est. Proin vel sem sed mauris posuere tincidunt. Nam at augue lacus. Cras sit amet dui tortor. Sed fermentum vulputate lorem non pretium. Curabitur tempor ultricies condimentum. Ut quis luctus nunc.  \n\n### Lorem ipsum dolor sit amet, \n\nconsectetur adipiscing elit. In facilisis quam nibh, eget placerat arcu interdum ac. Sed viverra consectetur orci, sit amet sollicitudin libero tristique ut. Maecenas at nulla blandit, venenatis ipsum non, gravida est. Proin vel sem sed mauris posuere tincidunt. Nam at augue lacus. Cras sit amet dui tortor. Sed fermentum vulputate lorem non pretium. Curabitur tempor ultricies condimentum. Ut quis luctus nunc.  \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis quam nibh, eget placerat arcu interdum ac. Sed viverra consectetur orci, sit amet sollicitudin libero tristique ut. Maecenas at nulla blandit, venenatis ipsum non, gravida est. Proin vel sem sed mauris posuere tincidunt. Nam at augue lacus. Cras sit amet dui tortor. Sed fermentum vulputate lorem non pretium. Curabitur tempor ultricies condimentum. Ut quis luctus nunc.  "
