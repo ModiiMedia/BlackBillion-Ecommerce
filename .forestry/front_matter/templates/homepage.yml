@@ -1,5 +1,5 @@
 ---
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - name: title
@@ -34,11 +34,9 @@ fields:
     type: text
     hidden: false
     default: ''
-  - name: photo
-    label: Photo
-    type: textarea
-    hidden: false
-    default: ''
+  - type: file
+    name: photo
+    label: photo
   - type: boolean
     name: show_button
     label: Show Button
