@@ -23,11 +23,12 @@ align_container = "center"
 align_text = "left"
 [[blocks]]
 column_height = "Image Priority"
-column_order = "Image First"
+column_order = "Content First"
 content = "## Reinventing Fashion\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis quam nibh, eget placerat arcu interdum ac. Sed viverra consectetur orci, sit amet sollicitudin libero tristique ut. Maecenas at nulla blandit, venenatis ipsum non, gravida est. Proin vel sem sed mauris posuere tincidunt. Nam at augue lacus. Cras sit amet dui tortor. Sed fermentum vulputate lorem non pretium. Curabitur tempor ultricies condimentum. Ut quis luctus nunc.  "
 image = "/images/ian-dooley-347962-unsplash-1.jpg"
 template = "2-column-content"
 [[blocks]]
+gallery_name = "Cool Gallery"
 heading = "Us At Work"
 images = ["/images/hipster-mum-236831-unsplash-1-p-500.jpeg", "/images/ian-dooley-347962-unsplash-1.jpg", "/images/louis-blythe-199659-unsplash.jpg", "/images/pete-bellis-256701-unsplash-1.jpg", "/images/pete-bellis-549843-unsplash-p-800.jpeg", "/images/raul-varzar-589748-unsplash.jpg", "/images/the_red_path.jpg"]
 template = "gallery"
