@@ -170,4 +170,4 @@ fields:
     - girls
     - unisex (kids)
   label: Gender
-  default: ''
+  default: mens
