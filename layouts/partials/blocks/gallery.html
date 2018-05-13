@@ -3,7 +3,7 @@
       {{ if .heading }}<h1 class="gallery-heading">{{ .heading }}</h1>{{ end }}
       <div class="flex-row gallery">
         {{ range .images }}
-        <a href="#" class="gallery-thumbnail w-inline-block w-lightbox">
+        <a href="#" class="gallery-thumbnail w-lightbox">
           <div class="gallery-thumbnail-inner" style="background-image:URL({{ . }})"></div>
           <script type="application/json" class="w-json">
             {

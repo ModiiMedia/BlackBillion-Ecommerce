@@ -1,0 +1,201 @@
+{{ partial "header.html" . }}
+<div class="main-section">
+    <div class="container">
+        <div class="breadcrumbs-wrap">
+            <div class="breadcrumbs">Products / Tops / T-Shirts /
+                <strong>{{ .Title }}</strong>
+            </div>
+        </div>
+        <div class="row w-row">
+            <div class="column-left w-col w-col-6">
+                <div data-duration-in="300" data-duration-out="300" class="tabs w-tabs">
+                    <div class="tabs-content w-tab-content">
+                        {{ range .Params.product_gallery }}
+                        <div data-w-tab="{{ . }}" class="tab-pane-2 w-tab-pane">
+                            <img src="{{ . }}" sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, 36vw" class="image-3" />
+                            <a href="#" class="lightbox-link w-inline-block w-lightbox">
+                                <div></div>
+                                <script type="application/json" class="w-json">
+                                    {
+                                        "items": [{
+                                            "type": "image",
+                                            "_id": "{{ . }}",
+                                            "origFileName": "{{ . }}",
+                                            "url": "{{ . }}"
+                                          }],
+                                        "group": "productGallery"
+                                    }
+                                </script>
+                            </a>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <div class="tabs-menu w-tab-menu">
+                        {{ range first 1 .Params.product_gallery }}
+                        <a data-w-tab="{{ . }}" style="background-image:url({{ . }})"
+                            class="tab-link w-inline-block w-tab-link w--current">
+                            <div class="gallery-thumb-overlay"></div>
+                        </a>
+                        {{ end }}
+                        {{ range after 1 .Params.product_gallery }}
+                        <a data-w-tab="{{ . }}" style="background-image:url({{ . }})"
+                            class="tab-link w-inline-block w-tab-link">
+                            <div class="gallery-thumb-overlay"></div>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="column-right w-col w-col-6">
+                {{ $price := .Params.price }} {{ $sale := .Params.sale_price }}
+                <h1 class="product-single-title">{{ .Title }}</h1>
+                <div class="price-single-page {{ if $sale }}sale{{ end }}">${{ lang.NumFmt 2 $price }}</div>
+                {{ if $sale }}
+                <div class="price-single-page">${{ lang.NumFmt 2 $sale }}</div>{{ end }}
+                <p class="product-summary">{{ .Description }}</p>
+                <div class="w-form">
+                    <form id="email-form" name="email-form" data-name="Email Form">
+                        <label for="Size">Size:</label>
+                        <select id="Size" name="Size" data-name="Size" required="" class="dropdown-selector w-select">
+                            <option value="">Select one...</option>
+                            <option value="Small">S</option>
+                            <option value="Medium">M</option>
+                            <option value="Large">L</option>
+                            <option value="Extra-Large">XL</option>
+                            <option value="Extra-Extra-Large">XXL</option>
+                        </select>
+                        <label for="Size-2">Quantity:</label>
+                        <input type="text" class="quantity-selection w-input" maxlength="256" name="Quantity" data-name="Quantity" id="Quantity"
+                            required="" />
+                    </form>
+                    <div class="w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                </div>
+                <div class="w-embed">
+                    <a class="add-to-cart w-button snipcart-add-item" data-item-id="oversized-plaid-sweater" data-item-name="Oversized Plaid Sweater"
+                        data-item-price="60" data-item-weight="20" data-item-url="http://black-billion.webflow.io/apparel/oversized-plaid-sweater"
+                        data-item-image="https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04af51d8156d9c1768452_pete-bellis-580698-unsplash.jpg"
+                        data-item-custom1-name="Size" data-item-custom1-options="Small|Medium|Large|Extra-Large" data-item-custom1-value="Large"
+                        href="#">Add To Cart</a>
+                </div>
+                <a href="#" class="add-to-cart w-button">Add To Cart</a>
+                <div class="accordian-wrap">
+                    <div class="accordian-item">
+                        <div class="accordian-trigger">
+                            <h2 class="accordian-title">Details</h2>
+                            <div data-w-id="aed57e5e-bca8-ba56-7b3d-26ccf1f76216" class="arrow-up"></div>
+                            <div data-w-id="efb9f260-a16f-da9f-28f1-8bc3e9744cc5" class="arrow-down"></div>
+                        </div>
+                        <div data-w-id="2c832112-b19a-82ac-bfb9-e5f945e85bba" class="accordiant-inline-block">Product ID: 43306216</div>
+                        <div data-w-id="dbdacc86-ffbe-d57f-8178-e54484606e38" class="accordian-content w-richtext">
+                            <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images,
+                                and video all in one place instead of having to add and format them individually. Just double-click
+                                and easily create content.</p>
+                            <h1>Static and dynamic content editing</h1>
+                            <p>A rich text element can be used with static or dynamic content. For static content, just drop
+                                it into any page and begin editing. For dynamic content, add a rich text field to any collection
+                                and then connect a rich text element to that field in the settings panel. Voila!</p>
+                            <h2>How to customize formatting for each rich text</h2>
+                            <p>Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after
+                                a class is added to the rich text element using the &quot;When inside of&quot; nested selector
+                                system.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordian-item">
+                        <div class="accordian-trigger">
+                            <h2 class="accordian-title">Shipping &amp; Returns</h2>
+                            <div class="arrow-down"></div>
+                            <div class="arrow-up"></div>
+                        </div>
+                        <div class="accordian-content w-richtext">
+                            <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images,
+                                and video all in one place instead of having to add and format them individually. Just double-click
+                                and easily create content.</p>
+                            <h1>Static and dynamic content editing</h1>
+                            <p>A rich text element can be used with static or dynamic content. For static content, just drop
+                                it into any page and begin editing. For dynamic content, add a rich text field to any collection
+                                and then connect a rich text element to that field in the settings panel. Voila!</p>
+                            <h2>How to customize formatting for each rich text</h2>
+                            <p>Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after
+                                a class is added to the rich text element using the &quot;When inside of&quot; nested selector
+                                system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="container">
+        <h1 class="related-products-heading">Related Products</h1>
+        <div class="w-dyn-list">
+            <div class="product-grid-wrap w-dyn-items">
+                <div class="grid-item w-dyn-item">
+                    <a href="/apparel/oversized-plaid-sweater" class="grid-link w-inline-block w--current">
+                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04afa91f6b275e9e12af5_pete-bellis-579482-unsplash.jpg&quot;)"
+                            class="grid-photo-main homepage">
+                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04af51d8156d9c1768452_pete-bellis-580698-unsplash.jpg&quot;)"
+                                class="grid-photo-hover"></div>
+                        </div>
+                        <div class="grid-content">
+                            <h1 class="grid-title">Oversized Plaid Sweater</h1>
+                            <div class="price-text">$ </div>
+                            <div class="price-text">60.00</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item w-dyn-item">
+                    <a href="/apparel/red-sweater" class="grid-link w-inline-block">
+                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04ac59f356a1e1e11dd1f_pete-bellis-549843-unsplash.jpg&quot;)"
+                            class="grid-photo-main homepage">
+                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04ac063a6e80884632afb_pete-bellis-552522-unsplash.jpg&quot;)"
+                                class="grid-photo-hover"></div>
+                        </div>
+                        <div class="grid-content">
+                            <h1 class="grid-title">Red Sweater</h1>
+                            <div class="price-text">$ </div>
+                            <div class="price-text">50.00</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item w-dyn-item">
+                    <a href="/apparel/pretty-red-dress" class="grid-link w-inline-block">
+                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad048f80b597361a8bb2fea_pete-bellis-423577-unsplash.jpg&quot;)"
+                            class="grid-photo-main homepage">
+                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad048f391f6b25d69e12a27_pete-bellis-422421-unsplash.jpg&quot;)"
+                                class="grid-photo-hover"></div>
+                        </div>
+                        <div class="grid-content">
+                            <h1 class="grid-title">Pretty Red Dress</h1>
+                            <div class="price-text">$ </div>
+                            <div class="price-text">250.00</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item w-dyn-item">
+                    <a href="/apparel/gray-outfit-thing" class="grid-link w-inline-block">
+                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad0486e63a6e892d0632974_pete-bellis-406811-unsplash.jpg&quot;)"
+                            class="grid-photo-main homepage">
+                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad048721d8156f7f776836f_pete-bellis-406807-unsplash.jpg&quot;)"
+                                class="grid-photo-hover"></div>
+                        </div>
+                        <div class="grid-content">
+                            <h1 class="grid-title">Gray Outfit Thing</h1>
+                            <div class="price-text">$ </div>
+                            <div class="price-text">150.00</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

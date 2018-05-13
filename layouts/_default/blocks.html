@@ -10,6 +10,9 @@
     {{ if eq .template "gallery"}}
         {{ partial "blocks/gallery.html" . }}
     {{ end }}
+    {{ if eq .template "1-column-content" }}
+        {{ partial "blocks/1-column-content.html" . }}
+    {{ end }}
     {{ if eq .template "product-grid" }}
         <div class="main-section page">
             <div class="container">

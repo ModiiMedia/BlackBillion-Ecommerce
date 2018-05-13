@@ -23,7 +23,7 @@ align_container = "center"
 align_text = "left"
 [[blocks]]
 column_height = "Image Priority"
-column_order = "Content First"
+column_order = "Image First"
 content = "## Reinventing Fashion\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis quam nibh, eget placerat arcu interdum ac. Sed viverra consectetur orci, sit amet sollicitudin libero tristique ut. Maecenas at nulla blandit, venenatis ipsum non, gravida est. Proin vel sem sed mauris posuere tincidunt. Nam at augue lacus. Cras sit amet dui tortor. Sed fermentum vulputate lorem non pretium. Curabitur tempor ultricies condimentum. Ut quis luctus nunc.  "
 image = "/images/ian-dooley-347962-unsplash-1.jpg"
 template = "2-column-content"

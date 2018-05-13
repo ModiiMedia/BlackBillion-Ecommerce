@@ -29,7 +29,7 @@ color_tags:
 - black
 weight: 5
 description: It's a totally rad red shirt
-category: t-shirts
+category: tops
 id: ''
 details: ''
 gender: mens
