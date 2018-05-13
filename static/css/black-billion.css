@@ -1091,9 +1091,9 @@ img {
 }
 
 .quantity-selection {
-  width: 45px;
+  width: 60px;
   height: 45px;
-  padding-top: 8px;
+  padding: 8px;
   border-radius: 5px;
   text-align: center;
 }

@@ -14,8 +14,8 @@ sizes:
   price_change: 2
 - size: Extra Extra Large
   price_change: 5
+id: ''
 variations: []
-sku: ''
 main_image: "/images/enis-yavuz-375324-unsplash.jpg"
 hover_image: "/images/raul-varzar-589748-unsplash.jpg"
 product_gallery:
@@ -29,8 +29,7 @@ color_tags:
 - black
 weight: 5
 description: It's a totally rad red shirt
-category: t-shirts
-id: ''
+category: tops
 details: ''
 gender: mens
 subcategory: t-shirts

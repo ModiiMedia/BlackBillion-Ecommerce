@@ -32,14 +32,11 @@
                     </div>
                     <div class="tabs-menu w-tab-menu">
                         {{ range first 1 .Params.product_gallery }}
-                        <a data-w-tab="{{ . }}" style="background-image:url({{ . }})"
-                            class="tab-link w-inline-block w-tab-link w--current">
+                        <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link w--current">
                             <div class="gallery-thumb-overlay"></div>
                         </a>
-                        {{ end }}
-                        {{ range after 1 .Params.product_gallery }}
-                        <a data-w-tab="{{ . }}" style="background-image:url({{ . }})"
-                            class="tab-link w-inline-block w-tab-link">
+                        {{ end }} {{ range after 1 .Params.product_gallery }}
+                        <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link">
                             <div class="gallery-thumb-overlay"></div>
                         </a>
                         {{ end }}
@@ -53,36 +50,37 @@
                 {{ if $sale }}
                 <div class="price-single-page">${{ lang.NumFmt 2 $sale }}</div>{{ end }}
                 <p class="product-summary">{{ .Description }}</p>
+                <!--product options-->
                 <div class="w-form">
-                    <form id="email-form" name="email-form" data-name="Email Form">
+                    <form id="product-form">
                         <label for="Size">Size:</label>
-                        <select id="Size" name="Size" data-name="Size" required="" class="dropdown-selector w-select">
+                        <select id="Size" name="Size" data-name="Size" required="true" class="dropdown-selector w-select">
                             <option value="">Select one...</option>
-                            <option value="Small">S</option>
-                            <option value="Medium">M</option>
-                            <option value="Large">L</option>
-                            <option value="Extra-Large">XL</option>
-                            <option value="Extra-Extra-Large">XXL</option>
+                            {{ range .Params.Sizes }}
+                            <option value="{{ .size }}">{{ .size }}{{ if ge .price_change 1 }} ( + ${{ .price_change }} ){{ end }}</option>
+                            {{ end }}
                         </select>
                         <label for="Size-2">Quantity:</label>
-                        <input type="text" class="quantity-selection w-input" maxlength="256" name="Quantity" data-name="Quantity" id="Quantity"
-                            required="" />
+                        <input type="number" value="1" class="quantity-selection w-input" maxlength="256" name="Quantity" data-name="Quantity" id="Quantity"
+                            required="true" />
+                        <submit class="w-embed">
+                            <a class="add-to-cart w-button snipcart-add-item" data-item-id="{{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .UniqueID }}{{ end }}"
+                                data-item-name="{{ .Title }}" data-item-price="{{ if $sale }}{{ $sale }}{{ else }}{{ $price }}{{ end }}"
+                                data-item-weight="{{ .Params.Weight }}" data-item-url="{{ .Permalink }}" data-item-image="{{ .Params.Main_Image }}"
+                                data-item-custom1-name="Size" data-item-custom1-options="
+                                    {{ range first 1 .Params.Sizes }}
+                                        {{ .size }}
+                                        {{ if ge .price_change 1 }}
+                                            [+{{ .price_change }}]
+                                        {{ end }}
+                                    {{ end }}
+                                    {{ range after 1 .Params.Sizes }}
+                                        |{{ .size }}[+{{ .price_change }}]
+                                    {{ end }}" data-item-custom1-value="" href="#">Add To Cart</a>
+                        </submit>
                     </form>
-                    <div class="w-form-done">
-                        <div>Thank you! Your submission has been received!</div>
-                    </div>
-                    <div class="w-form-fail">
-                        <div>Oops! Something went wrong while submitting the form.</div>
-                    </div>
                 </div>
-                <div class="w-embed">
-                    <a class="add-to-cart w-button snipcart-add-item" data-item-id="oversized-plaid-sweater" data-item-name="Oversized Plaid Sweater"
-                        data-item-price="60" data-item-weight="20" data-item-url="http://black-billion.webflow.io/apparel/oversized-plaid-sweater"
-                        data-item-image="https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04af51d8156d9c1768452_pete-bellis-580698-unsplash.jpg"
-                        data-item-custom1-name="Size" data-item-custom1-options="Small|Medium|Large|Extra-Large" data-item-custom1-value="Large"
-                        href="#">Add To Cart</a>
-                </div>
-                <a href="#" class="add-to-cart w-button">Add To Cart</a>
+                <!--end options-->
                 <div class="accordian-wrap">
                     <div class="accordian-item">
                         <div class="accordian-trigger">
@@ -90,7 +88,7 @@
                             <div data-w-id="aed57e5e-bca8-ba56-7b3d-26ccf1f76216" class="arrow-up"></div>
                             <div data-w-id="efb9f260-a16f-da9f-28f1-8bc3e9744cc5" class="arrow-down"></div>
                         </div>
-                        <div data-w-id="2c832112-b19a-82ac-bfb9-e5f945e85bba" class="accordiant-inline-block">Product ID: 43306216</div>
+                        <div data-w-id="2c832112-b19a-82ac-bfb9-e5f945e85bba" class="accordiant-inline-block">Product ID: {{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .UniqueID }}{{ end }}</div>
                         <div data-w-id="dbdacc86-ffbe-d57f-8178-e54484606e38" class="accordian-content w-richtext">
                             <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images,
                                 and video all in one place instead of having to add and format them individually. Just double-click
