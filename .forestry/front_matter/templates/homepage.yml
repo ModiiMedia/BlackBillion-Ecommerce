@@ -7,18 +7,21 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: type
-  label: Type
+  config:
+    required: true
+- name: meta_title
+  label: Meta Title
   type: text
   hidden: false
   default: ''
-- name: metaTitle
-  label: Metatitle
-  type: text
-  hidden: false
-  default: ''
+- type: textarea
+  name: meta_description
+  label: Meta Description
+- type: file
+  name: social_image
+  label: Social Image
 - name: sliderSlides
-  label: Sliderslides
+  label: Hero Slider Slides
   type: field_group_list
   fields:
   - name: heading
@@ -27,7 +30,7 @@ fields:
     hidden: false
     default: ''
   - name: text
-    label: Text
+    label: Paragraph
     type: text
     hidden: false
     default: ''
@@ -36,20 +39,45 @@ fields:
     type: textarea
     hidden: false
     default: ''
+  - type: boolean
+    name: show_button
+    label: Show Button
+    default: true
   - name: buttonText
-    label: Buttontext
+    label: Button Text
     type: text
     hidden: false
-    default: ''
-  - name: buttonLink
-    label: Buttonlink
+    default: Learn More
+    config:
+      required: true
+  - type: select
+    name: linkSettings
+    config:
+      source:
+        type: simple
+      required: true
+      options:
+      - Internal Link
+      - External Link
+    label: Button Link Settings
+    description: Choose what link field to use.
+    default: Internal Link
+  - type: select
+    name: buttonLink
+    config:
+      source:
+        type: pages
+    label: Button Internal Link
+    description: Link to page within your website.
+  - name: buttonExternalLink
+    label: Button External Link
     type: text
     hidden: false
-    default: ''
+    description: Link to add different website or a custom URL.
   hidden: false
   default: ''
 - name: featuredBlocks
-  label: Image blocks
+  label: Image Blocks
   type: field_group_list
   fields:
   - type: select
