@@ -2,12 +2,21 @@
 <div data-delay="4000" data-animation="cross" data-autoplay="1" data-duration="500" data-infinite="1" class="slider w-slider">
     <div class="slider-mask w-slider-mask">
         {{ range .Params.sliderSlides }}
+        {{ $ilink := replace .buttonLink "_index.md" "" }}
+        {{ $ilink2 := replace $ilink ".md" "" }}
             <div class="slider-slide w-slide" style="background-image:URL({{.photo}})">
                 <div class="slide-content-wrap">
                     <div class="slide-content">
                         <h1 class="hero-heading">{{ .heading }}</h1>
                         <p class="hero-text">{{ .text }}</p>
-                        <a href="{{ .buttonLink }}" class="hero-button w-button">{{ .buttonText }}</a>
+                        {{ if eq .show_button true }}
+                            <a href="
+                            {{ if eq .linkSettings "Internal Link" }}
+                                {{ $ilink2 }}
+                            {{ else }}
+                                {{ .buttonExternalLink }}
+                            {{ end }}" class="hero-button w-button">{{ .buttonText }}</a>
+                        {{ end }}
                     </div>
                 </div>
             </div>
