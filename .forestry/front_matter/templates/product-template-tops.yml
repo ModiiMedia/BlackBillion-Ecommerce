@@ -1,5 +1,6 @@
 ---
 pages:
+- products/my-accessory.md
 - products/red-tshirt.md
 hide_body: true
 is_partial: false
