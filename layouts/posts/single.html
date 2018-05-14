@@ -15,21 +15,29 @@
 <div class="main-section page">
     <div class="container center-page">
         <div class="blog-single-content w-richtext">{{ .Content }}</div>
-        <h1 class="related-products-heading blog">Featured Product</h1>
-        <div class="w-dyn-list">
-            <div class="w-dyn-items">
-                <div class="featured-product-wrap w-dyn-item">
-                    <div style="background-image:url({{ .Params.main_image }})" class="blog-product-image"></div>
-                    <div class="blog-product-content">
-                        <h1 class="heading-6">Oversized Plaid Sweater</h1>
-                        <div class="price-single-page">$</div>
-                        <div class="price-single-page">60.00</div>
-                        <p>It&#x27;s a super comfy sweater.</p>
-                        <a href="/apparel/oversized-plaid-sweater" class="add-to-cart w-button">Purchase Now</a>
+        {{ if .Params.featured_product }}
+        {{ $p := replace .Params.featured_product ".md" "/" }}
+        {{ $p2 := replace $p "products/" "/products/" }}
+            {{ range where .Site.Pages "Section" "products" }}
+                {{ if eq .RelPermalink $p2 }}
+                <h1 class="related-products-heading blog">Featured Product</h1>
+                <div class="w-dyn-list">
+                    <div class="w-dyn-items">
+                        <div class="featured-product-wrap w-dyn-item">
+                            <div style="background-image:url({{ .Params.main_image }})" class="blog-product-image"></div>
+                            <div class="blog-product-content">
+                                <h1 class="heading-6">{{ .Title }}</h1>
+                                <div class="price-single-page {{ if .Params.sale_price }}sale{{ end }}">${{ lang.NumFmt 2 .Params.price }}</div>
+                                {{ if .Params.sale_price }}<div class="price-single-page">${{ lang.NumFmt 2 .Params.sale_price }}</div>{{ end }}
+                                <p>It&#x27;s a super comfy sweater.</p>
+                                <a href="{{ .RelPermalink }}" class="add-to-cart w-button">Purchase Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                {{ end }}
+            {{ end }}
+        {{ end }}
     </div>
 </div>
 
