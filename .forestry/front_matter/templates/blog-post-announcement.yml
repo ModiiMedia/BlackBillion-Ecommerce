@@ -1,4 +1,6 @@
 ---
+pages:
+- posts/my-first-post.md
 hide_body: false
 is_partial: false
 fields:
