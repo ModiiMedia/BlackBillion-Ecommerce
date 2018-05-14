@@ -1,0 +1,45 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: snippet
+  label: Snippet
+  type: text
+  hidden: false
+  default: ''
+  description: A short sentence or two summarizing the article, or a quick tagline.
+- name: type
+  label: Type
+  type: text
+  hidden: true
+  default: posts
+  config:
+    required: true
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+  config:
+    required: true
+- name: main_image
+  label: Main image
+  type: file
+  hidden: false
+  default: ''
+- type: tag_list
+  name: tags
+  label: Tags
+- type: select
+  config:
+    source:
+      type: pages
+      section: products
+  label: Featured Product
+  name: featured_product
+  description: Pick a product you'd like to have featured on this post.
