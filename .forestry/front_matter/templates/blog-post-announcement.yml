@@ -7,8 +7,8 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: snippet
-  label: Snippet
+- name: description
+  label: Description
   type: text
   hidden: false
   default: ''
@@ -43,3 +43,13 @@ fields:
   label: Featured Product
   name: featured_product
   description: Pick a product you'd like to have featured on this post.
+- type: text
+  name: meta_description
+  label: Meta Description
+  description: Description for search engines and social media. Will use description
+    above if not set.
+- type: file
+  name: social_image
+  label: Social Image
+  description: Image for search engine and social media previews. Will use "Main Image"
+    if not set.
