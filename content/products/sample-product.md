@@ -3,7 +3,6 @@ categories = "tops"
 date = "2018-05-14T20:28:27+00:00"
 description = "This is a sample product."
 details = ""
-draft = true
 gender = "womens"
 hover_image = "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
 id = ""
