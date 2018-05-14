@@ -15,21 +15,7 @@
             <div class="product-grid-wrap w-dyn-items">
                 {{ if eq .Params.List_All true }}
                     {{ range where .Site.RegularPages "Section" "products" }}
-                    {{ $price := .Params.price }}
-                        <div class="grid-item w-dyn-item">
-                            <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
-                                <div style="background-image:url({{ .Params.main_image }})"
-                                    class="grid-photo-main">
-                                    <div style="background-image:url({{ .Params.hover_image }})"
-                                        class="grid-photo-hover"></div>
-                                </div>
-                                <div class="grid-content">
-                                    <h1 class="grid-title">{{ .Title }}</h1>
-                                    <div class="price-text">$ </div>
-                                    {{ if $price}}<div class="price-text">{{ lang.NumFmt 2 $price }}</div>{{ end }}
-                                </div>
-                            </a>
-                        </div>
+                        {{ partial "product-grid-item.html" . }}
                     {{ end }}
                 {{ else }}
                     {{ range .Data.Pages }}

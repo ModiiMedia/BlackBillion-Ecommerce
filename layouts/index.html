@@ -46,20 +46,7 @@
     <div class="w-dyn-list">
         <div class="product-grid-wrap w-dyn-items">
             {{ range first 2 (where .Site.Pages "Section" "products") }}
-                <div class="grid-item w-dyn-item">
-                    <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
-                        <div style="background-image:url({{ .Params.Main_Image }})"
-                            class="grid-photo-main homepage">
-                            <div style="background-image:url({{ .Params.Hover_Image }})"
-                                class="grid-photo-hover"></div>
-                        </div>
-                        <div class="grid-content">
-                            <h1 class="grid-title">{{ .Title }}</h1>
-                            <div class="price-text">$ </div>
-                            <div class="price-text">{{ lang.NumFmt 2 .Params.Price }}</div>
-                        </div>
-                    </a>
-                </div>
+                {{ partial "product-grid-item.html" . }}
             {{ end }}
         </div>
     </div>

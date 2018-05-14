@@ -251,6 +251,12 @@ img {
   font-size: 20px;
   font-weight: 700;
 }
+.price-text.sale {
+  margin-right: 5px;
+  color: #999;
+  font-weight: 400;
+  text-decoration: line-through;
+}
 
 .logo-text {
   position: relative;

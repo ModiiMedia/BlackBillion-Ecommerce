@@ -24,22 +24,7 @@
                         {{ $2 := replace $1 "products/" "/products/" }}
                             {{ range $.Site.RegularPages }}
                                 {{ if eq .RelPermalink $2 }}
-                                {{ $price := .Params.Price }}
-                                    <div class="grid-item page w-dyn-item">
-                                        <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
-                                            <div style="background-image:url({{ .Params.Main_Image }})"
-                                                class="grid-photo-main homepage">
-                                                <div style="background-image:url({{ .Params.Hover_Image }})"
-                                                    class="grid-photo-hover">
-                                                </div>
-                                            </div>
-                                            <div class="grid-content">
-                                                <h1 class="grid-title">{{ .Title }}</h1>
-                                                {{ if $price }}<div class="price-text">$&nbsp;</div>
-                                                <div class="price-text">{{ lang.NumFmt 2 $price }}</div>{{ end }}
-                                            </div>
-                                        </a>
-                                    </div>
+                                    {{ partial "product-grid-item.html" . }}
                                 {{ end }}
                             {{ end }}
                         {{ end }}

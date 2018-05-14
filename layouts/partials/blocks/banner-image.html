@@ -1,4 +1,4 @@
-{{ $doc := .button.internal_link }}
+{{ $doc := replace .button.internal_link "/_index.md" "" }}
 {{ $alignC := .formatting.align_container }}
 <div class="section">
     <div class="banner-image" 
@@ -11,7 +11,7 @@
             <p>{{ if .text }}{{ .text | markdownify }}{{ end }}</p>
             {{ if ne .button.hide_button true }}
                 {{ if eq .button.link_settings "Internal Page Link" }}
-                    <a href="/{{ trim $doc "/_index.md" }}"
+                    <a href="/{{ replace $doc ".md" "" }}"
                         {{ if eq .button.open_in_new_tab true }} target="_blank" {{ end }}
                         class="hero-button w-button">{{ .button.button_text }}
                     </a>

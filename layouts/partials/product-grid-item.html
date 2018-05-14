@@ -1,0 +1,14 @@
+<div class="grid-item w-dyn-item">
+    <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
+        <div style="background-image:url({{ .Params.Main_Image }})"
+            class="grid-photo-main">
+            <div style="background-image:url({{ .Params.Hover_Image }})"
+                class="grid-photo-hover"></div>
+        </div>
+        <div class="grid-content">
+            <h1 class="grid-title">{{ .Title }}</h1>
+            <div class="price-text {{ if .Params.sale_price }}sale{{end}}">${{ lang.NumFmt 2 .Params.Price }}</div>
+            {{ if .Params.sale_price }}<div class="price-text">${{ lang.NumFmt 2 .Params.sale_price }}</div>{{ end }}
+        </div>
+    </a>
+</div>
