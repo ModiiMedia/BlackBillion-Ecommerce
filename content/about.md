@@ -2,10 +2,12 @@
 date = "2018-05-12T21:35:22Z"
 layout = "blocks"
 meta_description = "Black Billion Clothing is a clothing company based out of Houston TX."
+meta_title = ""
 social_image = "/images/pete-bellis-256701-unsplash-1-p-1080.jpeg"
 title = "About Us"
 type = "page"
 url = ""
+url_slug = ""
 [menu.footer]
 identifier = "About"
 name = "Who We Are"
@@ -49,7 +51,7 @@ content_section = "# Lorem ipsum \n\ndolor sit amet, consectetur adipiscing elit
 template = "1-column-content"
 [[blocks]]
 heading = "Recent Products"
-products = ["products/sample-product-mens-tshirt.md", "products/sample-product.md"]
+products = ["products/sample-women-s-product.md", "products/sample-men-s-product.md"]
 template = "product-grid"
 
 +++

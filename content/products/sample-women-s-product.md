@@ -1,7 +1,7 @@
 +++
 categories = "tops"
 color_tags = ["black", "gray", "red"]
-date = "2018-05-15T03:48:27+00:00"
+date = "2018-05-15T03:48:27Z"
 description = "Sample Product"
 details = ""
 gender = "womens"
@@ -12,7 +12,7 @@ meta_description = ""
 meta_title = ""
 price = 25
 product_gallery = ["/images/ian-dooley-347962-unsplash-1.jpg", "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1)-1.jpg"]
-related_products = []
+related_products = ["products/sample-men-s-product.md"]
 sale_price = 10
 shipping_details = ""
 social_image = ""
