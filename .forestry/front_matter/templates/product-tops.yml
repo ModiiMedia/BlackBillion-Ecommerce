@@ -1,5 +1,6 @@
 ---
 pages:
+- products/sample-product-mens-tshirt.md
 - products/sample-product.md
 hide_body: true
 is_partial: false
