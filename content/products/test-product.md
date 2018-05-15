@@ -4,7 +4,6 @@ color_tags = []
 date = "2018-05-15T05:04:04+00:00"
 description = "Hi"
 details = ""
-draft = true
 gender = "mens"
 hover_image = ""
 id = ""
