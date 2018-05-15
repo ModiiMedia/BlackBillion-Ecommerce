@@ -28,3 +28,6 @@ fields:
   name: type
   label: Type
   default: default
+  hidden: true
+  config:
+    required: true
