@@ -12,6 +12,17 @@ fields:
   default: ''
   config:
     required: true
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - home
+  label: layout
+  hidden: false
+  default: home
 - name: sliderSlides
   label: Hero Slider Slides
   type: field_group_list
@@ -112,14 +123,3 @@ fields:
   label: Type
   hidden: true
   default: page
-- type: select
-  name: layout
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - home
-  label: layout
-  hidden: true
-  default: home
