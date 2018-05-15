@@ -4,7 +4,7 @@ pages:
 - products/sample-product-mens-tshirt-2.md
 - products/sample-product-mens-tshirt.md
 hide_body: true
-is_partial: false
+is_partial: true
 fields:
 - name: title
   label: Title
@@ -150,27 +150,23 @@ fields:
   hidden: false
   default: ''
   description: Photo gallery for viewing on the product page
-- type: select
+- type: list
+  name: related_products
+  label: Related Products
   config:
+    use_select: true
+    source:
+      type: pages
+      section: products
+- type: list
+  name: color_tags
+  label: Color Tags
+  config:
+    use_select: true
     source:
       type: datafiles
-      file: product_categories-yaml
-    required: true
-  default: tops
-  label: Main category
-  name: categories
-  hidden: true
-- type: select
-  name: subcategories
-  config:
-    source:
-      type: datafiles
-      file: product_categories-yaml
-      path: tops
-    required: false
-  label: Subcategory
-  description: Choose a category for this product. If the category you want isn't
-    listed here add it using the "product categories" in the menu.
+      file: tags-yaml
+      path: product_color_tags
 - type: select
   name: gender
   config:
@@ -186,25 +182,3 @@ fields:
     - unisex (kids)
   label: Gender
   default: mens
-- type: list
-  name: color_tags
-  label: Color Tags
-  config:
-    use_select: true
-    source:
-      type: datafiles
-      file: tags-yaml
-      path: product_color_tags
-- type: list
-  name: related_products
-  label: Related Products
-  config:
-    use_select: true
-    source:
-      type: pages
-      section: products
-- type: include
-  template: seo-fields
-  label: SEO Fields
-  name: seo
-  description: Fields for search engine optimization and social media previews
