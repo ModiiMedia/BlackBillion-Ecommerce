@@ -1,0 +1,30 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: include
+  template: product-template-tops
+  label: Main Fields
+  name: main_fields
+- type: select
+  config:
+    source:
+      type: datafiles
+      file: product_categories-yaml
+    required: true
+  hidden: true
+  label: Main Category
+  name: category
+  default: tops
+- type: select
+  name: subcategory
+  config:
+    source:
+      type: datafiles
+      file: product_categories-yaml
+      path: tops
+  label: SubCategory
+- type: include
+  template: seo-fields
+  label: Seo
+  name: seo
