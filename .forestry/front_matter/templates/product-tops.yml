@@ -1,5 +1,6 @@
 ---
 pages:
+- products/test-product.md
 - products/sample-women-s-product.md
 - products/sample-men-s-product.md
 hide_body: true

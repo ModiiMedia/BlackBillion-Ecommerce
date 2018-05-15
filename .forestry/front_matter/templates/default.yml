@@ -1,6 +1,5 @@
 ---
 pages:
-- products/test-product.md
 - posts/hello-world-.md
 hide_body: false
 is_partial: false
