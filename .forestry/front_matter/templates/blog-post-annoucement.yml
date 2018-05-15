@@ -48,6 +48,13 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
+- type: select
+  name: featured_product
+  config:
+    source:
+      type: pages
+      section: products
+  label: Featured Product
 - type: include
   template: seo-fields
   label: Seo
