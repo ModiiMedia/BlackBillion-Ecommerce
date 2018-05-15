@@ -25,7 +25,7 @@ questions:
 
     _neato!_
 layout: faq
-type: default
+type: page
 social_image: ''
 list_all: false
 sliderSlides: []
