@@ -34,7 +34,7 @@
                         {{ end }}
                     </div>
                     <div class="tabs-menu w-tab-menu">
-                        {{ range first 1 .Params.product_gallery }}
+                        {{ if .Params.product_gallery}}{{ range first 1 .Params.product_gallery }}
                         <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link w--current">
                             <div class="gallery-thumb-overlay"></div>
                         </a>
@@ -42,21 +42,21 @@
                         <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link">
                             <div class="gallery-thumb-overlay"></div>
                         </a>
-                        {{ end }}
+                        {{ end }}{{ end }}
                     </div>
                 </div>
             </div>
             <div class="column-right w-col w-col-6">
                 {{ $price := .Params.price }} {{ $sale := .Params.sale_price }}
                 <h1 class="product-single-title">{{ .Title }}</h1>
-                <div class="price-single-page {{ if $sale }}sale{{ end }}">${{ lang.NumFmt 2 $price }}</div>
+                {{ if .Params.price }}<div class="price-single-page {{ if $sale }}sale{{ end }}">${{ lang.NumFmt 2 $price }}</div>
                 {{ if $sale }}
-                <div class="price-single-page">${{ lang.NumFmt 2 $sale }}</div>{{ end }}
+                <div class="price-single-page">${{ lang.NumFmt 2 $sale }}</div>{{ end }}{{ end }}
                 <p class="product-summary">{{ .Description }}</p>
                 <!--product options-->
                 <div class="w-form">
                     <form id="product-form">
-                        <label for="Size">Size:</label>
+                        {{ if .Params.Sizes }}<label for="Size">Size:</label>
                         <select id="Size" name="Size" data-name="Size" required="true" class="dropdown-selector w-select">
                             <option value="">Select one...</option>
                             {{ range .Params.Sizes }}
@@ -64,6 +64,7 @@
                             <option value="{{ .size }}">{{ .size }}{{ if ge .price_change 1 }} ( +{{ lang.NumFmt 2 $change }} ){{ end }}{{ if le .price_change -1 }} ( {{ lang.NumFmt 2 $change }} ){{ end }}</option>
                             {{ end }}
                         </select>
+                        {{ end }}
                         {{ range .Params.Variations }}
                             <label for="{{ .variant_name | urlize }}">{{ .variant_name }}</label>
                             <select id="{{ .variant_name | urlize }}" class="dropdown-selector w-select">
