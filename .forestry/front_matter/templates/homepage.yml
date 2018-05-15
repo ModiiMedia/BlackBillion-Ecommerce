@@ -100,3 +100,25 @@ fields:
   name: seo
   label: Seo Fields
   template: seo-fields
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - page
+  label: Type
+  hidden: true
+  default: page
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - home
+  label: layout
+  hidden: true
+  default: home
