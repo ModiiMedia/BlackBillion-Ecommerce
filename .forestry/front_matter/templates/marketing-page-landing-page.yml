@@ -18,23 +18,32 @@ fields:
   - 2-column-content
   label: Blocks
   name: blocks
-- type: text
-  label: type
-  name: type
-  hidden: true
-  config:
-    required: true
-  default: page
-- type: text
-  name: layout
-  label: layout
-  description: blocks
-  hidden: true
-  config:
-    required: true
-  default: blocks
 - type: include
   name: seo
   label: Seo Fields
   description: ''
   template: seo-fields
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - page
+  label: type
+  description: ''
+  hidden: true
+  default: page
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - blocks
+  label: layout
+  description: ''
+  hidden: true
+  default: blocks
