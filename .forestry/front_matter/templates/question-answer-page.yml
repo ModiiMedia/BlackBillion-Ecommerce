@@ -35,21 +35,29 @@ fields:
   config:
     labelField: question
   description: Add your Questions and Answers Here
-- name: type
-  label: Type
-  type: text
-  hidden: true
-  default: page
-  config:
-    required: true
-- name: layout
-  label: Layout
-  type: text
-  hidden: true
-  default: faq
-  config:
-    required: true
 - type: include
   name: seo
   label: Seo Fields
   template: seo-fields
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    options:
+    - page
+    required: true
+  label: type
+  hidden: true
+  default: page
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    options:
+    - faq
+    required: true
+  label: layout
+  default: faq
+  hidden: true
