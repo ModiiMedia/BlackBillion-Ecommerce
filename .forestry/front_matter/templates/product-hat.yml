@@ -19,7 +19,7 @@ fields:
       type: datafiles
       file: product_categories-yaml
       path: hats
-    required: true
+    required: false
   label: Subcategory
 - type: include
   template: product-template-tops
