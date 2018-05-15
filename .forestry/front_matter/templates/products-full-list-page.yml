@@ -1,0 +1,44 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: ''
+- name: label
+  label: Label
+  type: text
+  hidden: false
+  default: ''
+- name: name
+  label: Name
+  type: text
+  hidden: false
+  default: ''
+- name: meta_title
+  label: Meta title
+  type: text
+  hidden: false
+  default: ''
+- name: meta_description
+  label: Meta description
+  type: text
+  hidden: false
+  default: ''
+- name: main_image
+  label: Main image
+  type: text
+  hidden: false
+  default: ''
+- name: list_all
+  label: List all
+  type: boolean
+  hidden: false
+  default: ''
