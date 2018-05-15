@@ -5,12 +5,15 @@ snippet: It's my first ever Hugo post it's so exciting.
 date: 2018-05-10 19:45:38 -0500
 main_image: "/images/hipster-mum-236831-unsplash-1.jpg"
 description: Yay it's my first Hugo Post!
-featured_product: products/red-tshirt.md
+featured_product: products/sample-product-mens-tshirt.md
 tags:
 - tag 1
 - tag 2
 - tag 3
 social_image: ''
+type: default
+meta_title: ''
+url_slug: ''
 
 ---
 Lorem markdownum Philomela hostem arvis, en, est, quod Aenean plangoris tremens
