@@ -14,16 +14,18 @@ fields:
     required: true
   hidden: true
   label: Main Category
-  name: category
+  name: categories
   default: tops
 - type: select
-  name: subcategory
+  name: subcategories
   config:
     source:
       type: datafiles
       file: product_categories-yaml
       path: tops
   label: SubCategory
+  description: Choose a category. If you don't see the one you are looking for add
+    it to the "Product Categories" section in the menu.
 - type: include
   template: seo-fields
   label: Seo
