@@ -1,0 +1,54 @@
+{{ partial "header.html" . }}
+<div data-delay="4000" data-animation="cross" data-autoplay="1" data-duration="500" data-infinite="1" class="slider w-slider">
+    <div class="slider-mask w-slider-mask">
+        {{ range .Params.sliderSlides }}
+        {{ $ilink := replace .buttonLink "_index.md" "" }}
+        {{ $ilink2 := replace $ilink ".md" "" }}
+            <div class="slider-slide w-slide" style="background-image:URL({{.photo}})">
+                <div class="slide-content-wrap">
+                    <div class="slide-content">
+                        <h1 class="hero-heading">{{ .heading }}</h1>
+                        <p class="hero-text">{{ .text }}</p>
+                        {{ if eq .show_button true }}
+                            <a href="
+                            {{ if eq .linkSettings "Internal Link" }}
+                                {{ $ilink2 }}
+                            {{ else }}
+                                {{ .buttonExternalLink }}
+                            {{ end }}" class="hero-button w-button">{{ .buttonText }}</a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+    <div class="arrow-wrap w-slider-arrow-left">
+        <div class="arrow left w-icon-slider-left"></div>
+    </div>
+    <div class="arrow-wrap w-slider-arrow-right">
+        <div class="arrow right w-icon-slider-right"></div>
+    </div>
+    <div class="w-slider-nav w-slider-nav-invert w-round"></div>
+</div>
+<div class="section">
+    <div class="feature-grid">
+        {{ range .Params.featuredBlocks }}
+        {{ $link := replace .link "_index.md" "" }}
+        {{ $linkClean := replace $link ".md" "" }}
+        <div class="feature-grid-item">
+            <a href="{{ $linkClean }}" class="featured-block w-inline-block" style="background-image:URL({{ .photo }})">
+                <h1 class="featured-block-heading">{{ .text }}</h1>
+            </a>
+        </div>
+        {{ end }}
+    </div>
+    <h1 class="block-header">Recent Styles</h1>
+    <div class="w-dyn-list">
+        <div class="product-grid-wrap w-dyn-items">
+            {{ range first 2 (where .Site.RegularPages "Section" "products") }}
+                {{ partial "product-grid-item.html" . }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ partial "footer.html" . }}
