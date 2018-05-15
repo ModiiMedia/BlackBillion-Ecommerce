@@ -2,10 +2,6 @@
 hide_body: true
 is_partial: false
 fields:
-- type: include
-  name: main_fields
-  label: Main Fields
-  template: product-template-tops
 - type: select
   name: categories
   config:
@@ -27,6 +23,10 @@ fields:
       file: product_categories-yaml
       path: outerwear
   label: Subcategory
+- type: include
+  name: main_fields
+  label: Main Fields
+  template: product-template-tops
 - type: include
   name: seo
   label: Seo
