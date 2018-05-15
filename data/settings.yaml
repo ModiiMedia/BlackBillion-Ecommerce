@@ -15,17 +15,13 @@ contact_info:
   phone: ''
   email: blackbillion@yahoo.com
 
+# List each social media account you have here. Available Icons include: Facebook, Instagram, Google Plus, Youtube, Twitter, Pinterest, Reddit, and Tumblr 
+
 social_media:
-  Facebook: "https://www.instagram.com/blackbillionapparel/"
-  Instagram: "https://www.instagram.com/blackbillionapparel/"
-  Google_Plus: ""
-  Youtube: ""
-  Twitter: ""
-  Pinterest: ""
-  LinkedIn: ""
-  Reddit: ""
-  Vimeo: ""
-  Tumblr: ""
+  - URL: "https://www.instagram.com/blackbillionapparel/"
+    Icon: "Facebook"
+  - URL: "https://www.instagram.com/blackbillionapparel/"
+    Icon: "Instagram"
   
 announcement_bar:
   show_bar: false
