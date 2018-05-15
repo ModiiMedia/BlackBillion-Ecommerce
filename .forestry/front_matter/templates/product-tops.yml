@@ -1,6 +1,5 @@
 ---
 pages:
-- products/my-accessory.md
 - products/sample-product.md
 hide_body: true
 is_partial: false
