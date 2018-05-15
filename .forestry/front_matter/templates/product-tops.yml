@@ -1,8 +1,8 @@
 ---
 pages:
+- products/sample-product.md
 - products/sample-product-mens-tshirt-2.md
 - products/sample-product-mens-tshirt.md
-- products/sample-product.md
 hide_body: true
 is_partial: false
 fields:
