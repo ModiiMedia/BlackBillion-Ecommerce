@@ -2,17 +2,15 @@
 hide_body: true
 is_partial: false
 fields:
-- type: include
-  name: main_fields
-  label: Main Fields
-  template: product-template-tops
 - type: select
   config:
     source:
-      type: datafiles
+      type: simple
       file: product_categories-yaml
     required: true
-  hidden: true
+    options:
+    - bottoms
+  hidden: false
   label: Main Category
   name: categories
   default: bottoms
@@ -26,6 +24,10 @@ fields:
   name: subcategories
   description: Choose a category. If you don't see the one you are looking for add
     it to the "Product Categories" section in the menu.
+- type: include
+  name: main_fields
+  label: Main Fields
+  template: product-template-tops
 - type: include
   name: seo
   label: Seo
