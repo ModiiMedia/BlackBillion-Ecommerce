@@ -194,3 +194,8 @@ fields:
     source:
       type: pages
       section: products
+- type: include
+  template: seo-fields
+  label: SEO Fields
+  name: seo
+  description: Fields for search engine optimization and social media previews
