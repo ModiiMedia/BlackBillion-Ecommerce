@@ -1,1 +1,10 @@
-product_color_tags: ["blue", "purple", "red", "orange", "yellow", "gray", "white", "black"]
+---
+product_color_tags:
+- blue
+- purple
+- red
+- orange
+- yellow
+- gray
+- white
+- black

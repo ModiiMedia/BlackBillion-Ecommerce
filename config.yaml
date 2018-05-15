@@ -1,49 +1,24 @@
-baseURL: "https://blackbillionclothing.com"
-languageCode: "en-us"
-title: "Black Billion Clothing"
-
+---
+baseURL: https://blackbillionclothing.com
+languageCode: en-us
+title: Black Billion Clothing
+menu:
+  main:
+  - identifier: Explore
+    name: Explore
+    url: "#"
+    weight: 5
+  - identifier: Accessories
+    name: Accessories
+    url: "/products/categories/accessories/"
+    weight: 4
+  - identifier: Tops
+    name: Tops
+    url: "/categories/tops/"
+    weight: 3
 taxonomies:
   category: categories
   color: colors
   tag: tags
   subcategory: subcategories
   genders: gender
-
-menu:
-    main:
-      - identifier: "home"
-        name: "Home"
-        url: "/"
-        weight: 1
-      - identifier: "All"
-        name: "All Products"
-        emphasize: true
-        url: "/products/"
-        weight: 2
-      - identifier: "Tops"
-        name: "Tops"
-        url: "/categories/tops/"
-        weight: 3
-      - identifier: "Accessories"
-        name: "Accessories"
-        url: "/products/accessories/"
-        weight: 4
-      - identifier: "Explore"
-        name: "Explore"
-        url: "#"
-        weight: 5
-      - identifier: "About"
-        parent: "Explore"
-        name: "About"
-        url: "/about/"
-        weight: 1
-      - identifier: "Blog"
-        parent: "Explore"
-        name: "Blog"
-        url: "/posts/"
-        weight: 2
-      - identifier: "FAQ"
-        parent: "Explore"
-        name: "FAQ / Help"
-        url: "/faq/"
-        weight: 3

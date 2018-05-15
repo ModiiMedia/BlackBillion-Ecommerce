@@ -1,6 +1,15 @@
-tops: ["t-shirts", "blouses", "tank tops"]
-bottoms: ["pants", "shorts", "skirts"]
-outerwear: ["jackets", "hoodies"]
+---
+tops:
+- t-shirts
+- blouses
+- tank tops
+bottoms:
+- pants
+- shorts
+- skirts
+outerwear:
+- jackets
+- hoodies
 hats: []
 accessories: []
 shoes: []

@@ -29,5 +29,9 @@ featuredBlocks:
 type: home
 meta_title: ''
 social_image: ''
+menu:
+  main:
+    identifier: home
+    weight: 1
 
 ---

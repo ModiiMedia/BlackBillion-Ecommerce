@@ -6,6 +6,11 @@ social_image = "/images/pete-bellis-256701-unsplash-1-p-1080.jpeg"
 title = "About Us"
 type = "page"
 url = ""
+[menu.main]
+identifier = "About"
+name = "About"
+parent = "Explore"
+weight = 1
 [[blocks]]
 heading = "About Black Billion"
 image = "/images/allef-vinicius-147517-unsplash.jpg"

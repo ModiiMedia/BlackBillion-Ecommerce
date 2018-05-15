@@ -27,5 +27,11 @@ questions:
 layout: faq
 type: page
 social_image: ''
+menu:
+  main:
+    identifier: FAQ
+    name: FAQ / Help
+    parent: Explore
+    weight: 3
 
 ---
