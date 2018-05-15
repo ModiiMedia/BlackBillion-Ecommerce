@@ -20,35 +20,34 @@ parent = "Explore"
 weight = 1
 [[blocks]]
 heading = "About Black Billion"
-image = "/images/allef-vinicius-147517-unsplash.jpg"
+image = "/images/hipster-mum-236831-unsplash-1-p-1080.jpeg"
 template = "banner-image"
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.  "
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper metus erat, vel hendrerit tortor tristique a. Cras blandit felis sed leo dignissim, maximus elementum orci dictum. Integer"
 [blocks.button]
-button_text = "Shop Now"
-external_link = "https://www.google.com"
-hide_button = false
-internal_link = "products/_index.md"
+button_text = "Learn More"
+hide_button = true
 link_settings = "Internal Page Link"
-open_in_new_tab = true
 [blocks.formatting]
-align_container = "center"
+align_container = "left"
 align_text = "left"
 [[blocks]]
 column_height = "Image Priority"
+column_order = "Image First"
+content = "# Conveniunt mihi te nocte in vocesque agros\n\nTunc atris caelum, nitidissima nemo falleret coronae, agmine montis; dare, me ridet. Achivos at mille, sint ire sceleris ille exilibus: siquid minus, dictas. Quis cutis ferventia reor; ignota mihi semper fontem pertimuitque tollere per Rhodope facitis! Ultima in quam. Est deum dixit, adludentibus inani iungere quisque et bibit fruitur in.\n\nsima nemo falleret coronae, agmine montis; dare, me ridet. Achivos at mille, sint ire sceleris ille exilibus: siquid minus, dictas. Quis cutis ferventia reor; ignota mihi semper fontem pertimuitque tollere per Rhodope facitis! Ultima in quam. Est deum dixit, adludentibus inani iungere quisque et bibit fruitur in."
+image = "/images/pete-bellis-256701-unsplash-1.jpg"
+template = "2-column-content"
+[[blocks]]
+column_height = "Content Priority"
 column_order = "Content First"
-content = "## Reinventing Fashion\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis quam nibh, eget placerat arcu interdum ac. Sed viverra consectetur orci, sit amet sollicitudin libero tristique ut. Maecenas at nulla blandit, venenatis ipsum non, gravida est. Proin vel sem sed mauris posuere tincidunt. Nam at augue lacus. Cras sit amet dui tortor. Sed fermentum vulputate lorem non pretium. Curabitur tempor ultricies condimentum. Ut quis luctus nunc.  "
-image = "/images/ian-dooley-347962-unsplash-1.jpg"
+content = "# Conveniunt mihi te nocte in vocesque agros\n\n## Peperisse Nessus\n\nLorem markdownum responsaque formam? Ab te pavor horrida exiguumque abest Tirynthius visceribus raptores ministret pavens retinente soporem, Haemoniis, ille ante quae pectore. Inficit scite materiem Proserpina taedas. Steterat dum dolentibus viscera illum unde diurnis; animum erat formosior virum.\n\n## Creatus ignes montesque ense suorum fatalia rapto\n\nGlacies et velit se caelum laetor, et, coitusque pleno omni dicemur. Mittat quod est colla in totumque supra parte ut tuae viri fecere. Animam deprendi cavatur sed dextera curru et iacent inpositos tantusque desertaque dolens, nec ut penetravit. Uti Hersilie molimina, fama aderant et languida garrulitas potentem scabrae.\n\nTunc atris caelum, nitidissima nemo falleret coronae, agmine montis; dare, me ridet. Achivos at mille, sint ire sceleris ille exilibus: siquid minus, dictas. Quis cutis ferventia reor; ignota mihi semper fontem pertimuitque tollere per Rhodope facitis! Ultima in quam. Est deum dixit, adludentibus inani iungere quisque et bibit fruitur in."
+image = "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1)-1.jpg"
 template = "2-column-content"
 [[blocks]]
 align_grid = "left"
-gallery_name = "Cool Gallery"
-heading = "Us At Work"
-images = ["/images/hipster-mum-236831-unsplash-1-p-500.jpeg", "/images/ian-dooley-347962-unsplash-1.jpg", "/images/louis-blythe-199659-unsplash.jpg", "/images/pete-bellis-256701-unsplash-1.jpg", "/images/pete-bellis-549843-unsplash-p-800.jpeg", "/images/raul-varzar-589748-unsplash.jpg", "/images/the_red_path.jpg", "/images/the_red_path.jpg"]
+gallery_name = "About Me Gallery"
+images = ["/images/enis-yavuz-375324-unsplash.jpg", "/images/ian-dooley-347962-unsplash-1.jpg", "/images/louis-blythe-199659-unsplash.jpg", "/images/pete-bellis-256701-unsplash-1.jpg", "/images/pete-bellis-549843-unsplash-p-800.jpeg", "/images/ian-dooley-347942-unsplash (1).jpg", "/images/ian-dooley-347943-unsplash (1).jpg", "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1)-1.jpg"]
 photos_per_row = "four"
 template = "gallery"
-[[blocks]]
-content_section = "# Lorem ipsum \n\ndolor sit amet, consectetur adipiscing elit. In facilisis quam nibh, eget placerat arcu interdum ac. Sed viverra consectetur orci, sit amet sollicitudin libero tristique ut. Maecenas at nulla blandit, venenatis ipsum non, gravida est. Proin vel sem sed mauris posuere tincidunt. Nam at augue lacus. Cras sit amet dui tortor. Sed fermentum vulputate lorem non pretium. Curabitur tempor ultricies condimentum. Ut quis luctus nunc.  \n\n### Lorem ipsum dolor sit amet, \n\nconsectetur adipiscing elit. In facilisis quam nibh, eget placerat arcu interdum ac. Sed viverra consectetur orci, sit amet sollicitudin libero tristique ut. Maecenas at nulla blandit, venenatis ipsum non, gravida est. Proin vel sem sed mauris posuere tincidunt. Nam at augue lacus. Cras sit amet dui tortor. Sed fermentum vulputate lorem non pretium. Curabitur tempor ultricies condimentum. Ut quis luctus nunc.  \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis quam nibh, eget placerat arcu interdum ac. Sed viverra consectetur orci, sit amet sollicitudin libero tristique ut. Maecenas at nulla blandit, venenatis ipsum non, gravida est. Proin vel sem sed mauris posuere tincidunt. Nam at augue lacus. Cras sit amet dui tortor. Sed fermentum vulputate lorem non pretium. Curabitur tempor ultricies condimentum. Ut quis luctus nunc.  "
-template = "1-column-content"
 [[blocks]]
 heading = "Recent Products"
 products = ["products/sample-women-s-product.md", "products/sample-men-s-product.md"]
