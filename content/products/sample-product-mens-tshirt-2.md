@@ -3,6 +3,7 @@ categories = "tops"
 date = "2018-05-15T01:16:33Z"
 description = "Another Sample Product"
 details = ""
+draft = true
 gender = "womens"
 hover_image = "/images/raul-varzar-589748-unsplash.jpg"
 id = ""
