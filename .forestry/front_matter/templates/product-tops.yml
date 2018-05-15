@@ -6,17 +6,15 @@ pages:
 hide_body: true
 is_partial: false
 fields:
-- type: include
-  template: product-template-tops
-  label: Main Fields
-  name: main_fields
 - type: select
   config:
     source:
-      type: datafiles
+      type: simple
       file: product_categories-yaml
     required: true
-  hidden: true
+    options:
+    - tops
+  hidden: false
   label: Main Category
   name: categories
   default: tops
@@ -28,8 +26,12 @@ fields:
       file: product_categories-yaml
       path: tops
   label: SubCategory
-  description: Choose a category. If you don't see the one you are looking for add
-    it to the "Product Categories" section in the menu.
+  description: Choose a subcategory. If you don't see the subcategory you are looking
+    for, go to "Product Categories" in the menu on the left and add it there.
+- type: include
+  template: product-template-tops
+  label: Main Fields
+  name: main_fields
 - type: include
   template: seo-fields
   label: Seo
