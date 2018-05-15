@@ -9,11 +9,6 @@ fields:
   label: Title
   config:
     required: true
-- type: text
-  name: url
-  label: URL Slug
-  description: Type the slug for this page. For example typing "my-page" will cause
-    this page to appear at "www.blackbillionclothing.com/my-page"
 - type: blocks
   template_types:
   - banner-image
@@ -23,16 +18,6 @@ fields:
   - 2-column-content
   label: Blocks
   name: blocks
-- type: textarea
-  name: meta_description
-  label: meta description
-  description: Description for search engines and social media
-  config:
-    required: true
-- type: file
-  name: social_image
-  label: social Image
-  description: Image for social media
 - type: text
   label: type
   name: type
@@ -48,3 +33,8 @@ fields:
   config:
     required: true
   default: blocks
+- type: include
+  name: seo
+  label: Seo Fields
+  description: ''
+  template: seo-fields
