@@ -1,5 +1,6 @@
 ---
 pages:
+- new-homepage.md
 - _index.md
 hide_body: true
 is_partial: false
