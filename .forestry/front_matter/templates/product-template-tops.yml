@@ -162,7 +162,7 @@ fields:
       file: product_categories-yaml
       path: tops
     required: false
-  label: Category
+  label: Subcategory
   description: Choose a category for this product. If the category you want isn't
     listed here add it using the "product categories" in the menu.
 - type: select
