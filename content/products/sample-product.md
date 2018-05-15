@@ -1,6 +1,6 @@
 +++
 categories = "tops"
-date = "2018-05-14T20:28:27+00:00"
+date = "2018-05-14T20:28:27Z"
 description = "This is a sample product."
 details = ""
 gender = "womens"
