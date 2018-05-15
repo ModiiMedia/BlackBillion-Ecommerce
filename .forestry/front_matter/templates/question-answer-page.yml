@@ -46,7 +46,7 @@ fields:
     - page
     required: true
   label: type
-  hidden: true
+  hidden: false
   default: page
 - type: select
   name: layout
@@ -58,4 +58,4 @@ fields:
     required: true
   label: layout
   default: faq
-  hidden: true
+  hidden: false
