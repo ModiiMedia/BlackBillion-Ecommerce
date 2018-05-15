@@ -1,0 +1,32 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: select
+  name: categories
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - accessories
+  label: Category
+  default: accessories
+- type: select
+  name: subcategories
+  config:
+    source:
+      type: datafiles
+      file: product_categories-yaml
+      path: accessories
+  label: subcategory
+  description: Choose a subcategory. If you don't see the subcategory you are looking
+    for, go to "Product Categories" in the menu on the left and add it there.
+- type: include
+  template: product-template-tops
+  label: Main Fields
+  name: main_fields
+- type: include
+  template: seo-fields
+  label: Seo
+  name: seo
