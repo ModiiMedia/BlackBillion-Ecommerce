@@ -1,5 +1,7 @@
 ---
 title: Products Full List Page
+type: products
+layout: list
 label: testing 123
 name: All Products
 meta_title: All Products
