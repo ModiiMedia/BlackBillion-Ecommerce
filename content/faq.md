@@ -25,18 +25,27 @@ questions:
 
     _neato!_
 layout: faq
-type: page
+type: default
 social_image: ''
+list_all: false
+sliderSlides: []
+featuredBlocks: []
+meta_title: ''
+url_slug: ''
+date: ''
+description: ''
+main_image: ''
+tags: []
 menu:
-  footer:
-    identifier: FAQ
-    name: FAQ / Help
-    pre: ''
-    weight: 3
   main:
     identifier: FAQ
     name: FAQ / Help
     parent: Explore
+    weight: 3
+  footer:
+    identifier: FAQ
+    name: FAQ / Help
+    pre: ''
     weight: 3
 
 ---
