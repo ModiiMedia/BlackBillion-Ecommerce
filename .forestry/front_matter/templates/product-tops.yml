@@ -1,7 +1,7 @@
 ---
 pages:
-- products/sample-men-s-product.md
 - products/sample-women-s-product.md
+- products/sample-men-s-product.md
 hide_body: true
 is_partial: false
 fields:
