@@ -7,6 +7,17 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - products
+  label: Type
+  default: products
+  hidden: true
 - name: id
   label: Product ID
   type: text
@@ -19,13 +30,6 @@ fields:
   type: datetime
   hidden: false
   default: ''
-- name: type
-  label: Type
-  type: text
-  hidden: true
-  default: products
-  config:
-    required: true
 - name: price
   label: Price
   type: text
