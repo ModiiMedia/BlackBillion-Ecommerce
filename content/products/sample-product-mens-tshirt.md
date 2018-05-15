@@ -6,7 +6,6 @@ details = ""
 gender = "mens"
 hover_image = "/images/ian-dooley-347950-unsplash (1).jpg"
 id = ""
-layout = "faq"
 main_image = "/images/ian-dooley-347944-unsplash (1).jpg"
 price = 30
 product_gallery = ["/images/ian-dooley-347944-unsplash (1).jpg", "/images/ian-dooley-347950-unsplash (1).jpg", "/images/ian-dooley-347942-unsplash (1).jpg", "/images/ian-dooley-347943-unsplash (1).jpg"]
