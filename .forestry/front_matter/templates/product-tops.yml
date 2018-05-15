@@ -187,6 +187,15 @@ fields:
   label: Gender
   default: mens
 - type: list
+  name: color_tags
+  label: Color Tags
+  config:
+    use_select: true
+    source:
+      type: datafiles
+      file: tags-yaml
+      path: product_color_tags
+- type: list
   name: related_products
   label: Related Products
   config:
