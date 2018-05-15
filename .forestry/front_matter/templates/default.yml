@@ -24,10 +24,14 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
-- type: text
+- type: select
   name: type
-  label: Type
-  default: default
-  hidden: true
   config:
+    source:
+      type: simple
     required: true
+    options:
+    - default
+  label: type
+  hidden: true
+  default: default
