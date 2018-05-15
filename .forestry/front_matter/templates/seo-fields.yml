@@ -1,0 +1,16 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  name: meta_title
+  label: Meta Title
+  description: Title seen by search engines and social media sites
+- type: textarea
+  name: meta_description
+  label: Meta Description
+  description: Description seen by search engines and social media sites
+- type: file
+  name: social_image
+  label: Social Image
+  description: Image to appear when sharing on social media.
