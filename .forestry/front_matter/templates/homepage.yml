@@ -11,17 +11,6 @@ fields:
   default: ''
   config:
     required: true
-- name: meta_title
-  label: Meta Title
-  type: text
-  hidden: false
-  default: ''
-- type: textarea
-  name: meta_description
-  label: Meta Description
-- type: file
-  name: social_image
-  label: Social Image
 - name: sliderSlides
   label: Hero Slider Slides
   type: field_group_list
@@ -107,3 +96,7 @@ fields:
   default: ''
   config:
     labelField: text
+- type: include
+  name: seo
+  label: Seo Fields
+  template: seo-fields
