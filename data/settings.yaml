@@ -1,20 +1,20 @@
+---
 general:
-  website_title: "Black Billion Clothing"
-  slogan: ""
-  website_description: "We are a totally rad clothing company"
+  website_title: Black Billion Clothing
+  slogan: ''
+  website_description: We are a totally rad clothing company
   logo_dark: "/images/black-billion-logo-transparent-background-p-500.png"
   logo_white: "/images/black-billion-logo-transparent-background-white-p-500.png"
   favicon: "/images/favicon-32x32.png"
-
-contact_info: 
-  company_name: "Black Billion Apparel"
-  street_address: ""
-  city: "Houston"
-  state: "Texas"
-  phone: ""
-  email: "blackbillion@yahoo.com"
-
+contact_info:
+  company_name: Black Billion Apparel
+  street_address: ''
+  city: Houston
+  state: Texas
+  phone: ''
+  email: blackbillion@yahoo.com
 social_media:
+<<<<<<< HEAD
   Facebook: "https://www.instagram.com/blackbillionapparel/"
   Instagram: "https://www.instagram.com/blackbillionapparel/"
   Google_Plus: ""
@@ -26,7 +26,13 @@ social_media:
   Vimeo: ""
   Tumblr: ""
   
+=======
+- platform: Facebook
+  url: https://www.instagram.com/blackbillionapparel/
+- platform: Instagram
+  url: https://www.instagram.com/blackbillionapparel/
+>>>>>>> 293306050346f19fbe4655142b0fc492c36b5a38
 announcement_bar:
   show_bar: false
-  message: "All shipping orders are 50% off for a limited time!"
-  announcement_link: ""
+  message: All shipping orders are 50% off for a limited time!
+  announcement_link: ''
