@@ -4,29 +4,27 @@
         <div class="footer-column">
           <div class="footer-heading">Links:</div>
           <div class="footer-section">
-            <a href="#" class="footer-link w-inline-block">
-              <div>My Account</div>
+            {{ range .Site.Menus.footer }}
+            <a href="{{ .URL }}" class="footer-link w-inline-block {{ .Pre }}">
+              <div>{{ .Name }}</div>
             </a>
-            <a href="#" class="footer-link w-inline-block">
-              <div>FAQ / Help</div>
-            </a>
-            <a href="#" class="footer-link w-inline-block">
-              <div>Blog</div>
-            </a>
-            <a href="#" class="footer-link w-inline-block">
-              <div>Who We Are</div>
-            </a>
+            {{ end }}
           </div>
         </div>
         <div class="footer-column">
           <div class="footer-heading">Contact Us:</div>
           <div class="footer-section">
-            <a href="#" class="footer-link w-inline-block">
-              <div>210-111-1111</div>
+            <a href="tel:{{ $.Site.Data.settings.contact_info.phone }}" class="footer-link w-inline-block">
+              <div>{{ $.Site.Data.settings.contact_info.phone }}</div>
             </a>
-            <a href="#" class="footer-link w-inline-block">
-              <div>blackbillion@yahoo.com</div>
+            <a href="mailto:{{ $.Site.Data.settings.contact_info.email }}" class="footer-link w-inline-block">
+              <div>{{ $.Site.Data.settings.contact_info.email }}</div>
             </a>
+            <div class="footer-link w-inline-block">
+              <br/><b>{{ $.Site.Data.settings.contact_info.company_name }}</b><br/>
+              {{ if $.Site.Data.settings.contact_info.street_address }}{{ $.Site.Data.settings.contact_info.street_address }}<br/>{{ end }}
+              {{ $.Site.Data.settings.contact_info.city }}, {{ $.Site.Data.settings.contact_info.state }}{{ if $.Site.Data.settings.contact_info.zip_code }}, {{ $.Site.Data.settings.contact_info.zip_code }}{{ end }}
+            </div>
           </div>
         </div>
         <div class="footer-column social">
@@ -40,7 +38,7 @@
           </div><a href="#" class="about-wrap w-inline-block"></a></div>
       </div>
       <div class="copyright-bar">
-        <div>Copyright 2018 Black Billion Apparel. All Rights Reserved.  |  <a href="https://www.modiimedia.com" target="_blank" class="credit-link">Website by <strong xmlns="http://www.w3.org/1999/xhtml">Modii</strong></a></div>
+        <div>&copy;	{{ now.Year }} Black Billion Clothing &nbsp;|&nbsp; <a href="https://www.modiimedia.com" target="_blank" class="credit-link">Website by <strong xmlns="http://www.w3.org/1999/xhtml">Modii</strong></a></div>
       </div>
     </div>
   </footer>
