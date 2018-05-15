@@ -41,5 +41,5 @@ fields:
     options:
     - products
   label: type
-  hidden: true
+  hidden: false
   default: products
