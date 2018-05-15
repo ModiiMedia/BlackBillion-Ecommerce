@@ -17,7 +17,7 @@ fields:
     - products
   label: Type
   default: products
-  hidden: true
+  hidden: false
 - name: id
   label: Product ID
   type: text
