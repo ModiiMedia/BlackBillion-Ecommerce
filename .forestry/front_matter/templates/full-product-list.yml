@@ -41,5 +41,15 @@ fields:
     options:
     - products
   label: type
-  hidden: true
+  hidden: false
   default: products
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - list
+  label: layout
+  default: list

@@ -12,6 +12,27 @@ fields:
   default: ''
   config:
     required: true
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - default
+  label: Type
+  hidden: false
+  default: default
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    options:
+    - default
+    required: true
+  label: layout
+  default: default
 - name: date
   label: Date
   type: text
@@ -31,14 +52,3 @@ fields:
   template: seo-fields
   label: Seo
   name: seo
-- type: select
-  name: type
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - default
-  label: Type
-  hidden: true
-  default: default

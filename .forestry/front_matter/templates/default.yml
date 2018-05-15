@@ -9,6 +9,27 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - default
+  label: type
+  hidden: false
+  default: default
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    options:
+    - default
+    required: true
+  label: layout
+  default: default
 - type: datetime
   name: date
   label: Date
@@ -24,14 +45,3 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
-- type: select
-  name: type
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - default
-  label: type
-  hidden: true
-  default: default
