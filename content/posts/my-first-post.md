@@ -11,7 +11,6 @@ tags:
 - tag 2
 - tag 3
 social_image: ''
-type: default
 meta_title: ''
 url_slug: ''
 
