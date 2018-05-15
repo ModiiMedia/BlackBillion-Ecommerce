@@ -30,10 +30,14 @@ fields:
   template: seo-fields
   label: Seo
   name: seo
-- type: text
-  name: posts
-  label: Type
-  default: default
+- type: select
+  name: type
   config:
+    source:
+      type: simple
     required: true
+    options:
+    - default
+  label: Type
   hidden: true
+  default: default
