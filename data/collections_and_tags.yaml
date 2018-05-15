@@ -1,10 +1,9 @@
 ---
 product_collections:
-- name: Summer 2018
+- name: Sample Clothing Collection
   banner_image: /images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg
   description: |-
-    "Cool off with Black Billion's rad Summer collection!
-    ### We are super duper excited to reveal it to you."
+    "Cool off with Black Billion's rad Summer collection! We are super duper excited to reveal it to you."
 product_color_tags:
 - blue
 - purple
