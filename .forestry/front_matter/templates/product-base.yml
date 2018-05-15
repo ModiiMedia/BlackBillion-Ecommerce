@@ -161,7 +161,7 @@ fields:
     use_select: true
     source:
       type: datafiles
-      file: tags-yaml
+      file: collections_and_tags-yaml
       path: product_color_tags
 - type: select
   name: gender
@@ -177,4 +177,4 @@ fields:
     - girls
     - unisex (kids)
   label: Gender
-  default: 
+  default: mens
