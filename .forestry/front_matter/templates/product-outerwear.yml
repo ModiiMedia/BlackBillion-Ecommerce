@@ -10,12 +10,14 @@ fields:
   name: categories
   config:
     source:
-      type: datafiles
+      type: simple
       file: product_categories-yaml
       path: 
     required: true
+    options:
+    - outerwear
   label: Main Category
-  hidden: true
+  hidden: false
   default: outerwear
 - type: select
   name: subcategories
