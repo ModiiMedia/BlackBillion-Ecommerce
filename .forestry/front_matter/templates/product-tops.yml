@@ -3,7 +3,7 @@ hide_body: true
 is_partial: false
 fields:
 - type: include
-  template: product-template-tops
+  template: product-base
   label: Main Fields
   name: main_fields
 - type: select
