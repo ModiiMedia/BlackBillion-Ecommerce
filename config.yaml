@@ -3,6 +3,17 @@ baseURL: https://blackbillionclothing.com
 languageCode: en-us
 title: Black Billion Clothing
 menu:
+  footer:
+  - identifier: Account Settings
+    name: Account Settings
+    pre: snipcart-edit-profile
+    url: "#"
+    weight: 2
+  - identifier: My Orders
+    name: My Orders
+    pre: snipcart-user-profile
+    url: "#"
+    weight: 1
   main:
   - identifier: Explore
     name: Explore
@@ -16,32 +27,6 @@ menu:
     name: Tops
     url: "/categories/tops/"
     weight: 3
-  footer:
-  - identifier: My Orders
-    name: My Orders
-    url: "#"
-    pre: "snipcart-user-profile"
-    weight: 1
-  - identifier: Account Settings
-    name: Account Settings
-    url: "#"
-    pre: "snipcart-edit-profile"
-    weight: 2
-  - identifier: FAQ
-    name: "FAQ / Help"
-    url: "/faq"
-    pre: ""
-    weight: 3
-  - identifier: Blog
-    name: "Blog"
-    url: "/posts/"
-    pre: ""
-    weight: 4
-  - identifier: About
-    name: "Who We Are"
-    url: "/about/"
-    pre: ""
-    weight: 5
 taxonomies:
   category: categories
   color: colors

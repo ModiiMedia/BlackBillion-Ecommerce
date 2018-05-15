@@ -6,6 +6,11 @@ social_image = "/images/pete-bellis-256701-unsplash-1-p-1080.jpeg"
 title = "About Us"
 type = "page"
 url = ""
+[menu.footer]
+identifier = "About"
+name = "Who We Are"
+pre = ""
+weight = 5
 [menu.main]
 identifier = "About"
 name = "About"

@@ -28,6 +28,11 @@ layout: faq
 type: page
 social_image: ''
 menu:
+  footer:
+    identifier: FAQ
+    name: FAQ / Help
+    pre: ''
+    weight: 3
   main:
     identifier: FAQ
     name: FAQ / Help
