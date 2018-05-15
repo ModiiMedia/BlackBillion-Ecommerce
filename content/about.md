@@ -39,7 +39,7 @@ content_section = "# Lorem ipsum \n\ndolor sit amet, consectetur adipiscing elit
 template = "1-column-content"
 [[blocks]]
 heading = "Recent Products"
-products = ["products/my-accessory.md", "products/red-tshirt.md"]
+products = ["products/sample-product-mens-tshirt.md", "products/sample-product.md"]
 template = "product-grid"
 
 +++
