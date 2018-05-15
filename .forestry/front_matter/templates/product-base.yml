@@ -76,6 +76,16 @@ fields:
   description: More detailed description of the product. You can specify washing instructions,
     include a pricing chart, specify the clothing material, or anything else that
     you think is relevant for you customers to know.
+- type: textarea
+  name: shipping_details
+  label: Shipping Details
+  description: Customers will be linked to the shipping section in the FAQ. However
+    if there is something specific to this product regarding shipping fill out this
+    section.
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: field_group_list
   name: sizes
   label: Sizes
@@ -148,12 +158,6 @@ fields:
   default: ''
   description: Image that appears when people hover over a product in the product
     grid.
-- type: textarea
-  name: shipping_details
-  label: Shipping Details
-  description: Customers will be linked to the shipping section in the FAQ. However
-    if there is something specific to this product regarding shipping fill out this
-    section.
 - name: product_gallery
   label: Product gallery
   type: image_gallery
