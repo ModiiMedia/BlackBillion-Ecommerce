@@ -26,9 +26,12 @@ featuredBlocks:
   text: Shop Hats & Accessories
   photo: "/images/hipster-mum-236831-unsplash-1-p-800.jpeg"
   size: medium
-type: home
+type: page
 meta_title: ''
 social_image: ''
+layout: home
+blocks: ''
+url_slug: ''
 menu:
   main:
     identifier: home
