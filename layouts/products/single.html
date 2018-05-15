@@ -4,8 +4,8 @@
         <div class="breadcrumbs-wrap">
             <div class="breadcrumbs">
                 <a href="/products">All Products</a> / {{ if .Params.gender }}
-                <a href="/gender/{{ .Params.gender | urlize }}">{{ .Params.Gender | title }}</a> /{{ end }} 
-                <a href="/categories/{{ .Params.Categories | urlize }}">{{ .Params.Categories | title }}</a> / <a href="/subcategories/{{ .Params.Subcategories | urlize }}">{{ .Params.Subcategories | title }}</a> /
+                <a href="/gender/{{ .Params.Gender | urlize}}">{{ .Params.Gender | title }}</a> /{{ end }} 
+                {{ if .Params.Categories }}<a href="/categories/{{ .Params.Categories | urlize}}">{{ .Params.Categories | title }}</a> /{{ end }} {{ if .Params.Subcategories }}<a href="/subcategories/{{ .Params.Subcategories | urlize }}">{{ .Params.Subcategories | title }}</a> /{{ end }}
                 <strong>{{ .Title }}</strong>
             </div>
         </div>
