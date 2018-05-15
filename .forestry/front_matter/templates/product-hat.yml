@@ -1,0 +1,31 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: select
+  name: categories
+  config:
+    source:
+      type: simple
+    options:
+    - hats
+    required: true
+  label: Category
+  default: hats
+- type: select
+  name: subcategories
+  config:
+    source:
+      type: datafiles
+      file: product_categories-yaml
+      path: hats
+    required: true
+  label: Subcategory
+- type: include
+  template: product-template-tops
+  label: Main Fields
+  name: main_fields
+- type: include
+  template: seo-fields
+  label: Seo
+  name: seo
