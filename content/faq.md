@@ -27,5 +27,6 @@ questions:
 layout: faq
 type: page
 social_image: ''
+draft: true
 
 ---
