@@ -9,13 +9,15 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: date
+- type: datetime
+  name: date
   label: Date
-  type: text
-  hidden: false
-  default: 
-- name: draft
-  label: Draft
-  type: boolean
-  hidden: false
-  default: true
+  config:
+    required: false
+- type: file
+  name: main_image
+  label: Main Image
+- type: include
+  name: seo
+  label: Seo
+  template: seo-fields
