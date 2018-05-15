@@ -10,6 +10,11 @@ fields:
   name: meta_description
   label: Meta Description
   description: Description seen by search engines and social media sites
+- type: text
+  label: URL Slug
+  name: url_slug
+  description: Slug to appear at the end of the url. So if you type "my-page" the
+    page will appear at "https://blackbillionclothing.com/my-page"
 - type: file
   name: social_image
   label: Social Image
