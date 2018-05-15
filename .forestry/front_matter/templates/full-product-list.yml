@@ -12,13 +12,10 @@ fields:
 - name: type
   label: Type
   type: text
-  hidden: false
-  default: ''
-- name: label
-  label: Label
-  type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: products
+  config:
+    required: true
 - name: name
   label: Name
   type: text
