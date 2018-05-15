@@ -1,8 +1,8 @@
 ---
 pages:
-- products/sample-product.md
-- products/red-tshirt.md
 - products/my-accessory.md
+- products/red-tshirt.md
+- products/sample-product.md
 hide_body: true
 is_partial: false
 fields:
