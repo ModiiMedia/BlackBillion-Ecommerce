@@ -14,10 +14,10 @@ contact_info:
   phone: ''
   email: blackbillion@yahoo.com
 social_media:
-- URL: https://www.instagram.com/blackbillionapparel/
-  Icon: Facebook
-- URL: https://www.instagram.com/blackbillionapparel/
-  Icon: Instagram
+- Icon: Facebook
+  URL: https://www.instagram.com/blackbillionapparel/
+- Icon: Instagram
+  URL: https://www.instagram.com/blackbillionapparel/
 announcement_bar:
   show_bar: false
   message: All shipping orders are 50% off for a limited time!

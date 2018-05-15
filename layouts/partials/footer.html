@@ -32,15 +32,11 @@
         <div class="footer-column social">
           <div class="footer-heading">Social Media</div>
           <div class="social-link-wrap">
-            <a href="#" class="social-link w-inline-block">
-              <div></div>
+            {{ range $.Site.Data.settings.social_media }}
+            <a href="{{ .URL }}" target="_blank" class="social-link w-inline-block">
+              <i class="fab fa-{{ .Icon | lower }}"></i>
             </a>
-            <a href="#" class="social-link w-inline-block">
-              <div></div>
-            </a>
-            <a href="#" class="social-link w-inline-block">
-              <div></div>
-            </a>
+            {{ end }}
           </div><a href="#" class="about-wrap w-inline-block"></a></div>
       </div>
       <div class="copyright-bar">
