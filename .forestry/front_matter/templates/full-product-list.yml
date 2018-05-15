@@ -32,13 +32,11 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: main_image
-  label: Main image
-  type: text
-  hidden: false
-  default: ''
+- type: file
+  name: social_image
+  label: Social Image
 - name: list_all
   label: List all
   type: boolean
-  hidden: false
-  default: ''
+  hidden: true
+  default: true
