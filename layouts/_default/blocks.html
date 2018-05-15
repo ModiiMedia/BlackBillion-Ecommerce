@@ -1,18 +1,56 @@
 {{ partial "header.html" . }}
 
 {{ range .Params.Blocks }}
+    <!--Banner Image Template-->
     {{ if eq .template "banner-image" }}
-        {{ partial "blocks/banner-image.html" . }}
+        {{ $doc := replace .button.internal_link "/" "" }}
+        {{ $alignC := .formatting.align_container }}
+        <div class="section">
+            <div class="banner-image" 
+            style="background-image:URL({{ .image }}); text-align: {{ .formatting.align_text }};
+            {{ if eq $alignC "left" }}justify-content: flex-start{{end}}
+            {{ if eq $alignC "center" }}justify-content: center{{end}}
+            {{ if eq $alignC "right" }}justify-content: flex-end{{end}}">
+                <div class="slide-content page">
+                    <h1 class="banner-image-heading">{{ .heading }}</h1>
+                    <p>{{ if .text }}{{ .text | markdownify }}{{ end }}</p>
+                    {{ $text := .button.button_text }}
+                    {{ $tab := .button.open_in_new_tab }}
+                    {{ if ne .button.hide_button true }}
+                        {{ if eq .button.link_settings "Internal Page Link" }}
+                            {{ range $.Site.Pages }}
+                                {{ $file := add .Section .File.LogicalName }}
+                                {{ if eq $file $doc }}
+                                    <a href="{{ .RelPermalink }}"
+                                        {{ if eq $tab true }} target="_blank" {{ end }}
+                                        class="hero-button w-button">{{ $text }}
+                                    </a>
+                                {{ end }}
+                            {{ end }}
+                        {{ else }}
+                            <a href="{{ .button.external_link }}"
+                                {{ if eq .button.open_in_new_tab true }} target="_blank" {{ end }}
+                                class="hero-button w-button">{{ .button.button_text }}
+                            </a>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
     {{ end }}
+    <!--2 Column Content Template -->
     {{ if eq .template "2-column-content" }}
         {{ partial "blocks/2-column-content.html" . }}
     {{ end }}
+    <!--Gallery Template-->
     {{ if eq .template "gallery"}}
         {{ partial "blocks/gallery.html" . }}
     {{ end }}
+    <!--1 Column Content Template-->
     {{ if eq .template "1-column-content" }}
         {{ partial "blocks/1-column-content.html" . }}
     {{ end }}
+    <!--Product Grid Template-->
     {{ if eq .template "product-grid" }}
         <div class="main-section page">
             <div class="container">
@@ -20,10 +58,11 @@
                 <div class="w-dyn-list">
                     <div class="product-grid-wrap page w-dyn-items">
                         {{ range .products }}
-                        {{ $1 := replace . ".md" "/" }}
-                        {{ $2 := replace $1 "products/" "/products/" }}
+                        {{ $1 := . }}
+                        {{ $2 := replace . "/" "" }}
                             {{ range $.Site.RegularPages }}
-                                {{ if eq .RelPermalink $2 }}
+                            {{ $f := add .Section .File.LogicalName }}
+                                {{ if eq $f $2 }}
                                     {{ partial "product-grid-item.html" . }}
                                 {{ end }}
                             {{ end }}

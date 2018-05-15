@@ -2,7 +2,10 @@
 <div class="main-section">
     <div class="container">
         <div class="breadcrumbs-wrap">
-            <div class="breadcrumbs">Products / Tops / T-Shirts /
+            <div class="breadcrumbs">
+                <a href="/products">All Products</a> / {{ if .Params.gender }}
+                <a href="/gender/{{ .Params.gender | urlize }}">{{ .Params.Gender | title }}</a> /{{ end }} 
+                <a href="/categories/{{ .Params.Categories | urlize }}">{{ .Params.Categories | title }}</a> / <a href="/subcategories/{{ .Params.Subcategories | urlize }}">{{ .Params.Subcategories | title }}</a> /
                 <strong>{{ .Title }}</strong>
             </div>
         </div>
@@ -57,27 +60,35 @@
                         <select id="Size" name="Size" data-name="Size" required="true" class="dropdown-selector w-select">
                             <option value="">Select one...</option>
                             {{ range .Params.Sizes }}
-                            <option value="{{ .size }}">{{ .size }}{{ if ge .price_change 1 }} ( + ${{ .price_change }} ){{ end }}</option>
+                            {{ $change := .price_change }}
+                            <option value="{{ .size }}">{{ .size }}{{ if ge .price_change 1 }} ( +{{ lang.NumFmt 2 $change }} ){{ end }}{{ if le .price_change -1 }} ( {{ lang.NumFmt 2 $change }} ){{ end }}</option>
                             {{ end }}
                         </select>
+                        {{ range .Params.Variations }}
+                            <label for="{{ .variant_name | urlize }}">{{ .variant_name }}</label>
+                            <select id="{{ .variant_name | urlize }}" class="dropdown-selector w-select">
+                                {{ range .options }}
+                                {{ $change := .price_change }}
+                                    <option value="{{ .option_name }}">{{ .option_name }}{{ if ge .price_change 1 }} ( +{{ lang.NumFmt 2 $change }} ){{ end }}{{ if le .price_change -1 }} ( {{ lang.NumFmt 2 $change }} ){{ end }}</option>
+                                {{ end }}
+                            </select>
+                        {{ end }}
                         <label for="Size-2">Quantity:</label>
-                        <input type="number" value="1" class="quantity-selection w-input" maxlength="256" name="Quantity" data-name="Quantity" id="Quantity"
-                            required="true" />
-                        <submit class="w-embed">
-                            <a class="add-to-cart w-button snipcart-add-item" data-item-id="{{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .UniqueID }}{{ end }}"
+                        <input type="number" value="1" class="quantity-selection w-input" id="quantity" required="true" />
+                        <div class="w-embed">
+                            <a id="checkoutButton" class="add-to-cart w-button snipcart-add-item" data-item-id="{{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .UniqueID }}{{ end }}"
                                 data-item-name="{{ .Title }}" data-item-price="{{ if $sale }}{{ $sale }}{{ else }}{{ $price }}{{ end }}"
-                                data-item-weight="{{ .Params.Weight }}" data-item-url="{{ .Permalink }}" data-item-image="{{ .Params.Main_Image }}"
-                                data-item-custom1-name="Size" data-item-custom1-options="
-                                    {{ range first 1 .Params.Sizes }}
-                                        {{ .size }}
-                                        {{ if ge .price_change 1 }}
-                                            [+{{ .price_change }}]
-                                        {{ end }}
-                                    {{ end }}
-                                    {{ range after 1 .Params.Sizes }}
-                                        |{{ .size }}[+{{ .price_change }}]
-                                    {{ end }}" data-item-custom1-value="" href="#">Add To Cart</a>
-                        </submit>
+                                data-item-weight="{{ .Params.Weight }}" data-item-quantity="1" data-item-url="{{ .Permalink }}" data-item-image="{{ .Params.Main_Image }}"
+                                data-item-custom1-name="Size" data-item-custom1-value="Medium" data-item-custom1-options="{{ range first 1 .Params.Sizes }}{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}{{ range after 1 .Params.Sizes }}|{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}"
+                                    
+                                {{ range $index, $element := .Params.Variations }}
+                                    {{ $in := add $index 2 }}
+                                    data-item-custom{{ $in }}-name="{{ .variant_name }}"
+                                    data-item-custom{{ $in }}-options="{{ range first 1 .options }}{{ .option_name }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}{{ range after 1 .options }}|{{ .option_name }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}"
+                                    data-item-custom{{ $in }}-value=""
+                                {{ end }}
+                                href="#">Add To Cart</a>
+                        </div>
                     </form>
                 </div>
                 <!--end options-->
@@ -135,65 +146,17 @@
         <h1 class="related-products-heading">Related Products</h1>
         <div class="w-dyn-list">
             <div class="product-grid-wrap w-dyn-items">
-                <div class="grid-item w-dyn-item">
-                    <a href="/apparel/oversized-plaid-sweater" class="grid-link w-inline-block w--current">
-                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04afa91f6b275e9e12af5_pete-bellis-579482-unsplash.jpg&quot;)"
-                            class="grid-photo-main homepage">
-                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04af51d8156d9c1768452_pete-bellis-580698-unsplash.jpg&quot;)"
-                                class="grid-photo-hover"></div>
-                        </div>
-                        <div class="grid-content">
-                            <h1 class="grid-title">Oversized Plaid Sweater</h1>
-                            <div class="price-text">$ </div>
-                            <div class="price-text">60.00</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="grid-item w-dyn-item">
-                    <a href="/apparel/red-sweater" class="grid-link w-inline-block">
-                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04ac59f356a1e1e11dd1f_pete-bellis-549843-unsplash.jpg&quot;)"
-                            class="grid-photo-main homepage">
-                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad04ac063a6e80884632afb_pete-bellis-552522-unsplash.jpg&quot;)"
-                                class="grid-photo-hover"></div>
-                        </div>
-                        <div class="grid-content">
-                            <h1 class="grid-title">Red Sweater</h1>
-                            <div class="price-text">$ </div>
-                            <div class="price-text">50.00</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="grid-item w-dyn-item">
-                    <a href="/apparel/pretty-red-dress" class="grid-link w-inline-block">
-                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad048f80b597361a8bb2fea_pete-bellis-423577-unsplash.jpg&quot;)"
-                            class="grid-photo-main homepage">
-                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad048f391f6b25d69e12a27_pete-bellis-422421-unsplash.jpg&quot;)"
-                                class="grid-photo-hover"></div>
-                        </div>
-                        <div class="grid-content">
-                            <h1 class="grid-title">Pretty Red Dress</h1>
-                            <div class="price-text">$ </div>
-                            <div class="price-text">250.00</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="grid-item w-dyn-item">
-                    <a href="/apparel/gray-outfit-thing" class="grid-link w-inline-block">
-                        <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad0486e63a6e892d0632974_pete-bellis-406811-unsplash.jpg&quot;)"
-                            class="grid-photo-main homepage">
-                            <div style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ad012a80e97b8405b013916/5ad048721d8156f7f776836f_pete-bellis-406807-unsplash.jpg&quot;)"
-                                class="grid-photo-hover"></div>
-                        </div>
-                        <div class="grid-content">
-                            <h1 class="grid-title">Gray Outfit Thing</h1>
-                            <div class="price-text">$ </div>
-                            <div class="price-text">150.00</div>
-                        </div>
-                    </a>
-                </div>
+                {{ range .Params.related_products }}
+                    {{ $product := replace . "/" "" }}
+                    {{ range $.Site.RegularPages }}
+                        {{ $file := add .Section .File.LogicalName }}
+                        {{ if eq $file $product }}
+                            {{ partial "product-grid-item" . }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
             </div>
         </div>
     </div>
 </div>
-
 {{ partial "footer.html" . }}

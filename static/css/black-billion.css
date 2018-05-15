@@ -52,6 +52,14 @@ a {
   text-decoration: underline;
 }
 
+.breadcrumbs a {
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  margin: 0px 5px;
+}
+.breadcrumbs a:hover {
+  opacity: 0.5;
+}
 img {
   display: inline-block;
   max-width: 100%;
@@ -446,7 +454,7 @@ img {
 }
 
 .add-to-cart {
-  margin-top: 20px;
+  margin-top: 40px;
   background-color: #258f7e;
   font-weight: 600;
 }

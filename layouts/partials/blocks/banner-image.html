@@ -1,4 +1,5 @@
 {{ $doc := replace .button.internal_link "/_index.md" "" }}
+{{ $hi := .button.internal_link }}
 {{ $alignC := .formatting.align_container }}
 <div class="section">
     <div class="banner-image" 
@@ -9,12 +10,17 @@
         <div class="slide-content page">
             <h1 class="banner-image-heading">{{ .heading }}</h1>
             <p>{{ if .text }}{{ .text | markdownify }}{{ end }}</p>
+            {{ $text := .button.button_text }}
+            {{ $tab := .button.open_in_new_tab }}
             {{ if ne .button.hide_button true }}
                 {{ if eq .button.link_settings "Internal Page Link" }}
-                    <a href="/{{ replace $doc ".md" "" }}"
-                        {{ if eq .button.open_in_new_tab true }} target="_blank" {{ end }}
-                        class="hero-button w-button">{{ .button.button_text }}
-                    </a>
+                    {{ range $.Site.AllPages }}
+                        {{ $hi }}{{ .File.FileBaseName }}
+                            <a href="#"
+                                {{ if eq $tab true }} target="_blank" {{ end }}
+                                class="hero-button w-button">{{ $text }}
+                            </a>
+                        {{ end }}
                 {{ else }}
                     <a href="{{ .button.external_link }}"
                         {{ if eq .button.open_in_new_tab true }} target="_blank" {{ end }}
