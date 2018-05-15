@@ -18,6 +18,16 @@ fields:
   label: Type
   default: products
   hidden: false
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - default
+  label: Layout
+  default: default
 - name: id
   label: Product ID
   type: text
