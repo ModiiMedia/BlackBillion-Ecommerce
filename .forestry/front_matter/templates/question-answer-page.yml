@@ -9,18 +9,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: url
-  label: URL SLUG
-  type: text
-  hidden: false
-  default: ''
-  description: slug for where to find this on the website. For example typing "/my-page"
-    will put this page at "www.blackbillionclothing.com/mypage". Leaving blank will
-    base the url on the title initially set.
-- type: file
-  name: social_image
-  label: Social Image
-  description: Image for appearance on social media
 - name: questions
   label: Questions
   type: field_group_list
@@ -61,3 +49,7 @@ fields:
   default: faq
   config:
     required: true
+- type: include
+  name: seo
+  label: Seo Fields
+  template: seo-fields
