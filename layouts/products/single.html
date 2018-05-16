@@ -80,7 +80,7 @@
                             <a id="checkoutButton" class="add-to-cart w-button snipcart-add-item" data-item-id="{{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .UniqueID }}{{ end }}"
                                 data-item-name="{{ .Title }}" data-item-price="{{ if $sale }}{{ $sale }}{{ else }}{{ $price }}{{ end }}"
                                 data-item-weight="{{ .Params.Weight }}" data-item-quantity="1" data-item-url="{{ .Permalink }}" data-item-image="{{ .Params.Main_Image }}"
-                                data-item-custom1-name="Size" data-item-custom1-value="Medium" data-item-custom1-options="{{ range first 1 .Params.Sizes }}{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}{{ range after 1 .Params.Sizes }}|{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}"
+                                {{ if .Params.Sizes }}data-item-custom1-name="Size" data-item-custom1-value="" data-item-custom1-options="{{ range first 1 .Params.Sizes }}{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}{{ range after 1 .Params.Sizes }}|{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}"{{ end }}
                                     
                                 {{ range $index, $element := .Params.Variations }}
                                     {{ $in := add $index 2 }}
