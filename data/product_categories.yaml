@@ -30,15 +30,9 @@ category_metadata:
     image:
 
 tops_subcategories:
-- name: t-shirts
-  description: ""
-  image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
-- name: blouses
-  description: ""
-  image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
-- name: tank tops
-  description: ""
-  image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+- t-shirts
+- blouses
+- tank tops
 bottoms_subcategories:
 - pants
 - shorts
