@@ -13,37 +13,77 @@
             <div class="column-left w-col w-col-6">
                 <div data-duration-in="300" data-duration-out="300" class="tabs w-tabs">
                     <div class="tabs-content w-tab-content">
-                        {{ range .Params.product_gallery }}
-                        <div data-w-tab="{{ . }}" class="tab-pane-2 w-tab-pane">
-                            <img src="{{ . }}" sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, 36vw" class="image-3" />
-                            <a href="#" class="lightbox-link w-inline-block w-lightbox">
-                                <div></div>
-                                <script type="application/json" class="w-json">
-                                    {
-                                        "items": [{
-                                            "type": "image",
-                                            "_id": "{{ . }}",
-                                            "origFileName": "{{ . }}",
-                                            "url": "{{ . }}"
-                                          }],
-                                        "group": "productGallery"
-                                    }
-                                </script>
-                            </a>
-                        </div>
+                        {{ if .Params.product_gallery }}
+                            {{ range .Params.product_gallery }}
+                                <div data-w-tab="{{ . }}" class="tab-pane-2 w-tab-pane">
+                                    <img src="{{ . }}" sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, 36vw" class="image-3" />
+                                    <a href="#" class="lightbox-link w-inline-block w-lightbox">
+                                        <div></div>
+                                        <script type="application/json" class="w-json">
+                                            {
+                                                "items": [{
+                                                    "type": "image",
+                                                    "_id": "{{ . }}",
+                                                    "origFileName": "{{ . }}",
+                                                    "url": "{{ . }}"
+                                                }],
+                                                "group": "productGallery"
+                                            }
+                                        </script>
+                                    </a>
+                                </div>
+                            {{ end }}
+                        {{ else }}
+                            <div data-w-tab="tab-1" class="tab-pane-2 w-tab-pane">
+                                <img src="{{ .Params.main_image }}" sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, 36vw" class="image-3" />
+                                <a href="#" class="lightbox-link w-inline-block w-lightbox">
+                                    <div></div>
+                                    <script type="application/json" class="w-json">
+                                        {
+                                            "items": [{
+                                                "type": "image",
+                                                "_id": "{{ .Params.main_image }}",
+                                                "origFileName": "{{ .Params.main_image }}",
+                                                "url": "{{ .Params.main_image }}"
+                                            }],
+                                            "group": "productGallery"
+                                        }
+                                    </script>
+                                </a>
+                            </div>
                         {{ end }}
                     </div>
-                    <div class="tabs-menu w-tab-menu">
-                        {{ if .Params.product_gallery}}{{ range first 1 .Params.product_gallery }}
-                        <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link w--current">
-                            <div class="gallery-thumb-overlay"></div>
-                        </a>
-                        {{ end }} {{ range after 1 .Params.product_gallery }}
-                        <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link">
-                            <div class="gallery-thumb-overlay"></div>
-                        </a>
-                        {{ end }}{{ end }}
-                    </div>
+                    {{ $l := len .Params.product_gallery }}
+                    {{ if .Params.product_gallery  }}
+                        {{ if ge $l 2 }}
+                            <div class="tabs-menu w-tab-menu">
+                                    {{ range first 1 .Params.product_gallery }}
+                                    <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link w--current">
+                                        <div class="gallery-thumb-overlay"></div>
+                                    </a>
+                                    {{ end }} 
+                                    {{ range after 1 .Params.product_gallery }}
+                                        <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link">
+                                            <div class="gallery-thumb-overlay"></div>
+                                        </a>
+                                    {{ end }}
+                            </div>
+                        {{ else }}
+                        <div class="tabs-menu w-tab-menu" style="display:none">
+                            {{ range first 1 .Params.product_gallery }}
+                            <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link w--current">
+                                <div class="gallery-thumb-overlay"></div>
+                            </a>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    {{ else }}
+                        <div class="tabs-menu w-tab-menu" style="display:none">
+                            <a data-w-tab="tab-1" style="background-image:url({{ .Params.main_image }})" class="tab-link w-inline-block w-tab-link w--current">
+                                <div class="gallery-thumb-overlay"></div>
+                            </a>
+                        </div>
+                    {{ end }}
                 </div>
             </div>
             <div class="column-right w-col w-col-6">

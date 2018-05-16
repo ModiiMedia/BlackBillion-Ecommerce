@@ -1,16 +1,52 @@
 ---
-tops:
-- t-shirts
-- blouses
-- tank tops
-bottoms:
+category_metadata:
+  tops:
+    page_title: Shirts & Blouses
+    description: Shop all shirts and blouses from Black Billion Apparel.
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  bottoms:
+    page_title:
+    description:
+    image:
+  outerwear:
+    page_title:
+    description:
+    image:
+  hats:
+    page_title:
+    description:
+    image:
+  accessories:
+    page_title:
+    description:
+    image:
+  shoes:
+    page_title:
+    description:
+    image:
+  dresses:
+    page_title:
+    description:
+    image:
+
+tops_subcategories:
+- name: t-shirts
+  description: ""
+  image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+- name: blouses
+  description: ""
+  image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+- name: tank tops
+  description: ""
+  image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+bottoms_subcategories:
 - pants
 - shorts
 - skirts
-outerwear:
+outerwear_subcategories:
 - jackets
 - hoodies
-hats: []
-accessories: []
-shoes: []
-dresses: []
+hats_subcategories: []
+accessories_subcategories: []
+shoes_subcategories: []
+dresses_subcategories: []
