@@ -23,7 +23,7 @@ fields:
     source:
       type: datafiles
       file: product_categories-yaml
-      path: outerwear
+      path: outerwear_subcategories
   label: Subcategory
 - type: include
   name: main_fields
