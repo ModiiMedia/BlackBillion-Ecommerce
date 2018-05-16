@@ -1,4 +1,6 @@
 ---
+pages:
+- products/sample-jacket-product.md
 hide_body: true
 is_partial: false
 fields:
