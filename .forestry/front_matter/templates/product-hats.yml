@@ -20,7 +20,7 @@ fields:
     source:
       type: datafiles
       file: product_categories-yaml
-      path: hats
+      path: hats_subcategories
     required: false
   label: Subcategory
   description: Choose a subcategory. If you don't see the subcategory you are looking

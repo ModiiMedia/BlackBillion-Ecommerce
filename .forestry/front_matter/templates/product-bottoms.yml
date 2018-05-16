@@ -19,7 +19,7 @@ fields:
     source:
       type: datafiles
       file: product_categories-yaml
-      path: bottoms
+      path: bottoms_subcategories
   label: Subcategory
   name: subcategories
   description: Choose a category. If you don't see the one you are looking for add

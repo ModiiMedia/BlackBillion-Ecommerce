@@ -18,7 +18,7 @@ fields:
     source:
       type: datafiles
       file: product_categories-yaml
-      path: accessories
+      path: accessories_subcategories
   label: subcategory
   description: Choose a subcategory. If you don't see the subcategory you are looking
     for, go to "Product Categories" in the menu on the left and add it there.
