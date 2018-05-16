@@ -1,34 +1,34 @@
 ---
 category_metadata:
-  tops:
-    page_title: Shirts & Blouses
+  - name: tops
+    meta_title: Shirts & Blouses
     description: Shop all shirts and blouses from Black Billion Apparel.
     image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
-  bottoms:
-    page_title:
-    description:
-    image:
-  outerwear:
-    page_title:
-    description:
-    image:
-  hats:
-    page_title:
-    description:
-    image:
-  accessories:
-    page_title:
-    description:
-    image:
-  shoes:
-    page_title:
-    description:
-    image:
-  dresses:
-    page_title:
-    description:
-    image:
-
+  - name: bottoms
+    meta_title: Shop Pants, Shorts, and Skirts
+    description: Description goes here
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  - name: outerwear
+    meta_title: Shop Jackets and Hoodies
+    description: Description goes here
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  - name: hats
+    meta_title: Shop Hats
+    description: Description goes here
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  - name: accessories
+    meta_title: Shop Accessories
+    description: Description goes here
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  - name: shoes
+    meta_title: Shop Shoes
+    description: Description goes here
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  - name: dresses
+    meta_title: Shop Dresses
+    description: Description goes here
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+    
 tops_subcategories:
 - t-shirts
 - blouses
@@ -44,3 +44,27 @@ hats_subcategories: []
 accessories_subcategories: []
 shoes_subcategories: []
 dresses_subcategories: []
+
+gender_metadata:
+  - name: mens
+    meta_title: Shop All Men's 
+    description: Description Goes Here
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  - name: womens
+    meta_title: Shop Pants, Shorts, and Skirts
+    description: Description goes here
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  - name: unisex (adult)
+    meta_title: Shop All Unisex
+    description: Description Goes Here
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  - name: boys
+    meta_title: Shop All Boys Clothes
+    description: Description Goes Here
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  - name: girls
+    meta_title: Shop All Girls Clothes
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+  - name: unisex (kids)
+    meta_title: Shop all unisex kids clothes
+    image: "/images/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"

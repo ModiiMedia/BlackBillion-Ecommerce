@@ -938,6 +938,9 @@ img {
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
+.banner-image.center.taxonomy {
+  min-height: 250px
+}
 
 .banner-image.center {
   -webkit-box-pack: center;
@@ -1848,6 +1851,9 @@ img {
   }
   .banner-image {
     padding: 50px 30px;
+  }
+  .banner-image.center.taxonomy {
+    min-height: 0px;
   }
   .banner-image-heading {
     font-size: 26px;
