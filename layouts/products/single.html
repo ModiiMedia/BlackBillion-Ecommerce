@@ -127,6 +127,7 @@
 </div>
 <div>
     <div class="container">
+        {{ if .Params.related_products }}
         <h1 class="related-products-heading">Related Products</h1>
         <div class="w-dyn-list">
             <div class="product-grid-wrap w-dyn-items">
@@ -141,6 +142,7 @@
                 {{ end }}
             </div>
         </div>
+        {{ end }}
     </div>
 </div>
 {{ partial "footer.html" . }}
