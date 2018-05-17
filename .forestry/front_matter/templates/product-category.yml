@@ -1,5 +1,6 @@
 ---
 pages:
+- categories/outerwear.md
 - categories/tops.md
 hide_body: true
 is_partial: false
