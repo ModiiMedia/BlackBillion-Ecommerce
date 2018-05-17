@@ -45,7 +45,7 @@
     <h1 class="block-header">Recent Styles</h1>
     <div class="w-dyn-list">
         <div class="product-grid-wrap w-dyn-items">
-            {{ range first 2 (where .Site.RegularPages "Section" "products") }}
+            {{ range first 4 (where .Site.RegularPages "Section" "products") }}
                 {{ partial "product-grid-item.html" . }}
             {{ end }}
         </div>
