@@ -6,5 +6,9 @@ meta_title: ''
 meta_description: ''
 url_slug: ''
 social_image: ''
+menu:
+  main:
+    identifier: Accessories
+    weight: 4
 
 ---
