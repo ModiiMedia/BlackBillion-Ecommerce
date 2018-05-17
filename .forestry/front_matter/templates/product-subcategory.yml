@@ -1,5 +1,6 @@
 ---
 pages:
+- subcategories/hoodies.md
 - subcategories/jackets.md
 hide_body: true
 is_partial: false
