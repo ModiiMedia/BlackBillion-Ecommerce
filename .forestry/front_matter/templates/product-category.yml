@@ -1,0 +1,32 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- type: text
+  name: description
+  label: Description
+  default: ''
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - categories
+  label: Type
+  default: categories
+- type: file
+  name: main_image
+  label: Main Image
+- type: include
+  name: seo
+  label: Seo
+  template: seo-fields
