@@ -28,8 +28,6 @@ menu:
     url: "/categories/tops/"
     weight: 3
 taxonomies:
-  category: categories
   color: colors
   tag: tags
-  subcategory: subcategories
   genders: gender
