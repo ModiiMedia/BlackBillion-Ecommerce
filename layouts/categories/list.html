@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+<div class="section">
+    <div class="flex-row">
+        <div class="column-left sidebar">
+            <a href="/products/" class="category-item" style="background-color: #333; padding: 20px">
+                <p style="margin: 0px; z-index: 1;">All Products</p>
+                <div class="image-overlay"></div>
+            </a>
+        </div>
+        <div class="column-right p-grid">
+            <div class="product-grid-wrap w-dyn-items" style="width: 100%">
+            {{ range .Data.Pages }}
+                <div class="grid-item w-dyn-item">
+                    <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
+                        <div style="background-image:url({{ .Params.Main_Image }}); color: white; min-height: 0px; padding-top: 100%; background-color: #333;" class="grid-photo-main">
+                            <div class="grid-content" style="position: absolute; z-index: 1; top: 0; bottom: 0; left: 0; right: 0; display: flex; justify-content: center; align-items: center">
+                                <h1>{{ .Title | title }}</h1>
+                            </div>
+                            <div class="image-overlay"></div>
+                        </div>
+                    </a>
+                </div>
+            {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ partial "footer.html" . }}

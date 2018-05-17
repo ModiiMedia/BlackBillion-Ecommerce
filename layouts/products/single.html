@@ -1,11 +1,33 @@
 {{ partial "header.html" . }}
+{{ $f := .Params.Category }}
+{{ $sc := .Params.Subcategory }}
 <div class="main-section">
     <div class="container">
         <div class="breadcrumbs-wrap">
             <div class="breadcrumbs">
                 <a href="/products">All Products</a> / {{ if .Params.gender }}
                 <a href="/gender/{{ .Params.Gender | urlize}}">{{ .Params.Gender | title }}</a> /{{ end }} 
-                {{ if .Params.Categories }}<a href="/categories/{{ .Params.Categories | urlize}}">{{ .Params.Categories | title }}</a> /{{ end }} {{ if .Params.Subcategories }}<a href="/subcategories/{{ .Params.Subcategories | urlize }}">{{ .Params.Subcategories | title }}</a> /{{ end }}
+                
+                {{ if $f }}
+                    {{ range .Site.RegularPages }}
+                        {{ $file := add "categories/" .File.LogicalName }}
+                        {{ if eq $f $file }}
+                        <a href="{{ .RelPermalink }}">
+                            {{ .Title }}
+                        </a> /
+                        {{ end }}
+                    {{ end }}
+                {{ end }} 
+                {{ if $sc }}
+                    {{ range .Site.RegularPages }}
+                        {{ $file := add "subcategories/" .File.LogicalName }}
+                        {{ if eq $sc $file }}
+                        <a href="{{ .RelPermalink }}">
+                            {{ .Title }}
+                        </a> /
+                        {{ end }}
+                    {{ end }}
+                {{ end }} 
                 <strong>{{ .Title }}</strong>
             </div>
         </div>

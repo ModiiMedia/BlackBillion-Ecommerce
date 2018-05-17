@@ -1,0 +1,47 @@
+{{ partial "header.html" . }}
+
+{{ $catFile := add "subcategories/" .File.LogicalName }}
+{{ $pcat := .Params.parent_category }}
+
+<div class="section">
+    <div class="banner-image taxonomy center" style="background-image:URL({{ .Params.main_image }})">
+        <div class="slide-content page">
+            <h1 class="banner-image-heading">All {{ .Title }}</h1> 
+            <p>{{ .Description }}</p>         
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="flex-row">
+        <div class="column-left sidebar">
+            {{ range $.Site.RegularPages }}
+                {{ $f := add "categories/" .File.LogicalName }}
+                {{ if eq $f $pcat }}
+                    <a href="{{ .RelPermalink }}" class="category-item" style="background-color: #333; padding: 20px">
+                        <p style="margin: 0px; z-index: 1;">Back to {{ .Title }}</p>
+                        <div class="image-overlay"></div>
+                    </a>
+                {{ end }}
+            {{ end }}
+            {{ range $.Site.RegularPages }}
+                {{ if eq .Params.parent_category $catFile }}
+                    <a href="{{ .RelPermalink }}" class="category-item w-inline-block" style="background-image:URL({{ .Params.main_image }})">
+                    <div class="image-overlay"></div>
+                    <p style="z-index: 1">{{ .Title }}</p>
+                    </a>
+                {{ end }}
+            {{ end }}
+        </div>
+        <div class="column-right p-grid">
+            <div class="product-grid-wrap w-dyn-items" style="width: 100%">
+            {{ range $.Site.RegularPages }}
+                {{ if eq .Params.subcategory $catFile }}
+                    {{ partial "product-grid-item.html" . }}
+                {{ end }}
+            {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

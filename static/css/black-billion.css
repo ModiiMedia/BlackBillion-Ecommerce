@@ -69,7 +69,6 @@ img {
   position: relative;
   z-index: 100;
 }
-
 .container {
   display: block;
   max-width: 1460px;
@@ -202,7 +201,7 @@ img {
 
 .grid-item {
   width: 25%;
-  padding: 2px;
+  padding: 4px;
 }
 
 .grid-item.page {
@@ -227,7 +226,7 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: -2px -2px -20px;
+  margin: -4px -4px -20px -4px;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -342,6 +341,12 @@ img {
   justify-content: center;
   position: relative;
 }
+.column-right.p-grid {
+  flex-grow: 2;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 8px;
+}
 
 .column-left {
   padding-right: 20px;
@@ -367,6 +372,40 @@ img {
   justify-content: center;
 }
 
+.column-left.sidebar {
+  min-width: 200px;
+  flex-direction: column;
+  padding-right: 0px;
+  margin: -4px;
+  margin-bottom: 8px;
+}
+@media (max-width: 767px) {
+  .column-left.sidebar {
+    padding-right: 20px;
+  }
+}
+.column-right .grid-photo-main {
+  min-height: 450px;
+}
+
+.category-item-outer {
+  padding: 4px;
+}
+.category-item {
+  display: flex;
+  text-decoration: none;
+  min-height: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 50px 20px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  max-width: 100%
+}
 .row {
   margin-right: -20px;
   margin-left: -20px;
@@ -1456,6 +1495,9 @@ img {
   .grid-item {
     width: 33.33%;
   }
+  .column-right .grid-item {
+    width: 50%;
+  }
   .logo-text {
     margin-right: -45px;
     margin-left: -45px;
@@ -1792,12 +1834,19 @@ img {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .column-right.p-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .column-left {
     margin-bottom: 20px;
   }
   .column-left.flex {
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .column-left.sidebar {
+    min-width: 100%;
   }
   .tabs-menu {
     max-height: 290px;
@@ -1945,6 +1994,9 @@ img {
     padding-bottom: 20px;
   }
   .grid-item {
+    width: 100%;
+  }
+  .column-right .grid-item {
     width: 100%;
   }
   .logo-text {
