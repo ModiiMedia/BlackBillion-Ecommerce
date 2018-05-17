@@ -1,0 +1,42 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: ''
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    options:
+    - subcategories
+    required: true
+  label: type
+  default: subcategories
+- type: select
+  name: parent_category
+  config:
+    source:
+      type: pages
+      section: categories
+    required: true
+  label: Parent Category
+  default: categories/tops.md
+- type: file
+  name: main_image
+  label: Main Image
+- type: include
+  name: seo
+  label: Seo
+  template: seo-fields
