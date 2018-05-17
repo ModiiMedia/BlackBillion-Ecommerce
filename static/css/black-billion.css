@@ -283,7 +283,6 @@ img {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -296,7 +295,6 @@ img {
   position: relative;
   overflow: hidden;
   min-height: 450px;
-  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -430,7 +428,6 @@ img {
   margin: 5px;
   padding: 0px;
   background-color: transparent;
-  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -438,7 +435,6 @@ img {
 }
 
 .tab-link.w--current {
-  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -558,13 +554,8 @@ img {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-  background-image: url('../images/hipster-mum-236831-unsplash-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.slider-slide._2 {
-  background-image: url('../images/ian-dooley-347962-unsplash-1.jpg');
 }
 
 .feature-grid {
@@ -608,16 +599,10 @@ img {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  background-image: url('../images/pete-bellis-256701-unsplash-1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #333;
   text-decoration: none;
-}
-
-.featured-block._2 {
-  background-image: url('../images/alex-holyoake-361916-unsplash-1.jpg');
-  background-position: 50% 50%;
 }
 
 .section {
@@ -650,7 +635,6 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -971,7 +955,6 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/pete-bellis-256701-unsplash-1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -990,7 +973,6 @@ img {
 }
 
 .banner-image.center._2 {
-  background-image: url('../images/hipster-mum-236831-unsplash-1.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -1056,7 +1038,6 @@ img {
   bottom: 0px;
   margin-right: 20px;
   margin-left: 20px;
-  background-image: url('../images/ian-dooley-347962-unsplash-1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1099,7 +1080,6 @@ img {
 
 .gallery-thumbnail-inner {
   padding-top: 100%;
-  background-image: url('../images/pete-bellis-256701-unsplash-1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1230,7 +1210,6 @@ img {
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
-  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1437,7 +1416,6 @@ img {
 .blog-product-image {
   width: 250px;
   height: 250px;
-  background-image: url('../images/example-bg.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
