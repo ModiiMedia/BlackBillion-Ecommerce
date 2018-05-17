@@ -1,7 +1,7 @@
 +++
 category = "categories/hats.md"
 color_tags = ["gray", "yellow", "black"]
-date = "2018-05-17T05:10:33+00:00"
+date = "2018-05-17T05:10:33Z"
 description = "It's a hat"
 details = ""
 gender = "girls"

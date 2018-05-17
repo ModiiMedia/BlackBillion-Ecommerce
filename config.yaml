@@ -20,10 +20,6 @@ menu:
     name: Explore
     url: "#"
     weight: 5
-  - identifier: Accessories
-    name: Accessories
-    url: "/products/categories/accessories/"
-    weight: 4
   - identifier: Tops
     name: Tops
     url: "/categories/tops/"
