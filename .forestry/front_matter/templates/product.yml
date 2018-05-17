@@ -1,0 +1,12 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: include
+  template: product-template-tops
+  label: Main Fields
+  name: main_fields
+- type: include
+  name: seo
+  label: Seo
+  template: seo-fields
