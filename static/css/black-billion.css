@@ -837,10 +837,6 @@ img {
   font-weight: 400;
 }
 
-.body-4 {
-  font-family: 'Noto Sans', sans-serif;
-}
-
 .accordian-wrap {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -1671,7 +1667,6 @@ img {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    font-family: Lato, sans-serif;
     color: #000;
     font-size: 20px;
     line-height: 20px;

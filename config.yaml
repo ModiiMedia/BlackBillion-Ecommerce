@@ -2,6 +2,7 @@
 baseURL: https://blackbillionclothing.com
 languageCode: en-us
 title: Black Billion Clothing
+
 menu:
   footer:
   - identifier: Account Settings
@@ -27,6 +28,7 @@ menu:
     name: Tops
     url: "/categories/tops/"
     weight: 3
+
 taxonomies:
   color: colors
   tag: tags
