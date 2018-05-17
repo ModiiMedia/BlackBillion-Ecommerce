@@ -211,5 +211,5 @@ fields:
     use_select: true
     source:
       type: datafiles
-      file: collections_and_tags-yaml
+      file: taxonomy_data-yaml
       path: product_color_tags
