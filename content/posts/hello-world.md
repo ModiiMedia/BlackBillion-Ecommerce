@@ -1,7 +1,7 @@
 +++
-date = "2018-05-15T05:48:47Z"
+date = "2018-05-15T05:48:47+00:00"
 description = "This is my first blog post"
-featured_product = "products/sample-women-s-product.md"
+featured_product = "products/sample-hat.md"
 layout = "default"
 main_image = "/images/the_red_path.jpg"
 meta_description = ""
