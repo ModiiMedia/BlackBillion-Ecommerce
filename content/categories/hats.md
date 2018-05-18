@@ -7,5 +7,8 @@ meta_title = ""
 social_image = ""
 title = "Hats"
 url_slug = ""
+[menu.main]
+identifier = "Accessories"
+weight = 4
 
 +++

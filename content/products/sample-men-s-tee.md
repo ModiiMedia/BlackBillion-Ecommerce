@@ -1,7 +1,7 @@
 +++
 category = "categories/tops.md"
 color_tags = ["black", "gray"]
-date = "2018-05-17T05:07:55+00:00"
+date = "2018-05-17T05:07:55Z"
 description = "It's a men's t-shirt"
 details = ""
 gender = "mens"
