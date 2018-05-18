@@ -50,7 +50,7 @@ photos_per_row = "four"
 template = "gallery"
 [[blocks]]
 heading = "Recent Products"
-products = ["products/sample-women-s-product.md", "products/sample-men-s-product.md"]
+products = ["products/sample-men-s-tee.md", "products/sample-women-s-tee.md", "products/sample-hat.md"]
 template = "product-grid"
 
 +++

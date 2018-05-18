@@ -1,6 +1,4 @@
 ---
-pages:
-- about.md
 hide_body: true
 is_partial: false
 fields:
@@ -47,3 +45,5 @@ fields:
   label: Seo Fields
   description: ''
   template: seo-fields
+pages:
+- about.md

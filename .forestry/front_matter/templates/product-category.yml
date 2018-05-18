@@ -1,8 +1,4 @@
 ---
-pages:
-- categories/hats.md
-- categories/outerwear.md
-- categories/tops.md
 hide_body: true
 is_partial: false
 fields:
@@ -34,3 +30,7 @@ fields:
   name: seo
   label: Seo
   template: seo-fields
+pages:
+- categories/hats.md
+- categories/outerwear.md
+- categories/tops.md

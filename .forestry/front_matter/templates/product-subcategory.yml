@@ -1,8 +1,4 @@
 ---
-pages:
-- subcategories/t-shirts.md
-- subcategories/hoodies.md
-- subcategories/jackets.md
 hide_body: true
 is_partial: false
 fields:
@@ -44,3 +40,7 @@ fields:
   name: seo
   label: Seo
   template: seo-fields
+pages:
+- subcategories/t-shirts.md
+- subcategories/hoodies.md
+- subcategories/jackets.md

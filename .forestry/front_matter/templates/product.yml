@@ -1,8 +1,4 @@
 ---
-pages:
-- products/sample-hat.md
-- products/sample-women-s-tee.md
-- products/sample-men-s-tee.md
 hide_body: true
 is_partial: false
 fields:
@@ -14,3 +10,7 @@ fields:
   name: seo
   label: Seo
   template: seo-fields
+pages:
+- products/sample-hat.md
+- products/sample-women-s-tee.md
+- products/sample-men-s-tee.md

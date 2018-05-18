@@ -1,6 +1,4 @@
 ---
-pages:
-- _index.md
 hide_body: true
 is_partial: false
 fields:
@@ -122,3 +120,5 @@ fields:
   label: Type
   hidden: true
   default: page
+pages:
+- _index.md
