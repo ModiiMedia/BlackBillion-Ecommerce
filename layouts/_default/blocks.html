@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 
+{{ if .Params.Blocks }}
 {{ range .Params.Blocks }}
     <!--Banner Image Template-->
     {{ if eq .template "banner-image" }}
@@ -72,6 +73,7 @@
             </div> 
         </div>       
     {{ end }}
+{{ end }}
 {{ end }}
 
 {{ partial "footer.html" . }}
