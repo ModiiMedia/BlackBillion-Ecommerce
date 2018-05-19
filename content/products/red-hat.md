@@ -2,7 +2,7 @@
 category = "categories/hats.md"
 color_tags = ["blue", "black", "red"]
 date = "2018-05-19T12:18:15-05:00"
-description = "It's a cool red hat."
+description = "It's a very cool red hat."
 details = ""
 gender = "mens"
 hover_image = "/images/chad-madden-446411-unsplash (1).jpg"
