@@ -41,6 +41,7 @@ fields:
   label: Seo
   template: seo-fields
 pages:
+- subcategories/fedoras.md
 - subcategories/t-shirts.md
 - subcategories/hoodies.md
 - subcategories/jackets.md
