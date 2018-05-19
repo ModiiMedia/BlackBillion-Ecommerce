@@ -57,4 +57,5 @@ fields:
   label: Seo
   name: seo
 pages:
+- posts/annoucement-new-la-di-da.md
 - posts/hello-world.md
