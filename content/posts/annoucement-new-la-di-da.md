@@ -1,7 +1,6 @@
 +++
 date = "2018-05-19T12:48:49-05:00"
 description = "Here's my description"
-draft = true
 featured_product = ""
 layout = "default"
 main_image = "/images/the_red_path.jpg"
