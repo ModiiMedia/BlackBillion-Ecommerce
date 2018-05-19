@@ -1,25 +1,24 @@
 +++
 category = "categories/hats.md"
-color_tags = ["red"]
+color_tags = ["blue", "black", "red"]
 date = "2018-05-19T12:18:15-05:00"
-description = "It's a cool red hat."
+description = "It's a very cool red hat."
 details = ""
-draft = true
 gender = "mens"
-hover_image = ""
+hover_image = "/images/chad-madden-446411-unsplash (1).jpg"
 id = ""
 layout = "default"
-main_image = "/images/tanja-heffner-457655-unsplash (1).jpg"
+main_image = "/images/jordan-bauer-265391-unsplash (1).jpg"
 meta_description = ""
 meta_title = ""
 parent_category = "categories/hats.md"
 price = 32
-product_gallery = []
-related_products = ["products/sample-men-s-tee.md", "products/sample-hat.md", "products/sample-women-s-tee.md"]
-sale_price = ""
+product_gallery = ["/images/allef-vinicius-145443-unsplash (1).jpg", "/images/jordan-bauer-265391-unsplash (1).jpg", "/images/chad-madden-446411-unsplash (1).jpg", "/images/tanja-heffner-457655-unsplash (1).jpg"]
+related_products = ["products/sample-hat.md"]
+sale_price = 15
 shipping_details = ""
 social_image = ""
-subcategory = ""
+subcategory = "subcategories/fedoras.md"
 title = "Red Hat"
 url_slug = ""
 weight = 5
@@ -42,10 +41,13 @@ size = "Extra Large"
 required = true
 variant_name = "Colors"
 [[variations.options]]
-option_name = "Hello"
+option_name = "Red"
 price_change = "0"
 [[variations.options]]
-option_name = "Goodbye"
+option_name = "Blue"
+price_change = "0"
+[[variations.options]]
+option_name = "Black"
 price_change = "0"
 
 +++
