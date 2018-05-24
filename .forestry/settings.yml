@@ -7,7 +7,7 @@ sections:
   categories:
     default_front_matter_template: category
   posts:
-    default_front_matter_template: page
+    default_front_matter_template: post
   page:
     default_front_matter_template: page
   subcategories:
