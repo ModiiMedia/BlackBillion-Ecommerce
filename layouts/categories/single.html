@@ -20,7 +20,12 @@
             {{ range $.Site.RegularPages }}
                 {{ if eq .Params.parent_category $catFile }}
                 <div class="category-item-outer">
-                    <a href="{{ .RelPermalink }}" class="category-item w-inline-block" style="background-image:URL({{ .Params.main_image }})">
+                    <a href="{{ .RelPermalink }}" class="category-item w-inline-block" 
+                    {{ with .Params.Main_Image }}
+                        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                        {{ $resized := $imageResource.Fill "800x800 q80" }}
+                        style="background-image:url({{ $resized.RelPermalink }})"
+                    {{ end }}>
                     <div class="image-overlay"></div>
                     <p style="z-index: 1">{{ .Title }}</p>
                     </a>

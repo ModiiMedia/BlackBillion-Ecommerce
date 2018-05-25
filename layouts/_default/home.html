@@ -4,7 +4,12 @@
         {{ range .Params.sliderSlides }}
         {{ $ilink := replace .buttonLink "_index.md" "" }}
         {{ $ilink2 := replace $ilink ".md" "" }}
-            <div class="slider-slide w-slide" style="background-image:URL({{.photo}})">
+            <div class="slider-slide w-slide" 
+                {{ with .photo }}
+                {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                {{ $resized := $imageResource.Fill "1400x q80" }}
+                style="background-image:url({{ $resized.RelPermalink }})"
+                {{ end }}>
                 <div class="slide-content-wrap">
                     <div class="slide-content">
                         <h1 class="hero-heading">{{ .heading }}</h1>

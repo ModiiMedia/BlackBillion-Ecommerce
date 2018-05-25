@@ -14,7 +14,13 @@
             {{ range .Data.Pages }}
                 <div class="grid-item w-dyn-item">
                     <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
-                        <div style="background-image:url({{ .Params.Main_Image }}); color: white; min-height: 0px; padding-top: 100%; background-color: #333;" class="grid-photo-main">
+                        <div 
+                        {{ with .Params.Main_Image }}
+                        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                        {{ $resized := $imageResource.Fill "430x430 q80 center" }}
+                        style="background-image:url({{ $resized.RelPermalink }}); 
+                        {{ end }}
+                            color: white; min-height: 0px; padding-top: 100%; background-color: #333;" class="grid-photo-main">
                             <div class="grid-content" style="position: absolute; z-index: 1; top: 0; bottom: 0; left: 0; right: 0; display: flex; justify-content: center; align-items: center">
                                 <h1>{{ .Title | title }}</h1>
                             </div>
