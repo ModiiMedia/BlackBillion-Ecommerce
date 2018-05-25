@@ -13,7 +13,11 @@ meta_description = ""
 meta_title = ""
 parent_category = "categories/hats.md"
 price = 32
+<<<<<<< HEAD
 product_gallery = ["/uploads/allef-vinicius-145443-unsplash (1).jpg", "/uploads/jordan-bauer-265391-unsplash (1).jpg", "/uploads/chad-madden-446411-unsplash (1).jpg", "/uploads/tanja-heffner-457655-unsplash (1).jpg"]
+=======
+product_gallery = ["/uploads/allef-vinicius-145443-unsplash (1).jpg", "/uploads/chad-madden-446411-unsplash (1).jpg"]
+>>>>>>> 20ad9f00f09aca32e5257fef5a5fdb1eca7293cf
 related_products = ["products/sample-hat.md"]
 sale_price = 15
 shipping_details = ""
