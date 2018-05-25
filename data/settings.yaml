@@ -3,9 +3,9 @@ general:
   website_title: Black Billion Clothing
   slogan: ''
   website_description: We are a totally rad clothing company
-  logo_dark: "/images/black-billion-logo-transparent-background-p-500.png"
-  logo_white: "/images/black-billion-logo-transparent-background-white-p-500.png"
-  favicon: "/images/favicon-32x32.png"
+  logo_dark: "/uploads/black-billion-logo-transparent-background-p-500.png"
+  logo_white: "/uploads/black-billion-logo-transparent-background-white-p-500.png"
+  favicon: "/uploads/favicon-32x32.png"
 contact_info:
   company_name: Black Billion Apparel
   street_address: 11111 Some Street

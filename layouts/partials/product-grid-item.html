@@ -1,6 +1,11 @@
 <div class="grid-item w-dyn-item">
     <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
-        <div style="background-image:url({{ .Params.Main_Image }})"
+        <div 
+        {{ with .Params.main_image }}
+            {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+            {{ $resized := $imageResource.Fill "350x450" }}
+            style="background-image:url({{ $resized.RelPermalink }})"
+        {{ end }}
             class="grid-photo-main">
             <div style="background-image:url({{ .Params.Hover_Image }})"
                 class="grid-photo-hover"></div>
