@@ -4,7 +4,12 @@
 {{ $pcat := .Params.parent_category }}
 
 <div class="section">
-    <div class="banner-image taxonomy center" style="background-image:URL({{ .Params.main_image }})">
+    <div class="banner-image taxonomy center" 
+    {{ with .Params.main_image }}
+        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+        {{ $resized := $imageResource.Fill "1400x400 q80 center" }}
+        style="background-image:url({{ $resized.RelPermalink }})"
+    {{ end }}>
         <div class="slide-content page">
             <h1 class="banner-image-heading">All {{ .Title }}</h1> 
             <p>{{ .Description }}</p>         
@@ -28,7 +33,12 @@
             {{ range $.Site.RegularPages }}
                 {{ if eq .Params.parent_category $catFile }}
                 <div class="category-item-outer">
-                    <a href="{{ .RelPermalink }}" class="category-item w-inline-block" style="background-image:URL({{ .Params.main_image }})">
+                    <a href="{{ .RelPermalink }}" class="category-item w-inline-block" 
+                    {{ with .Params.main_image }}
+                        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                        {{ $resized := $imageResource.Fill "700x400 q80 center" }}
+                        style="background-image:url({{ $resized.RelPermalink }})"
+                    {{ end }}>
                     <div class="image-overlay"></div>
                     <p style="z-index: 1">{{ .Title }}</p>
                     </a>

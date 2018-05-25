@@ -16,9 +16,7 @@
                     <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
                         <div 
                         {{ with .Params.main_image }}
-                        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-                        {{ $resized := $imageResource.Fill "430x430 q80 center" }}
-                        style="background-image:url({{ $resized.RelPermalink }}); color: white; min-height: 0px; padding-top: 100%; background-color: #333;" 
+                        style="background-image:url({{ . }}); color: white; min-height: 0px; padding-top: 100%; background-color: #333;" 
                         {{ end }}
                         class="grid-photo-main">
                             <div class="grid-content" style="position: absolute; z-index: 1; top: 0; bottom: 0; left: 0; right: 0; display: flex; justify-content: center; align-items: center">

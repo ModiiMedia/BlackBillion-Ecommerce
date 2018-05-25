@@ -11,7 +11,6 @@ layout = "default"
 main_image = "/uploads/jordan-bauer-265391-unsplash (1).jpg"
 meta_description = ""
 meta_title = ""
-parent_category = "categories/hats.md"
 price = 32
 product_gallery = ["/uploads/allef-vinicius-145443-unsplash (1).jpg", "/uploads/jordan-bauer-265391-unsplash (1).jpg", "/uploads/chad-madden-446411-unsplash (1).jpg", "/uploads/tanja-heffner-457655-unsplash (1).jpg"]
 related_products = ["products/sample-hat.md"]
