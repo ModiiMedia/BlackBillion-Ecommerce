@@ -43,3 +43,5 @@ fields:
 - type: tag_list
   name: tags
   label: Tags
+pages:
+- uploads/test.md
