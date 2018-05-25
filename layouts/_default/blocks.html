@@ -7,8 +7,9 @@
         {{ $doc := replace .button.internal_link "/" "" }}
         {{ $alignC := .formatting.align_container }}
         <div class="section">
-            <div class="banner-image" 
-            style="background-image:URL({{ .image }}); text-align: {{ .formatting.align_text }};
+            <div class="banner-image" style="{{ with .image }}{{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+            {{ $resized := $imageResource.Fill "1400x650 q80 center" }} background-image:url({{ $resized.RelPermalink }}); {{ end }}
+            text-align: {{ .formatting.align_text }};
             {{ if eq $alignC "left" }}justify-content: flex-start{{end}}
             {{ if eq $alignC "center" }}justify-content: center{{end}}
             {{ if eq $alignC "right" }}justify-content: flex-end{{end}}">
@@ -41,11 +42,73 @@
     {{ end }}
     <!--2 Column Content Template -->
     {{ if eq .template "2-column-content" }}
-        {{ partial "blocks/2-column-content.html" . }}
+    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .image ) }}
+    {{ $resizedA := $imageResource.Fit "680x2000 q80" }}
+    {{ $resizedB := $imageResource.Fit "1000x2000 q80"}}
+        <div class="main-section page">
+            <div class="container">
+                <div class="flex-row">
+                    <div class="column-left flex">
+                        {{ if eq .column_order "Image First" }}
+                            {{ if eq .column_height "Image Priority" }}
+                                <img src="{{ $resizedA.RelPermalink }}" width="1000px" />
+                            {{ else }}
+                                <div class="column-image" style="background-image:URL({{ $resizedB.RelPermalink }})"></div>
+                            {{ end }}
+                        {{ else }}
+                            <div class="rich-text-page w-richtext">
+                                {{ .content | markdownify }}
+                            </div>
+                        {{ end }}
+                    </div>
+                    <div class="column-right flex">
+                        {{ if eq .column_order "Image First"}}
+                            <div class="rich-text-page w-richtext">
+                                {{ .content | markdownify }}
+                            </div>
+                        {{ else }}
+                            {{ if eq .column_height "Image Priority" }}
+                                <img src="{{ $resizedA.RelPermalink }}" width="1000px" />
+                            {{ else }}
+                                <div class="column-image" style="background-image:URL({{ $resizedB.RelPermalink }})"></div>
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
     {{ end }}
     <!--Gallery Template-->
     {{ if eq .template "gallery"}}
-        {{ partial "blocks/gallery.html" . }}
+        <div class="main-section page">
+            <div class="container">
+            {{ if .heading }}<h1 class="gallery-heading">{{ .heading }}</h1>{{ end }}
+            <div class="flex-row gallery"
+            {{ if eq .align_grid "right" }}style="justify-content: flex-end"{{ end }}{{ if eq .align_grid "center" }}style="justify-content: center"{{ end }}>
+                {{ $gallery := .gallery_name }}
+                {{ $row := .photos_per_row }}
+                {{ range .images }}
+                    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                    {{ $resized := $imageResource.Fill "400x400 q65 center" }}
+                    {{ $resizedA := $imageResource.Fit "1200x700 q90"}}
+                    <a href="#" class="gallery-thumbnail w-lightbox {{ $row }}">
+                        <div class="gallery-thumbnail-inner" style="background-image:URL({{ $resized.RelPermalink }})"></div>
+                        <script type="application/json" class="w-json">
+                        {
+                            "items": [{
+                            "type": "image",
+                            "_id": "{{ . }}",
+                            "origFileName": "{{ . }}",
+                            "url": "{{ $resizedA.RelPermalink }}"
+                            }],
+                            "group": "{{ $gallery }}"
+                        }
+                        </script>
+                    </a>
+                {{ end }}
+            </div>
+            </div>
+        </div>
     {{ end }}
     <!--1 Column Content Template-->
     {{ if eq .template "1-column-content" }}
