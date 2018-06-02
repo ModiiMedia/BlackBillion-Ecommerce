@@ -10,7 +10,3 @@ fields:
   name: seo
   label: Seo
   template: seo-fields
-pages:
-- products/sample-women-s-tee.md
-- products/sample-hat.md
-- products/red-hat.md
