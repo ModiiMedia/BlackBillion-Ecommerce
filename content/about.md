@@ -20,7 +20,7 @@ parent = "Explore"
 weight = 1
 [[blocks]]
 heading = "About Black Billion"
-image = "/uploads/hipster-mum-236831-unsplash-1-p-1080.jpeg"
+image = "/uploads/alex-holyoake-361916-unsplash-1.jpg"
 template = "banner-image"
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper metus erat, vel hendrerit tortor tristique a. Cras blandit felis sed leo dignissim, maximus elementum orci dictum. Integer"
 [blocks.button]
