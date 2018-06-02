@@ -37,8 +37,11 @@
                     <div class="tabs-content w-tab-content">
                         {{ if .Params.product_gallery }}
                             {{ range .Params.product_gallery }}
+                                {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                                {{ $resized := $imageResource.Fit "600x2000 q80" }}
+                                {{ $resizedB := $imageResource.Fit "1200x800 q80" }}
                                 <div data-w-tab="{{ . }}" class="tab-pane-2 w-tab-pane">
-                                    <img src="{{ . }}" sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, 36vw" class="image-3" />
+                                    <img src="{{ $resized.RelPermalink }}" sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, 36vw" class="image-3" />
                                     <a href="#" class="lightbox-link w-inline-block w-lightbox">
                                         <div></div>
                                         <script type="application/json" class="w-json">
@@ -47,7 +50,7 @@
                                                     "type": "image",
                                                     "_id": "{{ . }}",
                                                     "origFileName": "{{ . }}",
-                                                    "url": "{{ . }}"
+                                                    "url": "{{ $resizedB.RelPermalink }}"
                                                 }],
                                                 "group": "productGallery"
                                             }
@@ -56,8 +59,11 @@
                                 </div>
                             {{ end }}
                         {{ else }}
+                            {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.Main_Image ) }}
+                            {{ $resized := $imageResource.Fit "700x2000 q80" }}
+                            {{ $resizedB := $imageResource.Fit "1200x800 q80" }}
                             <div data-w-tab="tab-1" class="tab-pane-2 w-tab-pane">
-                                <img src="{{ .Params.main_image }}" sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, 36vw" class="image-3" />
+                                <img src="{{ $resized.RelPermalink }}" sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, 36vw" class="image-3" />
                                 <a href="#" class="lightbox-link w-inline-block w-lightbox">
                                     <div></div>
                                     <script type="application/json" class="w-json">
@@ -66,7 +72,7 @@
                                                 "type": "image",
                                                 "_id": "{{ .Params.main_image }}",
                                                 "origFileName": "{{ .Params.main_image }}",
-                                                "url": "{{ .Params.main_image }}"
+                                                "url": "{{ $resizedB.RelPermalink }}"
                                             }],
                                             "group": "productGallery"
                                         }
@@ -80,12 +86,16 @@
                         {{ if ge $l 2 }}
                             <div class="tabs-menu w-tab-menu">
                                     {{ range first 1 .Params.product_gallery }}
-                                    <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link w--current">
+                                    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                                    {{ $resized := $imageResource.Fill "80x80 q80" }}
+                                    <a data-w-tab="{{ . }}" style="background-image:url({{ $resized.RelPermalink }})" class="tab-link w-inline-block w-tab-link w--current">
                                         <div class="gallery-thumb-overlay"></div>
                                     </a>
                                     {{ end }} 
                                     {{ range after 1 .Params.product_gallery }}
-                                        <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link">
+                                    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                                    {{ $resized := $imageResource.Fill "80x80 q80" }}
+                                        <a data-w-tab="{{ . }}" style="background-image:url({{ $resized.RelPermalink }})" class="tab-link w-inline-block w-tab-link">
                                             <div class="gallery-thumb-overlay"></div>
                                         </a>
                                     {{ end }}

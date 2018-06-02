@@ -15,7 +15,9 @@
                 <div class="collection-item w-dyn-item">
                     <a href="{{ .RelPermalink }}" class="collection-link w-inline-block">
                         {{ if .Params.main_image}}
-                            <div style="background-image:url({{ .Params.main_image }})"class="collection-image"></div>
+                        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.Main_Image ) }}
+                        {{ $resized := $imageResource.Fill "500x250 q80 center" }}
+                            <div style="background-image:url({{ $resized.RelPermalink }})"class="collection-image"></div>
                         {{ end }}
                         <div class="collection-content">
                             <div class="collection-date">{{ .Date.Format "Jan 02, 2006" }}</div>
@@ -24,8 +26,9 @@
                             <div class="read-article">READ ARTICLE &gt;</div>
                         </div>
                     </a> 
+                </div>
                 {{ end }}
-            </div>
+
         </div>
     </div>
 </div>

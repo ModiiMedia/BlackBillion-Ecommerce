@@ -1,13 +1,18 @@
 {{ partial "header.html" . }}
 
-<div style="background-image:url({{ .Params.main_image }})"
+<div 
+    {{ with .Params.Main_Image }}
+        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+        {{ $resized := $imageResource.Fit "1400x500 q80" }}
+        style="background-image:url({{ $resized.RelPermalink }})"
+    {{ end }}
     class="section blog-single">
     <div class="image-overlay"></div>
     <div class="container center-page blog-heading">
         <div class="text-block-6">
             <a href="/{{ .Section }}" class="link">Return to blog</a>
         </div>
-        <h1 class="heading-5">Sed</h1>
+        <h1 class="heading-5">{{ .Title }}</h1>
         {{ if .Params.Author }}<div class="text-block-5">by {{ .Params.Author }}</div>{{ end }}
         <div class="text-block-5">{{ .Date.Format "January 02, 2006"}}</div>
     </div>
@@ -24,7 +29,13 @@
                 <div class="w-dyn-list">
                     <div class="w-dyn-items">
                         <div class="featured-product-wrap w-dyn-item">
-                            <div style="background-image:url({{ .Params.main_image }})" class="blog-product-image"></div>
+                            <div 
+                                {{ with .Params.main_image }}
+                                    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                                    {{ $resized := $imageResource.Fill "400x250 q80 center" }}
+                                    style="background-image:url({{ $resized.RelPermalink }})" 
+                                {{ end }}
+                                class="blog-product-image"></div>
                             <div class="blog-product-content">
                                 <h1 class="heading-6">{{ .Title }}</h1>
                                 <div class="price-single-page {{ if .Params.sale_price }}sale{{ end }}">${{ lang.NumFmt 2 .Params.price }}</div>
