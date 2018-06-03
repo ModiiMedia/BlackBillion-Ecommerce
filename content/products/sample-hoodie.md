@@ -4,7 +4,6 @@ color_tags = []
 date = "2018-06-03T03:50:00-05:00"
 description = "This is a sample hoodie product"
 details = ""
-draft = true
 gender = "mens"
 hover_image = ""
 id = ""
