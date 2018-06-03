@@ -17,7 +17,7 @@ fields:
     - products
   label: Type
   default: products
-  hidden: false
+  hidden: true
 - type: select
   name: layout
   config:
@@ -28,6 +28,7 @@ fields:
     - default
   label: Layout
   default: default
+  hidden: true
 - name: id
   label: Product ID
   type: text
