@@ -22,7 +22,7 @@ buttonLink = "faq.md"
 buttonText = "Learn More"
 heading = "Hello World"
 linkSettings = "Internal Link"
-photo = "/uploads/pete-bellis-462652-unsplash.jpg"
+photo = "/uploads/2.jpg"
 show_button = true
 text = "Text goes here"
 [[sliderSlides]]
