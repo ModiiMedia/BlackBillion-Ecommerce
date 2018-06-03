@@ -12,25 +12,25 @@ weight = 6
 [[featuredBlocks]]
 link = "faq.md"
 photo = "/uploads/drew-graham-338629.jpg"
-text = "Testing 123"
+text = "Block 1"
 [[featuredBlocks]]
 link = "faq.md"
 photo = "/uploads/hipster-mum-236831-unsplash.jpg"
-text = "Testing again"
+text = "Block 2"
 [[sliderSlides]]
 buttonLink = "faq.md"
 buttonText = "Learn More"
-heading = "Hello World"
+heading = "Awesome Heading Goes Here"
 linkSettings = "Internal Link"
 photo = "/uploads/2.jpg"
 show_button = true
-text = "Text goes here"
+text = "Put some text information here"
 [[sliderSlides]]
 buttonLink = "faq.md"
 buttonText = "Learn More"
-heading = "Hello Again"
+heading = "Another Awesome Heading Goes Here"
 linkSettings = "Internal Link"
-photo = "/uploads/christopher-campbell-28567.jpg"
+photo = "/uploads/drew-graham-338629.jpg"
 show_button = true
 
 +++

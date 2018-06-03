@@ -7,7 +7,7 @@
             <div class="slider-slide w-slide"
             {{ with .photo }}
                 {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-                {{ $resized := $imageResource.Fill }}
+                {{ $resized := $imageResource.Fill "1440x700 q80 center" }}
                 style="background-image:url({{ $resized.RelPermalink }})"
             {{ end }}>
                 <div class="slide-content-wrap">
@@ -44,7 +44,7 @@
             <a href="{{ $linkClean }}" class="featured-block w-inline-block" 
             {{ with .photo }}
                 {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-                {{ $resized := $imageResource }}
+                {{ $resized := $imageResource.Fill "700x400 q80 center" }}
                 style="background-image:url({{ $resized.RelPermalink }})"
             {{ end }}>
                 <h1 class="featured-block-heading">{{ .text }}</h1>
