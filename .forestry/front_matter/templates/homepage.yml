@@ -109,3 +109,5 @@ fields:
   label: Type
   hidden: true
   default: page
+pages:
+- _index.md
