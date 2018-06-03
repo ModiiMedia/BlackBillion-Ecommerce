@@ -42,5 +42,6 @@ fields:
   label: Seo
   template: seo-fields
 pages:
+- subcategories/hoodies.md
 - subcategories/shorts.md
 - subcategories/t-shirts.md
