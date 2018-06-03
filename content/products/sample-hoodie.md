@@ -1,10 +1,10 @@
 +++
-category = ""
-color_tags = []
+category = "categories/outerwear.md"
+color_tags = ["white", "gray"]
 date = "2018-06-03T03:50:00-05:00"
 description = "This is a sample hoodie product"
 details = ""
-gender = "mens"
+gender = "womens"
 hover_image = ""
 id = ""
 layout = "default"
@@ -17,7 +17,7 @@ related_products = []
 sale_price = ""
 shipping_details = ""
 social_image = ""
-subcategory = ""
+subcategory = "subcategories/hoodies.md"
 title = "Sample Hoodie"
 url_slug = ""
 variations = []
