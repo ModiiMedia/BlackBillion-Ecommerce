@@ -11,4 +11,5 @@ fields:
   label: Seo
   template: seo-fields
 pages:
+- products/sample-hoodie.md
 - products/sample-t-shirt.md
