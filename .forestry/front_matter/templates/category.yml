@@ -30,7 +30,3 @@ fields:
   name: seo
   label: Seo
   template: seo-fields
-pages:
-- categories/tops.md
-- categories/outerwear.md
-- categories/hats.md
