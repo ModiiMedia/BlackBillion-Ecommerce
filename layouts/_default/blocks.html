@@ -89,7 +89,7 @@
                 {{ $row := .photos_per_row }}
                 {{ range .images }}
                     {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-                    {{ $resized := $imageResource.Fill "400x400 q65 center" }}
+                    {{ $resized := $imageResource.Fill "500x500 q80 center" }}
                     {{ $resizedA := $imageResource.Fit "1200x700 q90"}}
                     <a href="#" class="gallery-thumbnail w-lightbox {{ $row }}">
                         <div class="gallery-thumbnail-inner" style="background-image:URL({{ $resized.RelPermalink }})"></div>
