@@ -3,7 +3,7 @@
 <div 
     {{ with .Params.Main_Image }}
         {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-        {{ $resized := $imageResource.Fit "1400x500 q80" }}
+        {{ $resized := $imageResource.Fill "1400x500 q80 center" }}
         style="background-image:url({{ $resized.RelPermalink }})"
     {{ end }}
     class="section blog-single">
