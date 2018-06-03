@@ -56,3 +56,5 @@ fields:
   template: seo-fields
   label: Seo
   name: seo
+pages:
+- posts/hello-world.md
