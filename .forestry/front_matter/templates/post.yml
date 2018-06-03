@@ -56,6 +56,3 @@ fields:
   template: seo-fields
   label: Seo
   name: seo
-pages:
-- posts/hello-world.md
-- posts/annoucement-new-la-di-da.md
