@@ -8,7 +8,7 @@ gender = "mens"
 hover_image = ""
 id = ""
 layout = "default"
-main_image = ""
+main_image = "/uploads/hieu-vu-minh-191853-unsplash.jpg"
 meta_description = ""
 meta_title = ""
 price = 50
@@ -16,12 +16,20 @@ product_gallery = []
 related_products = []
 sale_price = ""
 shipping_details = ""
-sizes = []
 social_image = ""
 subcategory = ""
 title = "Sample Hoodie"
 url_slug = ""
 variations = []
 weight = 10
+[[sizes]]
+price_change = "0"
+size = "Small"
+[[sizes]]
+price_change = "0"
+size = "Medium"
+[[sizes]]
+price_change = "5"
+size = "Large"
 
 +++
