@@ -1,5 +1,5 @@
 ---
-title: Products Full List Page
+title: Products List Page
 layout: list
 label: testing 123
 name: All Products
