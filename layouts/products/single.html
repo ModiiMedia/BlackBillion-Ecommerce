@@ -71,8 +71,8 @@
                                         {
                                             "items": [{
                                                 "type": "image",
-                                                "_id": "{{ .Params.main_image }}",
-                                                "origFileName": "{{ .Params.main_image }}",
+                                                "_id": "{{ . }}",
+                                                "origFileName": "{{ . }}",
                                                 "url": "{{ $resizedB.RelPermalink }}"
                                             }],
                                             "group": "productGallery"
