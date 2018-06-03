@@ -1,5 +1,5 @@
 +++
-category = ""
+category = "categories/hats.md"
 color_tags = []
 date = "2018-06-03T04:07:14-05:00"
 description = "It's a hat"
