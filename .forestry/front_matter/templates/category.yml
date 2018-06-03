@@ -30,3 +30,5 @@ fields:
   name: seo
   label: Seo
   template: seo-fields
+pages:
+- categories/tops.md
