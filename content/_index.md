@@ -15,7 +15,7 @@ photo = "/uploads/drew-graham-338629.jpg"
 text = "Testing 123"
 [[featuredBlocks]]
 link = "faq.md"
-photo = "/uploads/andreas-fidler-393644.jpg"
+photo = "/uploads/uploads/hipster-mum-236831-unsplash.jpg"
 text = "Testing again"
 [[sliderSlides]]
 buttonLink = "faq.md"
