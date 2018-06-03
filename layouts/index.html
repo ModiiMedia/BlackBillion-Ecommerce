@@ -4,7 +4,7 @@
         {{ range .Params.sliderSlides }}
         {{ $ilink := replace .buttonLink "_index.md" "" }}
         {{ $ilink2 := replace $ilink ".md" "" }}
-            <div class="slider-slide w-slide" 
+            <!--<div class="slider-slide w-slide"
             {{ with .photo }}
                 {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
                 {{ $resized := $imageResource.Fill "1400x600 q80 center" }}
@@ -24,7 +24,7 @@
                         {{ end }}
                     </div>
                 </div>
-            </div>
+            </div>-->
         {{ end }}
     </div>
     <div class="arrow-wrap w-slider-arrow-left">
