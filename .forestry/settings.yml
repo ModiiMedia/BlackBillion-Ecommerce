@@ -4,9 +4,9 @@ auto_deploy: false
 admin_path: "/manager"
 webhook_url: 
 sections: 
-upload_dir: blackbillion
-public_path: ''
+upload_dir: content/uploads
+public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: 
-file_template: ":filename:"
+file_template: 'uploads/:filename:'
 version: 0.38.1
