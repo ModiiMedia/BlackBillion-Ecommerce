@@ -1,5 +1,6 @@
 +++
 date = "2018-06-03T01:52:35-05:00"
+layout = ""
 meta_description = ""
 meta_title = ""
 social_image = ""
@@ -23,6 +24,7 @@ heading = "Hello World"
 linkSettings = "Internal Link"
 photo = "/uploads/pete-bellis-256701-unsplash-1-p-1080.jpeg"
 show_button = true
+text = "Text goes here"
 [[sliderSlides]]
 buttonLink = "subcategories/jackets.md"
 buttonText = "Learn More"
