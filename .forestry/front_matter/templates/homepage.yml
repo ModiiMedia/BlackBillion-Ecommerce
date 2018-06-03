@@ -109,5 +109,12 @@ fields:
   label: Type
   hidden: true
   default: page
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  config:
+    required: true
+  default: home
 pages:
 - _index.md
