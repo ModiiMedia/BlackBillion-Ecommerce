@@ -21,7 +21,7 @@ subcategory = "subcategories/hoodies.md"
 title = "Sample Hoodie"
 url_slug = ""
 variations = []
-weight = 10
+weight = 5
 [[sizes]]
 price_change = "0"
 size = "Small"
