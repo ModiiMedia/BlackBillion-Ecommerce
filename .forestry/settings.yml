@@ -8,5 +8,5 @@ upload_dir: content/uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: 
-file_template: 'uploads/:filename:'
+file_template: ":filename:"
 version: 0.38.1
