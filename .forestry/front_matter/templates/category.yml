@@ -23,6 +23,7 @@ fields:
     - categories
   label: Type
   default: categories
+  hidden: true
 - type: file
   name: main_image
   label: Main Image
