@@ -1,5 +1,5 @@
 +++
-date = "2018-05-15T05:48:47+00:00"
+date = "2018-05-15T05:48:47Z"
 description = "This is my first blog post"
 featured_product = "products/sample-hat.md"
 layout = "default"

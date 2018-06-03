@@ -4,7 +4,10 @@ meta_description = ""
 meta_title = ""
 social_image = ""
 title = "Home"
+type = "page"
 url_slug = ""
+[menu.main]
+weight = 6
 [[featuredBlocks]]
 link = "about.md"
 photo = "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
