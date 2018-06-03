@@ -7,7 +7,7 @@
             <div class="slider-slide w-slide"
             {{ with .photo }}
                 {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-                {{ $resized := $imageResource.Fit "1200x600 q80 center" }}
+                {{ $resized := $imageResource.Fit "1440x700 q80 center" }}
                 style="background-image:url({{ $resized.RelPermalink }})"
             {{ end }}>
                 <div class="slide-content-wrap">
