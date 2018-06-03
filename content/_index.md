@@ -11,18 +11,18 @@ url_slug = ""
 weight = 6
 [[featuredBlocks]]
 link = "faq.md"
-photo = "/uploads/uploads/drew-graham-338629.jpg"
+photo = "/uploads/drew-graham-338629.jpg"
 text = "Testing 123"
 [[featuredBlocks]]
 link = "faq.md"
-photo = "/uploads/uploads/andreas-fidler-393644.jpg"
+photo = "/uploads/andreas-fidler-393644.jpg"
 text = "Testing again"
 [[sliderSlides]]
 buttonLink = "faq.md"
 buttonText = "Learn More"
 heading = "Hello World"
 linkSettings = "Internal Link"
-photo = "/uploads/uploads/pete-bellis-462652-unsplash.jpg"
+photo = "/uploads/pete-bellis-462652-unsplash.jpg"
 show_button = true
 text = "Text goes here"
 [[sliderSlides]]
@@ -30,7 +30,7 @@ buttonLink = "faq.md"
 buttonText = "Learn More"
 heading = "Hello Again"
 linkSettings = "Internal Link"
-photo = "/uploads/uploads/christopher-campbell-28567.jpg"
+photo = "/uploads/christopher-campbell-28567.jpg"
 show_button = true
 
 +++
