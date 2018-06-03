@@ -24,6 +24,7 @@ fields:
     required: true
   label: type
   default: subcategories
+  hidden: true
 - type: select
   name: parent_category
   config:
