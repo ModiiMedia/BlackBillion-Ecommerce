@@ -4,7 +4,7 @@
         {{ range .Params.sliderSlides }}
         {{ $ilink := replace .buttonLink "_index.md" "" }}
         {{ $ilink2 := replace $ilink ".md" "" }}
-            <!--<div class="slider-slide w-slide"
+            <div class="slider-slide w-slide"
             {{ with .photo }}
                 {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
                 {{ $resized := $imageResource.Fill "1400x600 q80 center" }}
@@ -24,7 +24,7 @@
                         {{ end }}
                     </div>
                 </div>
-            </div>-->
+            </div>
         {{ end }}
     </div>
     <div class="arrow-wrap w-slider-arrow-left">
@@ -40,7 +40,7 @@
         {{ range .Params.featuredBlocks }}
         {{ $link := replace .link "_index.md" "" }}
         {{ $linkClean := replace $link ".md" "" }}
-        <!--<div class="feature-grid-item">
+        <div class="feature-grid-item">
             <a href="{{ $linkClean }}" class="featured-block w-inline-block" 
             {{ with .photo }}
                 {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
@@ -49,7 +49,7 @@
             {{ end }}>
                 <h1 class="featured-block-heading">{{ .text }}</h1>
             </a>
-        </div>-->
+        </div>
         {{ end }}
     </div>
     <h1 class="block-header">Recent Styles</h1>
