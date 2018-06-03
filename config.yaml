@@ -18,7 +18,7 @@ menu:
   - identifier: Explore
     name: Explore
     url: "#"
-    weight: 5
+    weight: 4
   - identifier: Tops
     name: Tops
     url: "/categories/tops/"

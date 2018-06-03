@@ -8,7 +8,7 @@ title = "Home"
 type = "page"
 url_slug = ""
 [menu.main]
-weight = 6
+weight = 1
 [[featuredBlocks]]
 link = "faq.md"
 photo = "/uploads/drew-graham-338629.jpg"

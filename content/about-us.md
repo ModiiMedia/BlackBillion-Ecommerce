@@ -7,6 +7,9 @@ social_image = ""
 title = "About Us"
 type = "page"
 url_slug = ""
+[menu.main]
+parent = "Explore"
+weight = 1
 [[blocks]]
 heading = "About Black Billion"
 image = "/uploads/andreas-fidler-393644.jpg"

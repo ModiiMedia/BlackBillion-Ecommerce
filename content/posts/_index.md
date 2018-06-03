@@ -7,7 +7,7 @@ menu:
     identifier: Blog
     name: Blog
     parent: Explore
-    weight: 2
+    weight: 1
   footer:
     identifier: Blog
     name: Blog
