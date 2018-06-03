@@ -4,12 +4,12 @@
         {{ range .Params.sliderSlides }}
         {{ $ilink := replace .buttonLink "_index.md" "" }}
         {{ $ilink2 := replace $ilink ".md" "" }}
-            <div class="slider-slide w-slide" 
-                {{ with .photo }}
+            <!--<div class="slider-slide w-slide"
+            {{ with .photo }}
                 {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-                {{ $resized := $imageResource.Fill "1400x q80" }}
+                {{ $resized := $imageResource.Fill "1400x600 q80 center" }}
                 style="background-image:url({{ $resized.RelPermalink }})"
-                {{ end }}>
+            {{ end }}>
                 <div class="slide-content-wrap">
                     <div class="slide-content">
                         <h1 class="hero-heading">{{ .heading }}</h1>
@@ -24,7 +24,7 @@
                         {{ end }}
                     </div>
                 </div>
-            </div>
+            </div>-->
         {{ end }}
     </div>
     <div class="arrow-wrap w-slider-arrow-left">
@@ -40,17 +40,22 @@
         {{ range .Params.featuredBlocks }}
         {{ $link := replace .link "_index.md" "" }}
         {{ $linkClean := replace $link ".md" "" }}
-        <div class="feature-grid-item">
-            <a href="{{ $linkClean }}" class="featured-block w-inline-block" style="background-image:URL({{ .photo }})">
+        <!--<div class="feature-grid-item">
+            <a href="{{ $linkClean }}" class="featured-block w-inline-block" 
+            {{ with .photo }}
+                {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+                {{ $resized := $imageResource.Fill "700x400 q80 center" }}
+                style="background-image:url({{ $resized.RelPermalink }})"
+            {{ end }}>
                 <h1 class="featured-block-heading">{{ .text }}</h1>
             </a>
-        </div>
+        </div>-->
         {{ end }}
     </div>
     <h1 class="block-header">Recent Styles</h1>
     <div class="w-dyn-list">
         <div class="product-grid-wrap w-dyn-items">
-            {{ range first 2 (where .Site.RegularPages "Section" "products") }}
+            {{ range first 4 (where .Site.RegularPages "Section" "products") }}
                 {{ partial "product-grid-item.html" . }}
             {{ end }}
         </div>
