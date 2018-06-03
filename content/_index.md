@@ -22,7 +22,7 @@ buttonLink = "faq.md"
 buttonText = "Learn More"
 heading = "Awesome Heading Goes Here"
 linkSettings = "Internal Link"
-photo = "/uploads/2.jpg"
+photo = "/uploads/pete-bellis-256701-unsplash.jpg"
 show_button = true
 text = "Put some text information here"
 [[sliderSlides]]
