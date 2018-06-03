@@ -1,7 +1,12 @@
 +++
 date = "2018-06-03T04:15:34-05:00"
-draft = true
-parent_category = "categories/tops.md"
+description = ""
+main_image = ""
+meta_description = ""
+meta_title = ""
+parent_category = "categories/hats.md"
+social_image = ""
 title = "Fedoras"
+url_slug = ""
 
 +++
