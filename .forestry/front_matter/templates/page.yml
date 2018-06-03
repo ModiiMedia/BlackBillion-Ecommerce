@@ -45,3 +45,5 @@ fields:
   label: Seo Fields
   description: ''
   template: seo-fields
+pages:
+- about-us.md
