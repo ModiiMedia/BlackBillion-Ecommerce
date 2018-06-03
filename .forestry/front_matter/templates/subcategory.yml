@@ -40,3 +40,5 @@ fields:
   name: seo
   label: Seo
   template: seo-fields
+pages:
+- subcategories/t-shirts.md
