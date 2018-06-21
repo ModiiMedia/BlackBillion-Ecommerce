@@ -117,4 +117,4 @@ fields:
     required: true
   default: home
 pages:
-- _index.md
+- content/_index.md

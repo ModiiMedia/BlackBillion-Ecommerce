@@ -42,7 +42,7 @@ fields:
   label: Seo
   template: seo-fields
 pages:
-- subcategories/fedoras.md
-- subcategories/snap-backs.md
-- subcategories/hoodies.md
-- subcategories/t-shirts.md
+- content/subcategories/snap-backs.md
+- content/subcategories/fedoras.md
+- content/subcategories/t-shirts.md
+- content/subcategories/hoodies.md

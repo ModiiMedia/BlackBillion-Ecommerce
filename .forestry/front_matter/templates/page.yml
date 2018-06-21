@@ -46,4 +46,4 @@ fields:
   description: ''
   template: seo-fields
 pages:
-- about-us.md
+- content/about-us.md

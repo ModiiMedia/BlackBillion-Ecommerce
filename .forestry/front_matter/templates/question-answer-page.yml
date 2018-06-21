@@ -60,4 +60,4 @@ fields:
   default: faq
   hidden: false
 pages:
-- faq.md
+- content/faq.md

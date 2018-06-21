@@ -52,4 +52,4 @@ fields:
   label: layout
   default: list
 pages:
-- products/_index.md
+- content/products/_index.md

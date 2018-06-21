@@ -9,4 +9,4 @@ public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
-version: 0.38.1
+version: 0.40.3
