@@ -7,7 +7,7 @@ sections:
 - path: content/products
   label: Products
   create: all
-  default_front_matter_template:: product
+  default_front_matter_template: product
 - path: content/posts
   label: Posts
   create: all
