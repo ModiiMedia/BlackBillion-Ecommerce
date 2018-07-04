@@ -7,28 +7,29 @@ sections:
 - path: content/products
   label: Products
   create: all
+  templates:
+  - product
   default_front_matter_template: product
-  templates: ["product"]
 - path: content/categories
   label: Categories
   create: all
-  default_front_matter_template: category
-  templates: ["category"]
+  templates:
+  - category
 - path: content/subcategories
   label: Subcategories
   create: all
-  templates: ["subcategory"]
-  default_front_matter_template: subcategory
+  templates:
+  - subcategory
 - path: content/posts
   label: Posts
   create: all
-  default_front_matter_template: post
-  templates: ["post"]
+  templates:
+  - post
 - path: content
   label: Pages
   create: all
-  default_front_matter_template: page
-  templates: ["page"]
+  templates:
+  - page
 - path: content/uploads
   label: Uploads
   create: all
