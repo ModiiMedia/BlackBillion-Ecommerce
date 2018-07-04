@@ -21,18 +21,19 @@ sections:
   create: all
   templates:
   - subcategory
-  - subcategory
+  - product
 - path: content/posts
   label: Posts
   create: all
   templates:
   - post
-  - post
+  - product
 - path: content
   label: Pages
   create: all
   templates:
-  - page.yml
+  - page
+  - product
 - path: content/uploads
   label: Uploads
   create: all
