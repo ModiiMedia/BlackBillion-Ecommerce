@@ -7,7 +7,7 @@ meta_title: All Products
 meta_description: Shop all products from Black Billion Apparel
 main_image: ''
 list_all: true
-social_image: "/uploads/hipster-mum-236831-unsplash-1-p-500.jpeg"
+social_image: "/uploads/hipster-mum-236831-unsplash.jpg"
 menu:
   main:
     emphasize: true
