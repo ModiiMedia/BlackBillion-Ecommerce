@@ -29,6 +29,14 @@ fields:
   label: Layout
   default: default
   hidden: true
+- type: datetime
+  label: Date
+  name: date
+  description: ''
+  hidden: true
+  config:
+    required: true
+    time_format: h:mm A
 - name: id
   label: Product ID
   type: text
