@@ -22,6 +22,21 @@ title = "Sample T Shirt"
 url_slug = ""
 variations = []
 weight = 5
+[photos]
+hover_image = "/uploads/ian-dooley-347950-unsplash (1).jpg"
+main_image = "/uploads/ian-dooley-347943-unsplash (1).jpg"
+product_gallery = ["/uploads/ian-dooley-347944-unsplash (1).jpg", "/uploads/ian-dooley-347950-unsplash (1).jpg", "/uploads/ian-dooley-347942-unsplash (1).jpg", "/uploads/ian-dooley-347943-unsplash (1).jpg"]
+[product_info]
+description = "My Descption"
+details = ""
+[seo]
+meta_description = ""
+meta_title = ""
+social_image = ""
+url_slug = ""
+[shipping]
+shipping_details = ""
+weight = "10"
 [[sizes]]
 price_change = "0"
 size = "Small"
