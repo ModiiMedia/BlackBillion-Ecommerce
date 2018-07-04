@@ -91,6 +91,22 @@ fields:
   default: ''
   config:
     required: true
+- type: field_group
+  name: product_info
+  label: Product Info
+  fields:
+  - type: textarea
+    name: description
+    label: Short Description
+    config:
+      required: false
+  - type: textarea
+    name: details
+    label: Detailed Description
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
 - type: textarea
   name: details
   label: Detailed description
