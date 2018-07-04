@@ -107,7 +107,7 @@ fields:
       step: '0.01'
     default: '0'
 - name: variations
-  label: Variations
+  label: Variant Group
   type: field_group_list
   fields:
   - type: text
@@ -145,6 +145,10 @@ fields:
     default: true
   hidden: false
   default: ''
+  description: Group for different variations of the product. For example you can
+    have a group call "COLORS" and then under color put "red" "Blue" and "Black"
+  config:
+    labelField: variant_name
 - name: main_image
   label: Main image
   type: file
