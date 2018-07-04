@@ -32,6 +32,6 @@ fields:
   label: Seo
   template: seo-fields
 pages:
-- content/categories/tops.md
-- content/categories/outerwear.md
 - content/categories/hats.md
+- content/categories/outerwear.md
+- content/categories/tops.md

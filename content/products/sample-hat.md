@@ -4,6 +4,7 @@ color_tags = []
 date = "2018-06-03T04:07:14-05:00"
 description = "It's a hat"
 details = ""
+draft = true
 gender = "womens"
 hover_image = "/uploads/tanja-heffner-457655-unsplash (1).jpg"
 id = ""
