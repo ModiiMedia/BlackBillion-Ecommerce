@@ -2,6 +2,7 @@
 category = "categories/tops.md"
 color_tags = ["white", "black"]
 date = "2018-06-03T03:23:45-05:00"
+description = "Sample TShirt"
 details = ""
 gender = "mens"
 hover_image = "/uploads/ian-dooley-347950-unsplash (1).jpg"
