@@ -7,21 +7,32 @@ sections:
 - path: content/products
   label: Products
   create: all
+  templates:
+    - product
 - path: content/posts
   label: Posts
   create: all
+  templates:
+    - post
 - path: content
   label: Pages
   create: all
+  templates: 
+    - page
 - path: content/uploads
   label: Uploads
   create: all
+  hidden: true
 - path: content/subcategories
   label: Subcategories
   create: all
+  templates:
+    - subcategory
 - path: content/categories
   label: Categories
   create: all
+  templates:
+    - category
 upload_dir: content/uploads
 public_path: "/uploads"
 front_matter_path: ''
