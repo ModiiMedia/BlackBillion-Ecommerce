@@ -1,0 +1,29 @@
+baseURL = "https://blackbillionclothing.com"
+languageCode = "en-us"
+title = "Black Billion Clothing"
+[[menu.footer]]
+identifier = "Account Settings"
+name = "Account Settings"
+pre = "snipcart-edit-profile"
+url = "#"
+weight = 2
+[[menu.footer]]
+identifier = "My Orders"
+name = "My Orders"
+pre = "snipcart-user-profile"
+url = "#"
+weight = 1
+[[menu.main]]
+identifier = "Explore"
+name = "Explore"
+url = "#"
+weight = 4
+[[menu.main]]
+identifier = "Tops"
+name = "Tops"
+url = "/categories/tops/"
+weight = 3
+[taxonomies]
+color = "colors"
+tag = "tags"
+genders = "gender"
