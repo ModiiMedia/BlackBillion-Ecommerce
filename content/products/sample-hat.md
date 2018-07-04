@@ -24,9 +24,9 @@ url_slug = ""
 variations = []
 weight = 5
 [photos]
-hover_image = ""
-main_image = ""
-product_gallery = []
+hover_image = "/uploads/allef-vinicius-145443-unsplash (1).jpg"
+main_image = "/uploads/tanja-heffner-457655-unsplash (1).jpg"
+product_gallery = ["/uploads/allef-vinicius-145443-unsplash (1).jpg", "/uploads/tanja-heffner-457655-unsplash (1).jpg"]
 [product_info]
 description = "This is a T-Shirt"
 details = "PRODUCT DETAILS STUFF\n\n## heading\n\n### another heading\n\n* list\n* list\n* lsit"
