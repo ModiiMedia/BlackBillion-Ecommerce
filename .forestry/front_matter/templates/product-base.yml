@@ -63,6 +63,17 @@ fields:
   description: Product weight in grams. (Required for shipping.)
   config:
     required: true
+- type: field_group
+  name: shipping
+  label: Shipping
+  fields:
+  - type: number
+    name: weight
+    label: Weight
+    description: Required for shipping calculations. Weight is in ounces.
+    config:
+      min: '0'
+      required: true
 - name: description
   label: short description
   type: text
