@@ -1,6 +1,7 @@
 +++
 category = ""
 color_tags = []
+date = "2018-07-04T00:00:00-05:00"
 description = "short description goes here"
 details = ""
 gender = "mens"
