@@ -1,14 +1,14 @@
 <div class="grid-item w-dyn-item">
     <a href="{{ .RelPermalink }}" class="grid-link w-inline-block">
         <div 
-        {{ with .Params.main_image }}
+        {{ with .Params.photos.main_image }}
             {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
             {{ $resized := $imageResource.Fill "350x450 q80 center" }}
             style="background-image:url({{ $resized.RelPermalink }})"
         {{ end }}
             class="grid-photo-main">
             <div 
-            {{ with .Params.hover_image }}
+            {{ with .Params.photos.hover_image }}
                 {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
                 {{ $resized := $imageResource.Fill "350x450 q80 center" }}
                 style="background-image:url({{ $resized.RelPermalink }})"

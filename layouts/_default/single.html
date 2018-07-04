@@ -30,7 +30,7 @@
                     <div class="w-dyn-items">
                         <div class="featured-product-wrap w-dyn-item">
                             <div 
-                                {{ with .Params.main_image }}
+                                {{ with .Params.photos.main_image }}
                                     {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
                                     {{ $resized := $imageResource.Fill "400x250 q80 center" }}
                                     style="background-image:url({{ $resized.RelPermalink }})" 
@@ -40,7 +40,7 @@
                                 <h1 class="heading-6">{{ .Title }}</h1>
                                 <div class="price-single-page {{ if .Params.sale_price }}sale{{ end }}">${{ lang.NumFmt 2 .Params.price }}</div>
                                 {{ if .Params.sale_price }}<div class="price-single-page">${{ lang.NumFmt 2 .Params.sale_price }}</div>{{ end }}
-                                <p>It&#x27;s a super comfy sweater.</p>
+                                <p>{{ .Params.product_info.description }}</p>
                                 <a href="{{ .RelPermalink }}" class="add-to-cart w-button">Purchase Now</a>
                             </div>
                         </div>

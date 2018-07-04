@@ -59,7 +59,7 @@
                                 </div>
                             {{ end }}
                         {{ else }}
-                            {{ with .Params.Main_Image }}
+                            {{ with .Params.photos.Main_Image }}
                             {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
                             {{ $resized := $imageResource.Fit "700x2000 q80" }}
                             {{ $resizedB := $imageResource.Fit "1200x800 q80" }}
@@ -83,7 +83,7 @@
                             {{ end }}
                         {{ end }}
                     </div>
-                    {{ $l := len .Params.product_gallery }}
+                    {{ $l := len .Params.photos.product_gallery }}
                     {{ if .Params.product_gallery  }}
                         {{ if ge $l 2 }}
                             <div class="tabs-menu w-tab-menu">
@@ -113,7 +113,7 @@
                         {{ end }}
                     {{ else }}
                         <div class="tabs-menu w-tab-menu" style="display:none">
-                            <a data-w-tab="tab-1" style="background-image:url({{ .Params.main_image }})" class="tab-link w-inline-block w-tab-link w--current">
+                            <a data-w-tab="tab-1" style="background-image:url({{ .Params.photos.main_image }})" class="tab-link w-inline-block w-tab-link w--current">
                                 <div class="gallery-thumb-overlay"></div>
                             </a>
                         </div>
@@ -126,7 +126,7 @@
                 {{ if .Params.price }}<div class="price-single-page {{ if $sale }}sale{{ end }}">${{ lang.NumFmt 2 $price }}</div>
                 {{ if $sale }}
                 <div class="price-single-page">${{ lang.NumFmt 2 $sale }}</div>{{ end }}{{ end }}
-                <p class="product-summary">{{ .Description }}</p>
+                <p class="product-summary">{{ .Params.product_info.description }}</p>
                 <!--product options-->
                 <div class="w-form">
                     <form id="product-form">
@@ -153,7 +153,7 @@
                         <div class="w-embed">
                             <a id="checkoutButton" class="add-to-cart w-button snipcart-add-item" data-item-id="{{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .UniqueID }}{{ end }}"
                                 data-item-name="{{ .Title }}" data-item-price="{{ if $sale }}{{ $sale }}{{ else }}{{ $price }}{{ end }}"
-                                data-item-weight="{{ .Params.Weight }}" data-item-quantity="1" data-item-url="{{ .Permalink }}" data-item-image="{{ .Params.Main_Image }}"
+                                data-item-weight="{{ .Params.shipping.Weight }}" data-item-quantity="1" data-item-url="{{ .Permalink }}" data-item-image="{{ .Params.photos.Main_Image }}"
                                 {{ if .Params.Sizes }}data-item-custom1-name="Size" data-item-custom1-value="" data-item-custom1-options="{{ range first 1 .Params.Sizes }}{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}{{ range after 1 .Params.Sizes }}|{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}"{{ end }}
                                     
                                 {{ range $index, $element := .Params.Variations }}
@@ -176,7 +176,7 @@
                         </div>
                         <div data-w-id="2c832112-b19a-82ac-bfb9-e5f945e85bba" class="accordiant-inline-block">Product ID: {{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .UniqueID }}{{ end }}</div>
                         <div data-w-id="dbdacc86-ffbe-d57f-8178-e54484606e38" class="accordian-content w-richtext">
-                            {{ if .Params.details }}{{ .Params.details | markdownify }}{{ else }}<p>No additional details</p>{{ end }}
+                            {{ if .Params.product_info.details }}{{ .Params.product_info.details | markdownify }}{{ else }}<p>No additional details</p>{{ end }}
                         </div>
                     </div>
                     <div class="accordian-item">
@@ -186,8 +186,8 @@
                             <div class="arrow-up"></div>
                         </div>
                         <div class="accordian-content w-richtext">
-                            {{ if .Params.shipping_details }}
-                                {{ .Params.shipping_details | markdownify }}
+                            {{ if .Params.shipping.shipping_details }}
+                                {{ .Params.shipping.shipping_details | markdownify }}
                             {{ else }}
                                 <p>No specifics for shipping regarding this product.</p>
                                 <p>For information regarding our shipping procedures visit our <a href="/faq"><b>faq page</b></a></p>
