@@ -23,5 +23,20 @@ title = "Sample Hat"
 url_slug = ""
 variations = []
 weight = 5
+[photos]
+hover_image = ""
+main_image = ""
+product_gallery = []
+[product_info]
+description = "This is a T-Shirt"
+details = "PRODUCT DETAILS STUFF\n\n## heading\n\n### another heading\n\n* list\n* list\n* lsit"
+[seo]
+meta_description = ""
+meta_title = ""
+social_image = ""
+url_slug = ""
+[shipping]
+shipping_details = ""
+weight = "10"
 
 +++
