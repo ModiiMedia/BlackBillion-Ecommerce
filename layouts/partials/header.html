@@ -10,10 +10,18 @@
         </a>
         <a href="/" class="logo w-inline-block w--current">
           <div class="logo-text">Black</div>
-          <img src="{{ $.Site.Data.settings.general.logo_dark }}"
-            width="251" sizes="(max-width: 767px) 100vw, 251px" class="image" />
-          <img src="{{ $.Site.Data.settings.general.logo_white }}" width="251"
+          {{ with $.Site.Data.settings.general.logo_dark }}
+            {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+            {{ $resized := $imageResource.Fit "250x500 q80 center" }}
+            <img src="{{ $resized.RelPermalink }}"
+              width="251" sizes="(max-width: 767px) 100vw, 251px" class="image" />
+          {{ end }}
+          {{ with $.Site.Data.settings.general.logo_white }}
+            {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+            {{ $resized := $imageResource.Fit "200x300 q80 center" }}
+            <img src="{{ $.Site.Data.settings.general.logo_white }}" width="251"
             sizes="(max-width: 479px) 42vw, (max-width: 767px) 31vw, 100vw" class="image-mobile" />
+          {{ end }}
           <div class="logo-text">Billion</div>
         </a>
         <div class="unused-styles">
