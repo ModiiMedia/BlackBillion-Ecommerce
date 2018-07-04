@@ -57,12 +57,6 @@ fields:
   label: Sale Price
   name: sale_price
   description: Setting a sale price will override the original price
-- type: number
-  name: weight
-  label: Weight
-  description: Product weight in grams. (Required for shipping.)
-  config:
-    required: true
 - type: field_group
   name: shipping
   label: Shipping
@@ -84,13 +78,6 @@ fields:
     description: Customers will automatically be linked to the shipping section in
       the FAQ. However if there is something specific to this product regarding shipping
       fill out this section.
-- name: description
-  label: short description
-  type: text
-  hidden: false
-  default: ''
-  config:
-    required: true
 - type: field_group
   name: product_info
   label: Product Info
@@ -107,26 +94,6 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
-- type: textarea
-  name: details
-  label: Detailed description
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
-  description: More detailed description of the product. You can specify washing instructions,
-    include a pricing chart, specify the clothing material, or anything else that
-    you think is relevant for you customers to know.
-- type: textarea
-  name: shipping_details
-  label: Shipping Details
-  description: Customers will be linked to the shipping section in the FAQ. However
-    if there is something specific to this product regarding shipping fill out this
-    section.
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
 - type: field_group_list
   name: sizes
   label: Sizes
@@ -147,7 +114,7 @@ fields:
       step: '0.01'
     default: '0'
 - name: variations
-  label: Variant Group
+  label: Variant Groups
   type: field_group_list
   fields:
   - type: text
@@ -185,30 +152,28 @@ fields:
     default: true
   hidden: false
   default: ''
-  description: Group for different variations of the product. For example you can
-    have a group call "COLORS" and then under color put "red" "Blue" and "Black"
+  description: Groups for different variations of the product. For example you can
+    have a group call "COLORS" and then under colors put "red" "Blue" and "Black"
   config:
     labelField: variant_name
-- name: main_image
-  label: Main image
-  type: file
-  hidden: false
-  default: ''
-  description: Main product image that will show on product grids and on social media
-    when shared
-- name: hover_image
-  label: Hover image
-  type: file
-  hidden: false
-  default: ''
-  description: Image that appears when people hover over a product in the product
-    grid.
-- name: product_gallery
-  label: Product gallery
-  type: image_gallery
-  hidden: false
-  default: ''
-  description: Photo gallery for viewing on the product page
+- type: field_group
+  name: photos
+  label: Photos
+  fields:
+  - type: file
+    name: main_image
+    label: Main Image
+    description: Main product image that will show on product grids and on social
+      media when shared
+  - type: file
+    description: Image that appears when people hover over a product in the product
+      grid.
+    label: Hover Image
+    name: hover_image
+  - type: image_gallery
+    description: Photo gallery for viewing on the product page
+    label: Product Gallery
+    name: product_gallery
 - type: list
   name: related_products
   label: Related Products
