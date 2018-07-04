@@ -57,4 +57,5 @@ fields:
   label: Seo
   name: seo
 pages:
+- content/posts/your-first-post.md
 - content/posts/hello-world.md
