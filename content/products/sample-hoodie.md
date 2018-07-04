@@ -1,7 +1,6 @@
 +++
 category = "categories/outerwear.md"
 color_tags = ["white", "gray"]
-date = "2018-06-03T03:50:00-05:00"
 description = "This is a sample hoodie product"
 details = ""
 gender = "womens"
