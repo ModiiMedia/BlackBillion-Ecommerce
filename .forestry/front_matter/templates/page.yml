@@ -7,30 +7,6 @@ fields:
   label: Title
   config:
     required: true
-- type: select
-  name: type
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - page
-  label: type
-  description: ''
-  hidden: false
-  default: page
-- type: select
-  name: layout
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - blocks
-  label: layout
-  description: ''
-  hidden: false
-  default: blocks
 - type: blocks
   template_types:
   - banner-image
@@ -45,5 +21,29 @@ fields:
   label: Seo Fields
   description: ''
   template: seo-fields
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - blocks
+  label: layout
+  description: ''
+  hidden: false
+  default: blocks
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - page
+  label: type
+  description: ''
+  hidden: false
+  default: page
 pages:
 - content/about-us.md
