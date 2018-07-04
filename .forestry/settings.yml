@@ -14,17 +14,18 @@ sections:
   label: Categories
   create: all
   templates:
-  - category.yml
+  - category
+  - product
 - path: content/subcategories
   label: Subcategories
   create: all
   templates:
-  - subcategory.yml
+  - subcategory
 - path: content/posts
   label: Posts
   create: all
   templates:
-  - post.yml
+  - post
 - path: content
   label: Pages
   create: all
