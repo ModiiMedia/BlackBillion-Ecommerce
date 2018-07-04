@@ -12,7 +12,7 @@ fields:
   template: seo-fields
 pages:
 - content/products/crew-neck-t-shirt-.md
-- content/products/snapback.md
 - content/products/sample-hoodie.md
+- content/products/snapback.md
 - content/products/sample-t-shirt.md
 - content/products/sample-hat.md

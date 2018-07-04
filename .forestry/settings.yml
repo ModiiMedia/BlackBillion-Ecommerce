@@ -8,17 +8,17 @@ sections:
   label: Products
   create: all
   templates:
-  - "product"
+  - product
 - path: content/posts
   label: Posts
   create: all
   templates:
-  - "post"
+  - post
 - path: content
   label: Pages
   create: all
-  templates: 
-  - "page"
+  templates:
+  - page
 - path: content/uploads
   label: Uploads
   create: all
@@ -27,15 +27,15 @@ sections:
   label: Subcategories
   create: all
   templates:
-  - "subcategory"
+  - subcategory
 - path: content/categories
   label: Categories
   create: all
   templates:
-  - "category"
+  - category
 upload_dir: content/uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
-version: 0.40.3
+version: 0.42.1
