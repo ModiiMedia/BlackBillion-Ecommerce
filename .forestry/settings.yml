@@ -21,10 +21,12 @@ sections:
   create: all
   templates:
   - subcategory
+  - subcategory
 - path: content/posts
   label: Posts
   create: all
   templates:
+  - post
   - post
 - path: content
   label: Pages
