@@ -36,11 +36,6 @@ fields:
   default: ''
   description: Create a unique product id for Snipcart. If you leave this blank one
     will be generated based on the product TITLE above.
-- name: date
-  label: Date
-  type: datetime
-  hidden: false
-  default: ''
 - name: price
   label: Price
   type: text
