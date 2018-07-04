@@ -8,14 +8,17 @@ sections:
   label: Products
   create: all
   default_front_matter_template: product
+  templates: ["product"]
 - path: content/posts
   label: Posts
   create: all
   default_front_matter_template: post
+  templates: ["post"]
 - path: content
   label: Pages
   create: all
   default_front_matter_template: page
+  templates: ["page"]
 - path: content/uploads
   label: Uploads
   create: all
@@ -23,11 +26,13 @@ sections:
 - path: content/subcategories
   label: Subcategories
   create: all
+  templates: ["subcategory"]
   default_front_matter_template: subcategory
 - path: content/categories
   label: Categories
   create: all
   default_front_matter_template: category
+  templates: ["category"]
 upload_dir: content/uploads
 public_path: "/uploads"
 front_matter_path: ''
