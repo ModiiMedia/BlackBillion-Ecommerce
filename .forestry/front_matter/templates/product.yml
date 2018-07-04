@@ -10,3 +10,5 @@ fields:
   name: seo
   label: Seo
   template: seo-fields
+pages:
+- content/new-page.md
