@@ -70,7 +70,7 @@ fields:
   - type: number
     name: weight
     label: Weight
-    description: Required for shipping calculations. Weight is in ounces.
+    description: Required for shipping calculations. Weight is in grams.
     config:
       min: '0'
       required: true
