@@ -74,6 +74,16 @@ fields:
     config:
       min: '0'
       required: true
+  - type: textarea
+    name: shipping_details
+    label: Shipping Details
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+    description: Customers will automatically be linked to the shipping section in
+      the FAQ. However if there is something specific to this product regarding shipping
+      fill out this section.
 - name: description
   label: short description
   type: text
