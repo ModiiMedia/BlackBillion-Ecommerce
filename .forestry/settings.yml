@@ -14,22 +14,23 @@ sections:
   label: Categories
   create: all
   templates:
-  - category
+  - category.yml
+  default_front_matter_template: category
 - path: content/subcategories
   label: Subcategories
   create: all
   templates:
-  - subcategory
+  - subcategory.yml
 - path: content/posts
   label: Posts
   create: all
   templates:
-  - post
+  - post.yml
 - path: content
   label: Pages
   create: all
   templates:
-  - page
+  - page.yml
 - path: content/uploads
   label: Uploads
   create: all
