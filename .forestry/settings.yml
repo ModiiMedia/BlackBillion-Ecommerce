@@ -15,7 +15,6 @@ sections:
   create: all
   templates:
   - category.yml
-  default_front_matter_template: category
 - path: content/subcategories
   label: Subcategories
   create: all
