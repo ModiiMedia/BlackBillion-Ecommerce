@@ -24,17 +24,10 @@ text = "Shop Hats"
 [[sliderSlides]]
 buttonLink = "subcategories/t-shirts.md"
 buttonText = "Shop Now"
-heading = "New T-Shirts"
+heading = "Create An Awesome Heading"
 linkSettings = "Internal Link"
-photo = "/uploads/IMG_23391.jpg"
+photo = "/uploads/hipster-mum-236831-unsplash.jpg"
 show_button = true
-text = "Get the latest Black Billion gear"
-[[sliderSlides]]
-buttonLink = "subcategories/snapbacks.md"
-buttonText = "Shop Now"
-heading = "Snapbacks by Black Billion"
-linkSettings = "Internal Link"
-photo = "/uploads/IMG_22111.jpg"
-show_button = true
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis magna vitae consectetur egestas. Pellentesque lorem nulla, pharetra sit amet varius et, lobortis mollis nunc. Nullam rutrum augue vitae placerat interdum. "
 
 +++
