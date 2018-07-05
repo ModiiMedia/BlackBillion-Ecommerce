@@ -1,7 +1,8 @@
 +++
+age = "adults"
 date = "2018-07-04T00:00:00-05:00"
 details = ""
-gender = "unisex (adult)"
+gender = ["female", "male"]
 id = ""
 layout = "default"
 main_image = ""
@@ -12,6 +13,7 @@ related_products = []
 sale_price = ""
 social_image = ""
 title = "Classic Snapback (Red)"
+undefined = []
 [categories_and_tags]
 category = "categories/hats.md"
 colors = ["red"]

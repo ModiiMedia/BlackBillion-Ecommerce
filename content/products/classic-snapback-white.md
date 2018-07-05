@@ -1,12 +1,14 @@
 +++
+age = "adults"
 date = "2018-07-05T11:21:37-05:00"
-gender = "unisex (adult)"
+gender = ["female", "male"]
 id = ""
 layout = "default"
 price = 20
 related_products = []
 sale_price = ""
 title = "Classic Snapback (White)"
+undefined = []
 variations = []
 [categories_and_tags]
 category = "categories/hats.md"
