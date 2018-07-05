@@ -26,7 +26,7 @@ buttonLink = "subcategories/t-shirts.md"
 buttonText = "Shop Now"
 heading = "Create An Awesome Heading"
 linkSettings = "Internal Link"
-photo = "/uploads/hipster-mum-236831-unsplash.jpg"
+photo = "/uploads/pete-bellis-256701-unsplash.jpg"
 show_button = true
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis magna vitae consectetur egestas. Pellentesque lorem nulla, pharetra sit amet varius et, lobortis mollis nunc. Nullam rutrum augue vitae placerat interdum. "
 
