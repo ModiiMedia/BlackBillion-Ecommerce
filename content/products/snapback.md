@@ -23,6 +23,10 @@ title = "SnapBack"
 url_slug = ""
 variations = []
 weight = 5
+[categories_and_tags]
+category = "categories/hats.md"
+colors = ["red"]
+subcategory = "subcategories/snap-backs.md"
 [photos]
 hover_image = ""
 main_image = ""
