@@ -4,7 +4,7 @@ main_image = "/uploads/IMG_24071 (1).jpg"
 title = "Tops"
 type = ""
 [menu.main]
-weight = 1
+weight = 2
 [seo]
 meta_description = ""
 meta_title = ""

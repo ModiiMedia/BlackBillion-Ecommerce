@@ -9,7 +9,7 @@ title = "Hats"
 type = ""
 url_slug = ""
 [menu.main]
-weight = 2
+weight = 4
 [seo]
 meta_description = ""
 meta_title = ""

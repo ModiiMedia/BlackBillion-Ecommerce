@@ -13,6 +13,6 @@ menu:
     emphasize: true
     identifier: All
     name: All Products
-    weight: 2
+    weight: 3
 
 ---
