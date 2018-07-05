@@ -1,6 +1,6 @@
 +++
 description = ""
-main_image = ""
+main_image = "/uploads/IMG_22121.jpg"
 meta_description = ""
 meta_title = "Snap Back Hats"
 parent_category = "categories/hats.md"
