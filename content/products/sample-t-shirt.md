@@ -22,6 +22,10 @@ title = "Sample T Shirt"
 url_slug = ""
 variations = []
 weight = 5
+[categories_and_tags]
+category = "categories/tops.md"
+colors = ["white", "black", "gray"]
+subcategory = "subcategories/t-shirts.md"
 [photos]
 hover_image = "/uploads/ian-dooley-347950-unsplash (1).jpg"
 main_image = "/uploads/ian-dooley-347943-unsplash (1).jpg"
