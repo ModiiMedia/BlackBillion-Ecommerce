@@ -10,7 +10,7 @@ title = "Classic Snapback (White)"
 variations = []
 [categories_and_tags]
 category = "categories/hats.md"
-colors = ["white"]
+colors = ["orange", "white"]
 subcategory = "subcategories/snapbacks.md"
 [photos]
 hover_image = ""
