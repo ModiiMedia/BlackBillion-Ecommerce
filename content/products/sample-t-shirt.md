@@ -9,12 +9,6 @@ variations = []
 related_products = []
 sale_price = 20
 [categories_and_tags]
-subcategory = "subcategories/t-shirts.md"
-title = "Sample T Shirt"
-url_slug = ""
-variations = []
-weight = 5
-[categories_and_tags]
 category = "categories/tops.md"
 colors = ["white", "black", "gray"]
 subcategory = "subcategories/t-shirts.md"
