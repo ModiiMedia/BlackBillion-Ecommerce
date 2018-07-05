@@ -1,6 +1,5 @@
 +++
 date = "2018-07-05T11:21:37-05:00"
-draft = true
 gender = "unisex (adult)"
 id = ""
 layout = "default"
@@ -11,8 +10,8 @@ title = "Classic Snapback (White)"
 variations = []
 [categories_and_tags]
 category = "categories/hats.md"
-colors = ["orange", "white"]
-subcategory = "subcategories/snap-backs.md"
+colors = ["white"]
+subcategory = "subcategories/snapbacks.md"
 [photos]
 hover_image = ""
 main_image = "/uploads/IMG_22371cropped.jpg"
