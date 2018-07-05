@@ -5,8 +5,8 @@
     <div class="container">
         <div class="breadcrumbs-wrap">
             <div class="breadcrumbs">
-                <a href="/products">All Products</a> / {{ if .Params.gender }}
-                <a href="/gender/{{ .Params.Gender | urlize}}">{{ .Params.Gender | title }}</a> /{{ end }} 
+                <a href="/products">All Products</a> / 
+                <!--<a href="/gender/"></a> /-->
                 
                 {{ if $f }}
                     {{ range .Site.RegularPages }}
