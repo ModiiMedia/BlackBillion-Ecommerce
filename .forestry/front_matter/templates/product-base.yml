@@ -238,5 +238,3 @@ fields:
   config:
     required: true
     time_format: h:mm A
-- type: list
-- type: tag_list
