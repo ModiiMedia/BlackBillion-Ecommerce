@@ -7,6 +7,21 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: select
+  name: gender
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - mens
+    - womens
+    - unisex (adult)
+    - boys
+    - girls
+    - unisex (kids)
+  label: Gender
+  default: mens
 - name: id
   label: Product ID
   type: text
@@ -144,6 +159,33 @@ fields:
     description: Photo gallery for viewing on the product page
     label: Product Gallery
     name: product_gallery
+- type: field_group
+  name: categories_and_tags
+  label: Categories & Tags
+  fields:
+  - type: select
+    name: category
+    config:
+      source:
+        type: pages
+        section: categories
+    label: Category
+  - type: select
+    name: subcategory
+    config:
+      source:
+        type: pages
+        section: subcategories
+    label: Subcategory
+    description: You can add new subcategories in the "Subcategory" tab on the left
+  - type: select
+    name: colors
+    config:
+      source:
+        type: datafiles
+        file: taxonomy_data-yaml
+        path: product_color_tags
+    label: Color Tags
 - type: list
   name: related_products
   label: Related Products
@@ -152,47 +194,6 @@ fields:
     source:
       type: pages
       section: products
-- type: select
-  name: category
-  config:
-    source:
-      type: pages
-      section: categories
-    required: false
-  label: Category
-  default: 
-- type: select
-  name: subcategory
-  config:
-    source:
-      type: pages
-      section: subcategories
-    required: false
-  label: Subcategory
-- type: select
-  name: gender
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - mens
-    - womens
-    - unisex (adult)
-    - boys
-    - girls
-    - unisex (kids)
-  label: Gender
-  default: mens
-- type: list
-  name: color_tags
-  label: Color Tags
-  config:
-    use_select: true
-    source:
-      type: datafiles
-      file: taxonomy_data-yaml
-      path: product_color_tags
 - type: select
   name: type
   config:
