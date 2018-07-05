@@ -8,6 +8,8 @@ social_image = ""
 title = "Hats"
 type = ""
 url_slug = ""
+[menu.main]
+weight = 2
 [seo]
 meta_description = ""
 meta_title = ""
