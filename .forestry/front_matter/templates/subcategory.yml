@@ -43,5 +43,4 @@ fields:
   template: seo-fields
 pages:
 - content/subcategories/t-shirts.md
-- content/subcategories/fedoras.md
 - content/subcategories/snapbacks.md
