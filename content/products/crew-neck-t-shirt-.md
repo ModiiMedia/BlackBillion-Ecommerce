@@ -8,10 +8,11 @@ price = 15
 related_products = []
 sale_price = ""
 variations = []
+weight = 1
 [categories_and_tags]
-subcategory = "subcategories/t-shirts.md"
 category = "categories/tops.md"
-color_tags = []
+colors = "gray"
+subcategory = "subcategories/t-shirts.md"
 [photos]
 hover_image = ""
 main_image = ""
