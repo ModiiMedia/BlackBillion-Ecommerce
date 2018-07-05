@@ -1,6 +1,5 @@
 +++
-category = "categories/tops.md"
-color_tags = []
+title = "Crew-neck t-shirt "
 date = "2018-07-03T20:16:46-05:00"
 gender = "mens"
 id = ""
@@ -8,9 +7,11 @@ layout = "default"
 price = 15
 related_products = []
 sale_price = ""
-subcategory = "subcategories/t-shirts.md"
-title = "Crew-neck t-shirt "
 variations = []
+[categories_and_tags]
+subcategory = "subcategories/t-shirts.md"
+category = "categories/tops.md"
+color_tags = []
 [photos]
 hover_image = ""
 main_image = ""

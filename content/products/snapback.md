@@ -1,6 +1,5 @@
 +++
-category = "categories/hats.md"
-color_tags = ["red"]
+title = "SnapBack"
 date = "2018-07-04T00:00:00-05:00"
 details = ""
 gender = "unisex (adult)"
@@ -14,9 +13,11 @@ related_products = []
 sale_price = ""
 sizes = []
 social_image = ""
-subcategory = "subcategories/snap-backs.md"
-title = "SnapBack"
 variations = []
+[categories_and_tags]
+subcategory = "subcategories/snap-backs.md"
+category = "categories/hats.md"
+colors = ["red"]
 [photos]
 hover_image = ""
 main_image = ""

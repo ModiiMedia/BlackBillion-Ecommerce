@@ -1,16 +1,17 @@
 +++
-category = "categories/tops.md"
-color_tags = ["white", "black"]
+title = "Sample T Shirt"
 date = "2018-06-03T03:23:45-05:00"
 gender = "mens"
 id = ""
 layout = "default"
 price = 50
+variations = []
 related_products = []
 sale_price = 20
+[categories_and_tags]
 subcategory = "subcategories/t-shirts.md"
-title = "Sample T Shirt"
-variations = []
+category = "categories/tops.md"
+colors = ["white", "black"]
 [photos]
 hover_image = "/uploads/ian-dooley-347950-unsplash (1).jpg"
 main_image = "/uploads/ian-dooley-347943-unsplash (1).jpg"

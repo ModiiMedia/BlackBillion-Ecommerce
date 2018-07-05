@@ -49,7 +49,7 @@
         <div class="column-right p-grid">
             <div class="product-grid-wrap w-dyn-items" style="width: 100%">
             {{ range $.Site.RegularPages }}
-                {{ if eq .Params.subcategory $catFile }}
+                {{ if eq .Params.categories_and_tags.subcategory $catFile }}
                     {{ partial "product-grid-item.html" . }}
                 {{ end }}
             {{ end }}
