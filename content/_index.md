@@ -26,15 +26,15 @@ buttonLink = "subcategories/t-shirts.md"
 buttonText = "Shop Now"
 heading = "New T-Shirts"
 linkSettings = "Internal Link"
-photo = "/uploads/IMG_24071 (1).jpg"
+photo = "/uploads/IMG_23391.jpg"
 show_button = true
 text = "Get the latest Black Billion gear"
 [[sliderSlides]]
-buttonLink = "faq.md"
-buttonText = "Learn More"
-heading = "Another Awesome Heading Goes Here"
+buttonLink = "subcategories/snapbacks.md"
+buttonText = "Shop Now"
+heading = "Snapbacks by Black Billion"
 linkSettings = "Internal Link"
-photo = "/uploads/drew-graham-338629.jpg"
+photo = "/uploads/IMG_22111.jpg"
 show_button = true
 
 +++
