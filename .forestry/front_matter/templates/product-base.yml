@@ -46,6 +46,7 @@ fields:
   default: ''
   config:
     required: true
+  description: Enter price
 - type: number
   config:
     step: '0.01'
