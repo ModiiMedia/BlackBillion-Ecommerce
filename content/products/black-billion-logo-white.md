@@ -7,7 +7,7 @@ layout = "default"
 price = 20
 related_products = []
 sale_price = ""
-title = "Black Billion Logo (White)"
+title = "Black Billion Logo Tee (White)"
 variations = []
 [categories_and_tags]
 category = "categories/tops.md"
