@@ -6,12 +6,8 @@ fields:
   template: product-template-tops
   label: Main Fields
   name: main_fields
-- type: field_group
+- type: include
   name: seo
-  label: SEO
-  fields:
-  - type: include
-    template: seo-fields
-    label: Seo
-    name: seo
-  description: Search Engine Optimization
+  label: Seo
+  description: ''
+  template: seo-fields
