@@ -9,6 +9,10 @@ type = "page"
 url_slug = ""
 [menu.main]
 weight = 1
+[seo]
+meta_description = ""
+meta_title = ""
+social_image = ""
 [[featuredBlocks]]
 link = "faq.md"
 photo = "/uploads/drew-graham-338629.jpg"
@@ -18,13 +22,13 @@ link = "faq.md"
 photo = "/uploads/hipster-mum-236831-unsplash.jpg"
 text = "Block 2"
 [[sliderSlides]]
-buttonLink = "faq.md"
-buttonText = "Learn More"
-heading = "Awesome Heading Goes Here"
+buttonLink = "subcategories/t-shirts.md"
+buttonText = "Shop Now"
+heading = "New T-Shirts"
 linkSettings = "Internal Link"
-photo = "/uploads/pete-bellis-256701-unsplash.jpg"
+photo = "/uploads/IMG_24071 (1).jpg"
 show_button = true
-text = "Put some text information here"
+text = "Get the latest Black Billion gear"
 [[sliderSlides]]
 buttonLink = "faq.md"
 buttonText = "Learn More"
