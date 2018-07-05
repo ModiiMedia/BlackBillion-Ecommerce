@@ -33,5 +33,4 @@ fields:
   template: seo-fields
 pages:
 - content/categories/hats.md
-- content/categories/outerwear.md
 - content/categories/tops.md
