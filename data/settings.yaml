@@ -8,11 +8,11 @@ general:
   favicon: "/uploads/favicon-32x32.png"
 contact_info:
   company_name: Black Billion Apparel
-  street_address: 11111 Some Street
+  street_address: ''
   city: Houston
   state: Texas
-  zip_code: 78230
-  phone: 210-316-3129
+  zip_code: ''
+  phone: "+1-832-368-6586"
   email: blackbillion@yahoo.com
 social_media:
 - Icon: Twitter
