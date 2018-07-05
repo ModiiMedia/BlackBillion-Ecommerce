@@ -23,6 +23,10 @@ title = "Sample Hat"
 url_slug = ""
 variations = []
 weight = 5
+[categories_and_tags]
+category = "categories/hats.md"
+colors = "blue"
+subcategory = "subcategories/fedoras.md"
 [photos]
 hover_image = "/uploads/allef-vinicius-145443-unsplash (1).jpg"
 main_image = "/uploads/tanja-heffner-457655-unsplash (1).jpg"
