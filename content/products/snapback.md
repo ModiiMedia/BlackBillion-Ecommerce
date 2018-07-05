@@ -15,7 +15,7 @@ title = "Classic Snapback (Red)"
 [categories_and_tags]
 category = "categories/hats.md"
 colors = ["red"]
-subcategory = "subcategories/snap-backs.md"
+subcategory = "subcategories/snapbacks.md"
 [photos]
 hover_image = ""
 main_image = "/uploads/IMG_24251.jpg"
