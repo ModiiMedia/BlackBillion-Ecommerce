@@ -14,18 +14,10 @@ sale_price = ""
 sizes = []
 social_image = ""
 variations = []
-<<<<<<< HEAD
-[categories_and_tags]
-subcategory = "subcategories/snap-backs.md"
-category = "categories/hats.md"
-colors = ["red"]
-=======
-weight = 5
 [categories_and_tags]
 category = "categories/hats.md"
 colors = ["red"]
 subcategory = "subcategories/snap-backs.md"
->>>>>>> 6d3bde653e68ee938f67b0ea0495be7cfd5a10d6
 [photos]
 hover_image = ""
 main_image = ""
