@@ -18,8 +18,8 @@
           {{ end }}
           {{ with $.Site.Data.settings.general.logo_white }}
             {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-            {{ $resized := $imageResource.Fit "200x300 q80 center" }}
-            <img src="{{ $.Site.Data.settings.general.logo_white }}" width="251"
+            {{ $resized := $imageResource.Fit "200x300 q50 center" }}
+            <img src="{{ $resized.RelPermalink }}" width="251"
             sizes="(max-width: 479px) 42vw, (max-width: 767px) 31vw, 100vw" class="image-mobile" />
           {{ end }}
           <div class="logo-text">Billion</div>

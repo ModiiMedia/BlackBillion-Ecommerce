@@ -17,8 +17,12 @@
               <div></div>
             </a>
             <a href="/" class="mobile-logo w-inline-block">
-              <img src="{{ $.Site.Data.settings.general.logo_white }}"
+            {{ with $.Site.Data.settings.general.logo_white }}
+              {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+              {{ $resized := $imageResource.Fit "200x300 q50 center" }}
+              <img src="{{ $resized.RelPermalink }}"
                 width="347" />
+            {{ end }}
             </a>
             <div class="mobile-icon w-embed">
               <a href="#" class="snipcart-checkout" style="color: white">
