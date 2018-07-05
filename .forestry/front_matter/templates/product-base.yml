@@ -170,6 +170,7 @@ fields:
         type: pages
         section: categories
     label: Category
+    description: New categories can be added in the "Categories" tab on the left
   - type: select
     name: subcategory
     config:
@@ -178,14 +179,16 @@ fields:
         section: subcategories
     label: Subcategory
     description: You can add new subcategories in the "Subcategory" tab on the left
-  - type: select
+  - type: list
     name: colors
+    label: Color Tags
     config:
+      use_select: true
       source:
         type: datafiles
         file: taxonomy_data-yaml
         path: product_color_tags
-    label: Color Tags
+    description: Will be used when we add a "sort by color" feature to the site.
 - type: list
   name: related_products
   label: Related Products
