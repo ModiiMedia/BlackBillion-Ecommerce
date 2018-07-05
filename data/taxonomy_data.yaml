@@ -5,14 +5,14 @@ product_collections:
   description: '"Cool off with Black Billion''s rad Summer collection! We are super
     duper excited to reveal it to you."'
 product_color_tags:
+- black
+- white
 - blue
-- purple
 - red
+- gray
 - orange
 - yellow
-- gray
-- white
-- black
+- purple
 gender_metadata:
 - name: mens
   meta_title: Shop All Men's
