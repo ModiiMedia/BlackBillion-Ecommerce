@@ -7,21 +7,31 @@ fields:
   type: text
   hidden: false
   default: ''
-- type: select
+- type: list
   name: gender
+  label: Gender
+  config:
+    use_select: true
+    source:
+      type: simple
+    options:
+    - male
+    - female
+  description: Is this product designed for men, women, or both. (If the sizing for
+    men and women on this product is different you need to make a separate product
+    for each)
+- type: select
+  name: age
   config:
     source:
       type: simple
-    required: true
     options:
-    - mens
-    - womens
-    - unisex (adult)
-    - boys
-    - girls
-    - unisex (kids)
-  label: Gender
-  default: mens
+    - adults
+    - kids
+    - infants
+  label: Age Range
+  description: Select the age group this product is for. (Because of different sizing
+    you should create separate products for each age group)
 - name: id
   label: Product ID
   type: text
@@ -227,3 +237,5 @@ fields:
   config:
     required: true
     time_format: h:mm A
+- type: list
+- type: tag_list
