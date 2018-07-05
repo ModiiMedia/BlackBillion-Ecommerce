@@ -2,20 +2,19 @@
 hide_body: false
 is_partial: true
 fields:
-- type: text
-  name: meta_title
-  label: Meta Title
-  description: Title seen by search engines and social media sites
-- type: textarea
-  name: meta_description
-  label: Meta Description
-  description: Description seen by search engines and social media sites
-- type: text
-  label: URL Slug
-  name: url_slug
-  description: Slug to appear at the end of the url. So if you type "my-page" the
-    page will appear at "https://blackbillionclothing.com/my-page"
-- type: file
-  name: social_image
-  label: Social Image
-  description: Image to appear when sharing on social media.
+- type: field_group
+  name: seo
+  label: SEO
+  fields:
+  - type: text
+    name: meta_title
+    label: Meta Title
+    description: Title seen by search engines and social media sites
+  - type: text
+    name: meta_description
+    label: Meta Description
+    description: Description seen by search engines and social media sites
+  - type: file
+    label: Social Image
+    name: social_image
+    description: Image to appear when sharing on social media.
