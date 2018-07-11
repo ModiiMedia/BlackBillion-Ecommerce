@@ -21,7 +21,7 @@ questions:
 
     > "and it's really cool"
     >
-    > -Joshua Sosso
+    > -Joshua
 
     _neato!_
 layout: faq
@@ -47,5 +47,9 @@ menu:
     name: FAQ / Help
     pre: ''
     weight: 3
+seo:
+  meta_title: ''
+  meta_description: ''
+  social_image: ''
 
 ---
