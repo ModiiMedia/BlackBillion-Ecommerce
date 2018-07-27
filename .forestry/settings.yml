@@ -9,7 +9,6 @@ sections:
   create: all
   templates:
   - product
-  default_front_matter_template: product
 - path: content/categories
   label: Categories
   create: all
