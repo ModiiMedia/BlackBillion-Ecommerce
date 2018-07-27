@@ -18,17 +18,17 @@ sections:
   label: Subcategories
   create: all
   templates:
-  - subcategory
+  - subcategories
 - path: content/posts
   label: Posts
   create: all
   templates:
-  - post
+  - posts
 - path: content
   label: Pages
   create: all
   templates:
-  - page
+  - pages
 - path: content/uploads
   label: Uploads
   create: all
