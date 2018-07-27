@@ -15,6 +15,7 @@ fields:
   type: text
   hidden: false
   default: ''
+  description: enter a description
 - type: select
   name: type
   config:
