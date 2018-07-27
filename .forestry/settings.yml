@@ -13,7 +13,7 @@ sections:
   label: Categories
   create: all
   templates:
-  - categories
+  - category
 - path: content/subcategories
   label: Subcategories
   create: all
