@@ -46,3 +46,5 @@ fields:
   description: ''
   hidden: false
   default: page
+pages:
+- content/about-us.md

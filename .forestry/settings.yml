@@ -4,34 +4,46 @@ auto_deploy: false
 admin_path: "/manager"
 webhook_url: 
 sections:
-- path: content/products
+- type: directory
+  path: content/products
   label: Products
   create: all
+  match: "**/*"
   templates:
   - product
-- path: content/categories
+- type: directory
+  path: content/categories
   label: Categories
   create: all
+  match: "**/*"
   templates:
   - category
-- path: content/subcategories
+- type: directory
+  path: content/subcategories
   label: Subcategories
   create: all
+  match: "**/*"
   templates:
   - subcategories
-- path: content/posts
+- type: directory
+  path: content/posts
   label: Posts
   create: all
+  match: "**/*"
   templates:
   - posts
-- path: content
+- type: directory
+  path: content
   label: Pages
   create: all
+  match: "*"
   templates:
   - pages
-- path: content/uploads
+- type: directory
+  path: content/uploads
   label: Uploads
   create: all
+  match: "**/*"
   hidden: true
 upload_dir: content/uploads
 public_path: "/uploads"

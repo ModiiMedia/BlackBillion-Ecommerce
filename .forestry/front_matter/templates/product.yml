@@ -12,3 +12,8 @@ fields:
   label: Seo
   description: ''
   template: seo-fields
+pages:
+- content/products/snapback.md
+- content/products/stars-iii-tee.md
+- content/products/classic-snapback-white.md
+- content/products/logo-tee-white.md
