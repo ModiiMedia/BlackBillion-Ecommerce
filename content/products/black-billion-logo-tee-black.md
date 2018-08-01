@@ -1,14 +1,13 @@
 +++
 age = "adults"
 date = "2018-08-01T01:27:17-05:00"
-gender = ["male"]
+gender = ["male", "female"]
 id = ""
 layout = "default"
 price = 25
 related_products = ["products/logo-tee-white.md"]
 sale_price = ""
 title = "Black Billion Logo Tee (Black)"
-variations = []
 [categories_and_tags]
 category = "categories/tops.md"
 colors = ["blue", "black"]
@@ -42,5 +41,14 @@ size = "Large"
 [[sizes]]
 price_change = "0"
 size = "Extra Large"
+[[variations]]
+required = true
+variant_name = "Gender"
+[[variations.options]]
+option_name = "Male"
+price_change = "0"
+[[variations.options]]
+option_name = "Female"
+price_change = "0"
 
 +++
