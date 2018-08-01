@@ -14,9 +14,9 @@ category = "categories/tops.md"
 colors = ["orange", "white"]
 subcategory = "subcategories/t-shirts.md"
 [photos]
-hover_image = ""
+hover_image = "/uploads/IMG_21531.jpg"
 main_image = "/uploads/IMG_23731.jpg"
-product_gallery = []
+product_gallery = ["/uploads/IMG_23731.jpg", "/uploads/IMG_21531.jpg"]
 [product_info]
 description = "Short sleeve tees"
 details = ""
