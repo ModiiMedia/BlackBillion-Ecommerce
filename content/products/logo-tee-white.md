@@ -8,7 +8,6 @@ price = "25.00"
 related_products = []
 sale_price = ""
 title = "Black Billion Logo Tee (White)"
-variations = []
 [categories_and_tags]
 category = "categories/tops.md"
 colors = ["orange", "white"]
@@ -42,5 +41,14 @@ size = "Large"
 [[sizes]]
 price_change = "0"
 size = "Extra Large"
+[[variations]]
+required = true
+variant_name = "Design Color"
+[[variations.options]]
+option_name = "Orange"
+price_change = "0"
+[[variations.options]]
+option_name = "Black & Red"
+price_change = "0"
 
 +++
