@@ -39,6 +39,7 @@ sections:
   match: "*"
   templates:
   - pages
+  - homepage
 - type: directory
   path: content/uploads
   label: Uploads
