@@ -5,7 +5,7 @@ color_tags = []
 date = "2018-07-03T20:16:46-05:00"
 description = "you need a description"
 details = ""
-gender = ["female", "male"]
+gender = ["male", "female"]
 hover_image = ""
 id = ""
 layout = "default"
@@ -22,7 +22,6 @@ subcategory = "subcategories/t-shirts.md"
 title = "Stars III Tee (Black)"
 undefined = []
 url_slug = ""
-variations = []
 weight = 1
 [categories_and_tags]
 category = "categories/tops.md"
@@ -45,6 +44,9 @@ shipping_details = ""
 weight = "5"
 [[sizes]]
 price_change = "0"
+size = "Extra Small"
+[[sizes]]
+price_change = "0"
 size = "Small"
 [[sizes]]
 price_change = "0"
@@ -52,5 +54,17 @@ size = "Medium"
 [[sizes]]
 price_change = "0"
 size = "Large"
+[[sizes]]
+price_change = "0"
+size = "Extra Large"
+[[variations]]
+required = true
+variant_name = "Gender"
+[[variations.options]]
+option_name = "Male"
+price_change = "0"
+[[variations.options]]
+option_name = "Female"
+price_change = "0"
 
 +++
