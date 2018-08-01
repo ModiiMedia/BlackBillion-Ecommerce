@@ -117,3 +117,5 @@ fields:
   config:
     required: true
   default: home
+pages:
+- content/_index.md

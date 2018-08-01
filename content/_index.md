@@ -1,6 +1,6 @@
 +++
 date = "2018-06-03T01:52:35-05:00"
-layout = ""
+layout = "blocks"
 meta_description = ""
 meta_title = ""
 social_image = ""
@@ -24,10 +24,10 @@ text = "Shop Hats"
 [[sliderSlides]]
 buttonLink = "subcategories/t-shirts.md"
 buttonText = "Shop Now"
-heading = "Create An Awesome Heading"
+heading = ""
 linkSettings = "Internal Link"
-photo = "/uploads/pete-bellis-256701-unsplash.jpg"
-show_button = true
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis magna vitae consectetur egestas. Pellentesque lorem nulla, pharetra sit amet varius et, lobortis mollis nunc. Nullam rutrum augue vitae placerat interdum. "
+photo = "/uploads/Image-11.jpg"
+show_button = false
+text = ""
 
 +++
