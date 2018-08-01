@@ -18,7 +18,7 @@ hover_image = ""
 main_image = "/uploads/IMG_23731.jpg"
 product_gallery = []
 [product_info]
-description = ""
+description = "Short sleeve tees"
 details = ""
 [seo]
 meta_description = ""
