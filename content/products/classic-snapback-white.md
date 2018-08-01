@@ -1,10 +1,10 @@
 +++
 age = "adults"
 date = "2018-07-05T11:21:37-05:00"
-gender = ["female", "male"]
+gender = ["male", "female"]
 id = ""
 layout = "default"
-price = 20
+price = "25.00"
 related_products = []
 sale_price = ""
 title = "Classic Snapback (White)"
