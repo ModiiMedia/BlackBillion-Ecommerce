@@ -5,7 +5,7 @@ gender = ["male", "female", "male"]
 id = ""
 layout = "default"
 price = "25.00"
-related_products = []
+related_products = ["products/black-billion-logo-tee-black.md"]
 sale_price = ""
 title = "Black Billion Logo Tee (White)"
 [categories_and_tags]
