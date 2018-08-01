@@ -35,8 +35,8 @@
             <div class="column-left w-col w-col-6">
                 <div data-duration-in="300" data-duration-out="300" class="tabs w-tabs">
                     <div class="tabs-content w-tab-content">
-                        {{ if .Params.product_gallery }}
-                            {{ range .Params.product_gallery }}
+                        {{ if .Params.photos.product_gallery }}
+                            {{ range .Params.photos.product_gallery }}
                                 {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
                                 {{ $resized := $imageResource.Fit "600x2000 q80" }}
                                 {{ $resizedB := $imageResource.Fit "1200x800 q80" }}
@@ -84,17 +84,17 @@
                         {{ end }}
                     </div>
                     {{ $l := len .Params.photos.product_gallery }}
-                    {{ if .Params.product_gallery  }}
+                    {{ if .Params.photos.product_gallery  }}
                         {{ if ge $l 2 }}
                             <div class="tabs-menu w-tab-menu">
-                                    {{ range first 1 .Params.product_gallery }}
+                                    {{ range first 1 .Params.photos.product_gallery }}
                                     {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
                                     {{ $resized := $imageResource.Fill "80x80 q80" }}
                                     <a data-w-tab="{{ . }}" style="background-image:url({{ $resized.RelPermalink }})" class="tab-link w-inline-block w-tab-link w--current">
                                         <div class="gallery-thumb-overlay"></div>
                                     </a>
                                     {{ end }} 
-                                    {{ range after 1 .Params.product_gallery }}
+                                    {{ range after 1 .Params.photos.product_gallery }}
                                     {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
                                     {{ $resized := $imageResource.Fill "80x80 q80" }}
                                         <a data-w-tab="{{ . }}" style="background-image:url({{ $resized.RelPermalink }})" class="tab-link w-inline-block w-tab-link">
@@ -104,7 +104,7 @@
                             </div>
                         {{ else }}
                         <div class="tabs-menu w-tab-menu" style="display:none">
-                            {{ range first 1 .Params.product_gallery }}
+                            {{ range first 1 .Params.photos.product_gallery }}
                             <a data-w-tab="{{ . }}" style="background-image:url({{ . }})" class="tab-link w-inline-block w-tab-link w--current">
                                 <div class="gallery-thumb-overlay"></div>
                             </a>
