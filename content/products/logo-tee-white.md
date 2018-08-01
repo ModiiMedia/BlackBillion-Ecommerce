@@ -43,6 +43,15 @@ price_change = "0"
 size = "Extra Large"
 [[variations]]
 required = true
+variant_name = "Gender"
+[[variations.options]]
+option_name = "Male"
+price_change = "0"
+[[variations.options]]
+option_name = "Female"
+price_change = "0"
+[[variations]]
+required = true
 variant_name = "Design Color"
 [[variations.options]]
 option_name = "Orange"
