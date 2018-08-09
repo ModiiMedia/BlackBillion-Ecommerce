@@ -10,7 +10,7 @@ sale_price = ""
 title = "Short Sleeve Polo (White)"
 variations = []
 [categories_and_tags]
-category = "categories/hats.md"
+category = "categories/tops.md"
 colors = ["red", "white"]
 subcategory = "subcategories/t-shirts.md"
 [photos]
