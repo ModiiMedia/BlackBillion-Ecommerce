@@ -43,6 +43,3 @@ fields:
   name: seo
   label: Seo
   template: seo-fields
-pages:
-- content/subcategories/snapbacks.md
-- content/subcategories/t-shirts.md
