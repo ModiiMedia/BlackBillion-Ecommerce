@@ -14,7 +14,7 @@ meta_description = ""
 meta_title = ""
 social_image = ""
 [[featuredBlocks]]
-link = "subcategories/t-shirts.md"
+link = "categories/tops.md"
 photo = "/uploads/IMG_24071 (1).jpg"
 text = "Shop T-Shirts"
 [[featuredBlocks]]
