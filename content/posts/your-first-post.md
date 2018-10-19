@@ -1,7 +1,7 @@
 +++
 date = "2018-07-04T01:37:01-05:00"
 description = "Right something useful for people who might want to click on this article"
-featured_product = ""
+featured_product = "products/stars-iii-tee.md"
 layout = "default"
 main_image = "/uploads/hieu-vu-minh-191853-unsplash.jpg"
 meta_description = "The Meta Description is for Search Engines and social media also"
