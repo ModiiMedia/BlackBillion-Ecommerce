@@ -12,7 +12,7 @@ sections:
   label: Pages
   create: documents
   match: "*"
-  exclude: "_index.md"
+  exclude: _index.md
   templates:
   - pages
   - question-answer-page
