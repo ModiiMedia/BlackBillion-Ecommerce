@@ -23,6 +23,6 @@ social_media:
 - Icon: Instagram
   URL: https://www.instagram.com/blackbillionapparel/
 announcement_bar:
-  show_bar: true
+  show_bar: false
   message: Shipping is free free on orders of two or more!
   announcement_link: ''
