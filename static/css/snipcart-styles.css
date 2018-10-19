@@ -15,7 +15,9 @@
     transform: translateX(0%);
     }
 }
-
+.snipcart-total-items {
+    margin-right: 3px;
+}
 .snipcart-user-logout {
     display: none;
 }
