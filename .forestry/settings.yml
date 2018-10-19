@@ -19,13 +19,6 @@ sections:
   templates:
   - category
 - type: directory
-  path: content/subcategories
-  label: Subcategories
-  create: all
-  match: "**/*"
-  templates:
-  - subcategories
-- type: directory
   path: content/posts
   label: Posts
   create: all
