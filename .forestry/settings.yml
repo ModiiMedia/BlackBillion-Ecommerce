@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: content/products
   label: Products
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - product
@@ -30,6 +30,7 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+  exclude: "**/_index.md"
   templates:
   - posts
 - type: directory

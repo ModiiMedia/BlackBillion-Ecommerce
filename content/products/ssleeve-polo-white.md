@@ -1,14 +1,13 @@
 +++
 age = "adults"
 date = "2018-08-01T01:38:08-05:00"
-gender = ["male"]
+gender = ["female", "male"]
 id = ""
 layout = "default"
 price = 40
 related_products = []
 sale_price = ""
 title = "Short Sleeve Polo (White)"
-variations = []
 [categories_and_tags]
 category = "categories/tops.md"
 colors = ["red", "white"]
@@ -42,5 +41,14 @@ size = "Large"
 [[sizes]]
 price_change = "0"
 size = "Extra Large"
+[[variations]]
+required = true
+variant_name = "Gender"
+[[variations.options]]
+option_name = "Male"
+price_change = "0"
+[[variations.options]]
+option_name = "Female"
+price_change = "0"
 
 +++

@@ -183,14 +183,6 @@ fields:
         section: categories
     label: Category
     description: New categories can be added in the "Categories" tab on the left
-  - type: select
-    name: subcategory
-    config:
-      source:
-        type: pages
-        section: subcategories
-    label: Subcategory
-    description: You can add new subcategories in the "Subcategory" tab on the left
   - type: list
     name: colors
     label: Color Tags
