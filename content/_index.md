@@ -18,7 +18,7 @@ link = "categories/tops.md"
 photo = "/uploads/IMG_24071 (1).jpg"
 text = "Shop T-Shirts"
 [[featuredBlocks]]
-link = "subcategories/snapbacks.md"
+link = "categories/hats.md"
 photo = "/uploads/IMG_22111.jpg"
 text = "Shop Hats"
 [[sliderSlides]]
