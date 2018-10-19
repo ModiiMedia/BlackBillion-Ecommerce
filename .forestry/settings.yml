@@ -46,9 +46,14 @@ sections:
   create: all
   match: "**/*"
   hidden: true
+- type: heading
+  label: other
 - type: document
   path: data/settings.yaml
   label: Settings
+- type: document
+  path: data/taxonomy_data.yaml
+  label: Taxonomy Info
 upload_dir: content/uploads
 public_path: "/uploads"
 front_matter_path: ''
