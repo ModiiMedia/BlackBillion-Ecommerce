@@ -19,7 +19,7 @@ fields:
     options:
     - default
   label: Type
-  hidden: false
+  hidden: true
   default: default
 - type: select
   name: layout
@@ -31,11 +31,15 @@ fields:
     required: true
   label: layout
   default: default
-- name: date
+  hidden: true
+- type: datetime
+  name: date
   label: Date
-  type: text
-  hidden: false
-  default: ''
+  description: ''
+  config:
+    required: true
+    time_format: h:mm A
+    date_format: dddd MM/DD/YYYY
 - type: textarea
   name: description
   label: Description
