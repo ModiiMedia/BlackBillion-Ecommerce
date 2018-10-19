@@ -1,6 +1,11 @@
 baseURL = "https://blackbillionclothing.com"
 languageCode = "en-us"
 title = "Black Billion Clothing"
+[[menu.main]]
+identifier = "Explore"
+name = "Explore"
+url = "#"
+weight = 5
 [[menu.footer]]
 identifier = "My Orders"
 name = "My Orders"
@@ -13,11 +18,6 @@ name = "Account Settings"
 pre = "snipcart-edit-profile"
 url = "#"
 weight = 2
-[[menu.main]]
-identifier = "Explore"
-name = "Explore"
-url = "#"
-weight = 5
 [taxonomies]
 color = "colors"
 genders = "gender"
