@@ -22,7 +22,7 @@ link = "categories/hats.md"
 photo = "/uploads/IMG_22111.jpg"
 text = "Shop Hats"
 [[sliderSlides]]
-buttonLink = "subcategories/t-shirts.md"
+buttonLink = "categories/hats.md"
 buttonText = "Shop Now"
 heading = ""
 linkSettings = "Internal Link"
