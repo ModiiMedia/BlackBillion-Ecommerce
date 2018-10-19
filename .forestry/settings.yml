@@ -4,6 +4,18 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: document
+  path: content/_index.md
+  label: Homepage
+- type: directory
+  path: content
+  label: Pages
+  create: documents
+  match: "*"
+  exclude: "_index.md"
+  templates:
+  - pages
+  - question-answer-page
 - type: directory
   path: content/products
   label: Products
@@ -14,26 +26,18 @@ sections:
 - type: directory
   path: content/categories
   label: Categories
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - category
 - type: directory
   path: content/posts
   label: Posts
-  create: all
+  create: documents
   match: "**/*"
   exclude: "**/_index.md"
   templates:
   - posts
-- type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
-  templates:
-  - pages
-  - homepage
 - type: directory
   path: content/uploads
   label: Uploads
