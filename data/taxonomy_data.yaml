@@ -1,9 +1,9 @@
 ---
-product_collections:
-- name: Sample Clothing Collection
-  banner_image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
-  description: '"Cool off with Black Billion''s rad Summer collection! We are super
-    duper excited to reveal it to you."'
+# product_collections:
+# - name: Sample Clothing Collection
+#   banner_image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+#   description: '"Cool off with Black Billion''s rad Summer collection! We are super
+#     duper excited to reveal it to you."'
 product_color_tags:
 - black
 - white
@@ -13,26 +13,26 @@ product_color_tags:
 - orange
 - yellow
 - purple
-gender_metadata:
-- name: mens
-  meta_title: Shop All Men's
-  description: Description Goes Here
-  image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
-- name: womens
-  meta_title: Shop Pants, Shorts, and Skirts
-  description: Description goes here
-  image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
-- name: unisex (adult)
-  meta_title: Shop All Unisex
-  description: Description Goes Here
-  image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
-- name: boys
-  meta_title: Shop All Boys Clothes
-  description: Description Goes Here
-  image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
-- name: girls
-  meta_title: Shop All Girls Clothes
-  image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
-- name: unisex (kids)
-  meta_title: Shop all unisex kids clothes
-  image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+# gender_metadata:
+# - name: mens
+#   meta_title: Shop All Men's
+#   description: Description Goes Here
+#   image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+# - name: womens
+#   meta_title: Shop Pants, Shorts, and Skirts
+#   description: Description goes here
+#   image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+# - name: unisex (adult)
+#   meta_title: Shop All Unisex
+#   description: Description Goes Here
+#   image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+# - name: boys
+#   meta_title: Shop All Boys Clothes
+#   description: Description Goes Here
+#   image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+# - name: girls
+#   meta_title: Shop All Girls Clothes
+#   image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
+# - name: unisex (kids)
+#   meta_title: Shop all unisex kids clothes
+#   image: "/uploads/5ad03eb591f6b2366de124bb_ian-dooley-347970-unsplash (1).jpg"
