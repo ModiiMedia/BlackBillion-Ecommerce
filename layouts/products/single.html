@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 {{ $f := .Params.Categories_and_tags.Category }}
 <div class="main-section">
     <div class="container">
@@ -207,4 +207,4 @@
         {{ end }}
     </div>
 </div>
-{{ partial "footer.html" . }}
+{{ end }}

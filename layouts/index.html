@@ -1,4 +1,22 @@
-{{ partial "header.html" . }}
+{{- define "title" -}}
+    {{- $t := $.Site.Data.settings.general -}}
+    {{- $t.website_title }} | {{ $t.slogan -}}
+{{- end -}}
+
+{{- define "seo" -}}
+{{ $gen := $.Site.Data.settings.general }}
+<meta name="description" content="{{ $gen.website_description }}">
+<meta name="og:title" content="{{ $gen.website_title }} | {{ $gen.slogan }}">
+<meta name="og:description" content="{{ $gen.website_description }}">
+<meta name="og:image" content="
+    {{- with $gen.logo_dark -}}
+        {{- $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) -}}
+        {{- $resized := $imageResource.Fill "1200x630 q80 center" -}}
+        {{- $resized.Permalink -}}
+    {{- end -}}">
+{{- end -}}
+
+{{- define "main" -}}
 <div data-delay="4000" data-animation="cross" data-autoplay="1" data-duration="500" data-infinite="1" class="slider w-slider">
     <div class="slider-mask w-slider-mask">
         {{ range .Params.sliderSlides }}
@@ -61,4 +79,5 @@
         </div>
     </div>
 </div>
-{{ partial "footer.html" . }}
+
+{{ end }}

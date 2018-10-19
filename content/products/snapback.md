@@ -6,12 +6,9 @@ gender = ["female", "male"]
 id = ""
 layout = "default"
 main_image = ""
-meta_description = ""
-meta_title = ""
 price = 30
 related_products = []
 sale_price = ""
-social_image = ""
 title = "Classic Snapback (Red)"
 undefined = []
 [categories_and_tags]

@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 {{ $catFile := add "categories/" .File.LogicalName }}
 <div class="section">
     <div {{ with .Params.main_image }}
@@ -49,4 +49,4 @@
     </div>
 </div>
 
-{{ partial "footer.html" . }}
+{{ end }}

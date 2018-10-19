@@ -1,5 +1,4 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 {{ if .Params.Blocks }}
 {{ range .Params.Blocks }}
     <!--Banner Image Template-->
@@ -139,4 +138,4 @@
 {{ end }}
 {{ end }}
 
-{{ partial "footer.html" . }}
+{{ end }}

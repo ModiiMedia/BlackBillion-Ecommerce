@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 <div data-delay="4000" data-animation="cross" data-autoplay="1" data-duration="500" data-infinite="1" class="slider w-slider">
     <div class="slider-mask w-slider-mask">
         {{ range .Params.sliderSlides }}
@@ -61,4 +61,4 @@
         </div>
     </div>
 </div>
-{{ partial "footer.html" . }}
+{{ end }}

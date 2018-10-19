@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 {{ $url := .RelPermalink }}
 <div class="main-section page">
     <div class="container center-page">
@@ -14,5 +14,4 @@
         {{ end }}
     </div>
 </div>
-
-{{ partial "footer.html" . }}
+{{ end }}

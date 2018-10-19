@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
 {{ $catFile := add "subcategories/" .File.LogicalName }}
 {{ $pcat := .Params.parent_category }}
@@ -58,4 +58,4 @@
     </div>
 </div>
 
-{{ partial "footer.html" . }}
+{{ end }}

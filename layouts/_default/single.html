@@ -1,5 +1,4 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <div 
     {{ with .Params.Main_Image }}
         {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
@@ -52,4 +51,4 @@
     </div>
 </div>
 
-{{ partial "footer.html" . }}
+{{ end }}
