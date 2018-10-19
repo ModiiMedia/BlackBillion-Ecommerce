@@ -197,8 +197,8 @@ fields:
     config:
       use_select: true
       source:
-        type: datafiles
-        file: taxonomy_data-yaml
+        type: documents
+        file: data/taxonomy_data.yaml
         path: product_color_tags
     description: Will be used when we add a "sort by color" feature to the site.
 - type: list
