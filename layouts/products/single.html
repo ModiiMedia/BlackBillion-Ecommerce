@@ -1,27 +1,15 @@
 {{ partial "header.html" . }}
 {{ $f := .Params.Categories_and_tags.Category }}
-{{ $sc := .Params.Categories_and_tags.Subcategory }}
 <div class="main-section">
     <div class="container">
         <div class="breadcrumbs-wrap">
             <div class="breadcrumbs">
                 <a href="/products">All Products</a> / 
                 <!--<a href="/gender/"></a> /-->
-                
                 {{ if $f }}
                     {{ range .Site.RegularPages }}
                         {{ $file := add "categories/" .File.LogicalName }}
                         {{ if eq $f $file }}
-                        <a href="{{ .RelPermalink }}">
-                            {{ .Title }}
-                        </a> /
-                        {{ end }}
-                    {{ end }}
-                {{ end }} 
-                {{ if $sc }}
-                    {{ range .Site.RegularPages }}
-                        {{ $file := add "subcategories/" .File.LogicalName }}
-                        {{ if eq $sc $file }}
                         <a href="{{ .RelPermalink }}">
                             {{ .Title }}
                         </a> /
