@@ -30,6 +30,7 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+  exclude: "**/_index.md"
   templates:
   - posts
 - type: directory
