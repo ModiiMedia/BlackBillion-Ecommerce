@@ -1,12 +1,12 @@
 +++
 age = "adults"
 date = "2018-07-05T11:21:37-05:00"
+discount = 0
 gender = ["male", "female"]
 id = ""
 layout = "default"
 price = "25.00"
 related_products = []
-discount = 0
 title = "Classic Snapback (White)"
 undefined = []
 variations = []
