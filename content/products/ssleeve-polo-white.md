@@ -1,12 +1,12 @@
 +++
 age = "adults"
 date = "2018-08-01T01:38:08-05:00"
+discount = 0
 gender = ["female", "male"]
 id = ""
 layout = "default"
 price = 40
 related_products = []
-discount = 0
 title = "Short Sleeve Polo (White)"
 [categories_and_tags]
 category = "categories/tops.md"
