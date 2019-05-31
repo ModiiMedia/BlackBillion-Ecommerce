@@ -7,6 +7,19 @@ fields:
   type: text
   hidden: false
   default: ''
+- name: price
+  label: Price
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+  description: Enter price
+- name: sale_price
+  type: text
+  config:
+    required: false
+  label: Sale Price
 - type: list
   name: gender
   label: Gender
@@ -32,26 +45,29 @@ fields:
   label: Age Range
   description: Select the age group this product is for. (Because of different sizing
     you should create separate products for each age group)
+- type: field_group
+  name: product_info
+  label: Product Info
+  fields:
+  - type: textarea
+    name: description
+    label: Short Description
+    config:
+      required: false
+  - type: textarea
+    name: details
+    label: Detailed Description
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
 - name: id
   label: Product ID
   type: text
   hidden: false
   default: ''
   description: Create a unique product id for Snipcart. If you leave this blank one
-    will be generated based on the product TITLE above.
-- name: price
-  label: Price
-  type: text
-  hidden: false
-  default: ''
-  config:
-    required: true
-  description: Enter price
-- name: sale_price
-  type: text
-  config:
-    required: false
-  label: Sale Price
+    a unique ID will be randomly generated.
 - type: field_group
   name: shipping
   label: Shipping
@@ -73,22 +89,6 @@ fields:
     description: Customers will automatically be linked to the shipping section in
       the FAQ. However if there is something specific to this product regarding shipping
       fill out this section.
-- type: field_group
-  name: product_info
-  label: Product Info
-  fields:
-  - type: textarea
-    name: description
-    label: Short Description
-    config:
-      required: false
-  - type: textarea
-    name: details
-    label: Detailed Description
-    config:
-      wysiwyg: true
-      schema:
-        format: markdown
 - type: field_group_list
   name: sizes
   label: Sizes
