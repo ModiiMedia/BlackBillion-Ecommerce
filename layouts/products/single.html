@@ -1,5 +1,40 @@
 {{ define "main" }}
 {{ $f := .Params.Categories_and_tags.Category }}
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "{{ .Title }}",
+      "image": [
+        {{- with .Params.photos.main_image -}}
+            {{- $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) -}}
+            {{- $squareImage := $imageResource.Fill "1080x1080 q80 center" -}}
+            {{- $fourByThree := $imageResource.Fill "1440x1080 q80 center" -}}
+            {{- $sixteenByNine := $imageResource.Fill "1920x1080 q80 center" -}}
+            "{{ $squareImage.Permalink }}",
+            "{{ $fourByThree.Permalink }}",
+            "{{ $sixteenByNine.Permalink }}"
+        {{- end -}}
+       ],
+      "description": "{{ .Params.product_info.description }}",
+      "sku": "{{ if .Params.id }}{{ .Params.id }}{{ else }}{{ .File.UniqueID }}{{ end }}",
+      "offers": {
+        "@type": "Offer",
+        "url": "{{ .Permalink }}",
+        "priceCurrency": "USD",
+        "price": "{{ if gt .Params.discount 0 }}{{ lang.NumFmt 2 (sub .Params.Price .Params.Discount) }}{{ else }}{{ lang.NumFmt 2 .Params.Price }}{{ end }}",
+        "priceValidUntil": "2020-11-05",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Black Billion Clothing"
+        }
+      }
+    }
+</script>    
+
 <div class="main-section">
     <div class="container">
         <div class="breadcrumbs-wrap">
