@@ -33,7 +33,7 @@ sections:
   - category
 - type: directory
   path: content/posts
-  label: Posts
+  label: Blog Posts
   create: documents
   match: "**/*"
   exclude: "**/_index.md"
