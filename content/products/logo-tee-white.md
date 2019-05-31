@@ -1,7 +1,7 @@
 +++
 age = "adults"
 date = "2018-07-05T11:52:34-05:00"
-discount = 10
+discount = 0
 gender = ["male", "female"]
 id = ""
 layout = "default"
