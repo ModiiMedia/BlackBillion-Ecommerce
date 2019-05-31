@@ -16,7 +16,7 @@ fields:
     required: true
     min: '0'
   description: Enter price
-- name: sale_price
+- name: discount
   type: number
   config:
     min: '0'

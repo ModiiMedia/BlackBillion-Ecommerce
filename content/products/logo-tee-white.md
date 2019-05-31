@@ -6,7 +6,7 @@ id = ""
 layout = "default"
 price = "25.00"
 related_products = ["products/black-billion-logo-tee-black.md"]
-sale_price = ""
+discount = 0
 title = "Black Billion Logo Tee (White)"
 [categories_and_tags]
 category = "categories/tops.md"

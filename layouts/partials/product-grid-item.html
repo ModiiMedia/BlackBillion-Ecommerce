@@ -17,8 +17,8 @@
         </div>
         <div class="grid-content">
             <h1 class="grid-title">{{ .Title }}</h1>
-            {{ if .Params.Price }}<div class="price-text {{ if .Params.sale_price }}sale{{end}}">${{ lang.NumFmt 2 .Params.Price }}</div>{{ end }}
-            {{ if .Params.sale_price }}<div class="price-text">${{ lang.NumFmt 2 .Params.sale_price }}</div>{{ end }}
+            {{ if .Params.Price }}<div class="price-text {{ if gt .Params.discount 0 }}sale{{ end }}">${{ lang.NumFmt 2 .Params.Price }}</div>{{ end }}
+            {{ if gt .Params.discount 0 }}<div class="price-text">${{ lang.NumFmt 2 ( sub .Params.Price .Params.discount ) }}</div>{{ end }}
         </div>
     </a>
 </div>

@@ -8,7 +8,7 @@ layout = "default"
 main_image = ""
 price = 30
 related_products = []
-sale_price = ""
+discount = 0
 title = "Classic Snapback (Red)"
 undefined = []
 [categories_and_tags]

@@ -109,11 +109,11 @@
                 </div>
             </div>
             <div class="column-right w-col w-col-6">
-                {{ $price := .Params.price }} {{ $sale := .Params.sale_price }}
+                {{ $price := .Params.price }} {{ $discount := .Params.discount }}
                 <h1 class="product-single-title">{{ .Title }}</h1>
-                {{ if .Params.price }}<div class="price-single-page {{ if $sale }}sale{{ end }}">${{ lang.NumFmt 2 $price }}</div>
-                {{ if $sale }}
-                <div class="price-single-page">${{ lang.NumFmt 2 $sale }}</div>{{ end }}{{ end }}
+                {{ if .Params.price }}<div class="price-single-page {{ if gt .Params.discount 0 }}sale{{ end }}">${{ lang.NumFmt 2 $price }}</div>
+                {{ if gt .Params.discount 0 }}
+                <div class="price-single-page">${{ lang.NumFmt 2 (sub $price $discount) }}</div>{{ end }}{{ end }}
                 <p class="product-summary">{{ .Params.product_info.description }}</p>
                 <!--product options-->
                 <div class="w-form">
@@ -123,7 +123,7 @@
                             <option value="">Select one...</option>
                             {{ range .Params.Sizes }}
                             {{ $change := .price_change }}
-                            <option value="{{ .size }}">{{ .size }}{{ if ge .price_change 1 }} ( +{{ lang.NumFmt 2 $change }} ){{ end }}{{ if le .price_change -1 }} ( {{ lang.NumFmt 2 $change }} ){{ end }}</option>
+                                <option value="{{ .size }}">{{ .size }}{{ if ge .price_change 1 }} ( +{{ lang.NumFmt 2 $change }} ){{ end }}{{ if le .price_change -1 }} ( {{ lang.NumFmt 2 $change }} ){{ end }}</option>
                             {{ end }}
                         </select>
                         {{ end }}
@@ -140,7 +140,7 @@
                         <input type="number" value="1" class="quantity-selection w-input" id="quantity" required="true" />
                         <div class="w-embed">
                             <a id="checkoutButton" class="add-to-cart w-button snipcart-add-item" data-item-id="{{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .File.UniqueID }}{{ end }}"
-                                data-item-name="{{ .Title }}" data-item-price="{{ if $sale }}{{ $sale }}{{ else }}{{ $price }}{{ end }}"
+                                data-item-name="{{ .Title }}" data-item-price="{{ if gt .Params.discount 0 }}{{ sub $price $discount }}{{ else }}{{ $price }}{{ end }}"
                                 data-item-weight="{{ .Params.shipping.Weight }}" data-item-quantity="1" data-item-url="{{ .Permalink }}" data-item-image="{{ .Params.photos.Main_Image }}"
                                 {{ if .Params.Sizes }}data-item-custom1-name="Size" data-item-custom1-value="" data-item-custom1-options="{{ range first 1 .Params.Sizes }}{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}{{ range after 1 .Params.Sizes }}|{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}"{{ end }}
                                     
