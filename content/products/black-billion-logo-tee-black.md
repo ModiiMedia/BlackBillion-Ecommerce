@@ -6,7 +6,7 @@ id = ""
 layout = "default"
 price = 25
 related_products = ["products/logo-tee-white.md"]
-sale_price = 10
+sale_price = nil
 title = "Black Billion Logo Tee (Black)"
 [categories_and_tags]
 category = "categories/tops.md"
