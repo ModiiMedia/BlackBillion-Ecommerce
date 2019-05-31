@@ -206,28 +206,6 @@ fields:
     source:
       type: pages
       section: products
-- type: select
-  name: type
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - products
-  label: Type
-  default: products
-  hidden: true
-- type: select
-  name: layout
-  config:
-    source:
-      type: simple
-    required: true
-    options:
-    - default
-  label: Layout
-  default: default
-  hidden: true
 - type: datetime
   label: Date
   name: date
