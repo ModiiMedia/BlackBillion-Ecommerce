@@ -72,5 +72,17 @@ fields:
   - type: text
     name: announcement_link
     label: announcement_link
+- name: snipcart_settings
+  type: field_group
+  config: {}
+  fields:
+  - name: api_key
+    type: text
+    config:
+      required: false
+    label: API Key
+    description: copy and paste your live API key here so that Snipcart can operate
+      properly on your website.
+  label: Snipcart Settings
 pages:
 - data/settings.yaml
