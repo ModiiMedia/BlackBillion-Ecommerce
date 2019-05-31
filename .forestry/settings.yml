@@ -39,12 +39,6 @@ sections:
   exclude: "**/_index.md"
   templates:
   - posts
-- type: directory
-  path: content/uploads
-  label: Uploads
-  create: all
-  match: "**/*"
-  hidden: true
 - type: heading
   label: other
 - type: document
