@@ -139,7 +139,7 @@
                         <label for="Size-2">Quantity:</label>
                         <input type="number" value="1" class="quantity-selection w-input" id="quantity" required="true" />
                         <div class="w-embed">
-                            <a id="checkoutButton" class="add-to-cart w-button snipcart-add-item" data-item-id="{{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .UniqueID }}{{ end }}"
+                            <a id="checkoutButton" class="add-to-cart w-button snipcart-add-item" data-item-id="{{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .File.UniqueID }}{{ end }}"
                                 data-item-name="{{ .Title }}" data-item-price="{{ if $sale }}{{ $sale }}{{ else }}{{ $price }}{{ end }}"
                                 data-item-weight="{{ .Params.shipping.Weight }}" data-item-quantity="1" data-item-url="{{ .Permalink }}" data-item-image="{{ .Params.photos.Main_Image }}"
                                 {{ if .Params.Sizes }}data-item-custom1-name="Size" data-item-custom1-value="" data-item-custom1-options="{{ range first 1 .Params.Sizes }}{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}{{ range after 1 .Params.Sizes }}|{{ .size }}{{ if ge .price_change 1 }}[+{{ .price_change }}]{{ end }}{{ if le .price_change -1 }}[{{ .price_change }}]{{ end }}{{ end }}"{{ end }}
@@ -162,7 +162,7 @@
                             <div data-w-id="aed57e5e-bca8-ba56-7b3d-26ccf1f76216" class="arrow-up"></div>
                             <div data-w-id="efb9f260-a16f-da9f-28f1-8bc3e9744cc5" class="arrow-down"></div>
                         </div>
-                        <div data-w-id="2c832112-b19a-82ac-bfb9-e5f945e85bba" class="accordiant-inline-block">Product ID: {{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .UniqueID }}{{ end }}</div>
+                        <div data-w-id="2c832112-b19a-82ac-bfb9-e5f945e85bba" class="accordiant-inline-block">Product ID: {{ if .Params.Id }}{{ .Params.Id }}{{ else }}{{ .File.UniqueID }}{{ end }}</div>
                         <div data-w-id="dbdacc86-ffbe-d57f-8178-e54484606e38" class="accordian-content w-richtext">
                             {{ if .Params.product_info.details }}{{ .Params.product_info.details | markdownify }}{{ else }}<p>No additional details</p>{{ end }}
                         </div>
