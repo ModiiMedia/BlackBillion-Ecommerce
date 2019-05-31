@@ -47,12 +47,11 @@ fields:
   config:
     required: true
   description: Enter price
-- type: number
+- name: sale_price
+  type: text
   config:
-    step: ''
+    required: false
   label: Sale Price
-  name: sale_price
-  description: Setting a sale price will override the original price
 - type: field_group
   name: shipping
   label: Shipping
