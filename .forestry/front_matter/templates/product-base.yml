@@ -20,8 +20,9 @@ fields:
   type: number
   config:
     min: '0'
-    required: false
-  label: Sale Price
+    required: true
+  label: Discount
+  default: '0'
 - type: list
   name: gender
   label: Gender
