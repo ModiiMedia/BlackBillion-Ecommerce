@@ -23,6 +23,8 @@ fields:
     required: true
   label: Discount
   default: '0'
+  description: How much do you want to discount this product by? Set to "0" to use
+    the regular price.
 - type: list
   name: gender
   label: Gender
