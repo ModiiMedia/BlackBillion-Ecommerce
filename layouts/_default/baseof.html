@@ -57,8 +57,13 @@
         n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
       }(window, document);
     </script>
-    <link href="https://uploads-ssl.webflow.com/5ad0111263a6e8d7f3630b1e/5ad55af21ca0c55fe3be72b5_favicon-32x32.png" rel="shortcut icon" type="image/x-icon" />
-    <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon" />
+    {{- with $.Site.Data.settings.general.favicon -}}
+      {{- $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) -}}
+      {{- $resized := $imageResource.Fill "48x48 q80 center" -}}
+      {{- $resizedWebclip := $imageResource.Fill "120x120 q80 center" -}}
+      <link href="{{ $resized.RelPermalink }}" rel="shortcut icon" type="image/x-icon" >
+      <link href="{{ $resizedWebclip.RelPermalink }}" rel="apple-touch-icon">
+    {{- end -}}
     <style>
       .dropdown:hover .dropdown-menu {
         display: flex;
