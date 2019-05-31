@@ -19,7 +19,7 @@ fields:
 - name: discount
   type: number
   config:
-    min: '0'
+    min: ''
     required: true
   label: Discount
   default: '0'
