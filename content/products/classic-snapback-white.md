@@ -17,7 +17,7 @@ subcategory = "subcategories/snapbacks.md"
 [photos]
 hover_image = ""
 main_image = "/uploads/IMG_22371cropped.jpg"
-product_gallery = ["/uploads/IMG_22371.jpg", "/uploads/IMG_22371cropped.jpg", "/uploads/IMG_22121.jpg", "/uploads/C0B2B372-1418-4AE2-94BE-1A18ED1F9F0D.jpeg", "/uploads/08515982-5400-4751-AF09-78BB5C4F1949.jpeg"]
+product_gallery = []
 [product_info]
 description = ""
 details = ""
