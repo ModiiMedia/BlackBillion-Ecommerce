@@ -6,7 +6,7 @@ id = ""
 layout = "default"
 price = 40
 related_products = []
-sale_price = ""
+sale_price = nil
 title = "Short Sleeve Polo (White)"
 [categories_and_tags]
 category = "categories/tops.md"
