@@ -229,4 +229,5 @@ fields:
   config:
     required: true
     time_format: h:mm A
+    date_format: MM/DD/YYYY
   default: now
