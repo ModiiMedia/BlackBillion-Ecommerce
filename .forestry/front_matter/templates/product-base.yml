@@ -108,6 +108,8 @@ fields:
       required: true
       step: '0.01'
     default: '0'
+  config:
+    labelField: size
 - name: variations
   label: Variant Groups
   type: field_group_list
