@@ -1,0 +1,74 @@
+---
+label: Settings
+hide_body: true
+fields:
+- type: field_group
+  name: general
+  label: general
+  fields:
+  - type: text
+    name: website_title
+    label: website_title
+  - type: text
+    name: slogan
+    label: slogan
+  - type: text
+    name: website_description
+    label: website_description
+  - type: file
+    name: logo_dark
+    label: logo_dark
+  - type: file
+    name: logo_white
+    label: logo_white
+  - type: file
+    name: favicon
+    label: favicon
+- type: field_group
+  name: contact_info
+  label: contact_info
+  fields:
+  - type: text
+    name: company_name
+    label: company_name
+  - type: text
+    name: street_address
+    label: street_address
+  - type: text
+    name: city
+    label: city
+  - type: text
+    name: state
+    label: state
+  - type: text
+    name: zip_code
+    label: zip_code
+  - type: text
+    name: phone
+    label: phone
+  - type: text
+    name: email
+    label: email
+- type: field_group_list
+  name: social_media
+  label: social_media
+  fields:
+  - type: text
+    name: Icon
+    label: Icon
+  - type: text
+    name: URL
+    label: URL
+- type: field_group
+  name: announcement_bar
+  label: announcement_bar
+  fields:
+  - type: boolean
+    name: show_bar
+    label: show_bar
+  - type: text
+    name: message
+    label: message
+  - type: text
+    name: announcement_link
+    label: announcement_link
