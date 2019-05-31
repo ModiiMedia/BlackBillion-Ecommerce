@@ -2,13 +2,13 @@
 age = "adults"
 date = "2018-07-04T00:00:00-05:00"
 details = ""
+discount = 0
 gender = ["female", "male"]
 id = ""
 layout = "default"
 main_image = ""
 price = 30
 related_products = []
-discount = 0
 title = "Classic Snapback (Red)"
 undefined = []
 [categories_and_tags]
