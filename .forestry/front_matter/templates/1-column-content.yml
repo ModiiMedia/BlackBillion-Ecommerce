@@ -1,7 +1,6 @@
 ---
 label: 1 column content
 hide_body: false
-is_partial: true
 fields:
 - type: textarea
   config:

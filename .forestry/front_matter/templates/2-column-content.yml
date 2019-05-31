@@ -1,7 +1,6 @@
 ---
 label: 2 column content
 hide_body: false
-is_partial: true
 fields:
 - type: select
   name: column_order
