@@ -51,5 +51,3 @@ fields:
     - list
   label: layout
   default: list
-pages:
-- content/products/_index.md
