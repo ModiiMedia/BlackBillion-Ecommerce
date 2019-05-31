@@ -22,3 +22,5 @@ weight = 2
 color = "colors"
 genders = "gender"
 tag = "tags"
+[outputs]
+section = ['HTML', 'json']

@@ -1,0 +1,11 @@
+{{- $len := len .Pages -}}
+[
+ {{- range $i, $e := .Pages -}}
+    {
+        "id": {{- .File.UniqueID | jsonify -}},
+        "name": {{- .Title | jsonify -}},
+        "price": {{- if gt .Params.discount 0 }}{{ $p := sub .Params.price .Params.discount }}{{ lang.NumFmt 2 $p }}{{ else }}{{ lang.NumFmt 2 .Params.price | jsonify }}{{ end -}},
+        "url": {{- .Permalink | jsonify -}}
+    }{{- if ne $i (sub $len 1) }},{{- end -}}
+ {{- end -}}
+]
