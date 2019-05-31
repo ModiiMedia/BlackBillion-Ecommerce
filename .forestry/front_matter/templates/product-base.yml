@@ -49,7 +49,7 @@ fields:
   description: Enter price
 - type: number
   config:
-    step: '0.01'
+    step: ''
   label: Sale Price
   name: sale_price
   description: Setting a sale price will override the original price
