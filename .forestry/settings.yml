@@ -17,14 +17,6 @@ sections:
   - pages
   - question-answer-page
 - type: directory
-  path: content/products
-  label: Products
-  create: documents
-  match: "**/*.md"
-  exclude: _index.md
-  templates:
-  - product
-- type: directory
   path: content/categories
   label: Categories
   create: documents
