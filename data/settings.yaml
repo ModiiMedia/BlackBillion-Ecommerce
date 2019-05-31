@@ -22,3 +22,5 @@ announcement_bar:
   show_bar: false
   message: Shipping is free free on orders of two or more!
   announcement_link: ''
+snipcart_settings:
+  api_key: ZmZjNTM5Y2YtMWZlZC00MmRmLTk4YmItNDEyNTYyYzEzNGZjNjM2NjExNTgwNzYwOTY5NTU0
