@@ -10,9 +10,9 @@ list_all: true
 social_image: "/uploads/hipster-mum-236831-unsplash.jpg"
 menu:
   main:
+    name: All Products
     emphasize: true
     identifier: All
-    name: All Products
     weight: 2
 
 ---
