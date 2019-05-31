@@ -21,6 +21,7 @@ sections:
   label: Products
   create: documents
   match: "**/*"
+  exclude: _index.md
   templates:
   - product
 - type: directory
