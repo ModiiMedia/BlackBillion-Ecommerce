@@ -1,12 +1,12 @@
 +++
 age = "adults"
 date = "2018-07-05T11:52:34-05:00"
+discount = 10
 gender = ["male", "female"]
 id = ""
 layout = "default"
 price = "25.00"
 related_products = ["products/black-billion-logo-tee-black.md"]
-discount = 0
 title = "Black Billion Logo Tee (White)"
 [categories_and_tags]
 category = "categories/tops.md"
