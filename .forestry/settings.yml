@@ -20,7 +20,7 @@ sections:
   path: content/products
   label: Products
   create: documents
-  match: "**/*"
+  match: "**/*.md"
   exclude: _index.md
   templates:
   - product
