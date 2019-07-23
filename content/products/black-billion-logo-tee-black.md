@@ -14,7 +14,7 @@ colors = ["blue", "black"]
 subcategory = "subcategories/t-shirts.md"
 [photos]
 hover_image = ""
-main_image = "/uploads/IMG_23671.jpg"
+main_image = "/uploads/F42B9668-1F4D-49AE-8438-145D17ABDF48.jpeg"
 product_gallery = []
 [product_info]
 description = ""
@@ -25,30 +25,30 @@ meta_title = ""
 social_image = ""
 [shipping]
 shipping_details = ""
-weight = "3"
+weight = 3
 [[sizes]]
-price_change = "0"
+price_change = 0
 size = "Extra Small"
 [[sizes]]
-price_change = "0"
+price_change = 0
 size = "Small"
 [[sizes]]
-price_change = "0"
+price_change = 0
 size = "Medium"
 [[sizes]]
-price_change = "0"
+price_change = 0
 size = "Large"
 [[sizes]]
-price_change = "0"
+price_change = 0
 size = "Extra Large"
 [[variations]]
 required = true
 variant_name = "Gender"
 [[variations.options]]
 option_name = "Male"
-price_change = "0"
+price_change = 0
 [[variations.options]]
 option_name = "Female"
-price_change = "0"
+price_change = 0
 
 +++
