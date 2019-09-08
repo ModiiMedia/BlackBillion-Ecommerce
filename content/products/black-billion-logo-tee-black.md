@@ -5,9 +5,9 @@ discount = 0
 gender = ["male", "female"]
 id = ""
 layout = "default"
-price = 25
+price = "40"
 related_products = ["products/logo-tee-white.md"]
-title = "Black Billion Logo Tee (Black)"
+title = "Black Billion White polo red logo"
 [categories_and_tags]
 category = "categories/tops.md"
 colors = ["blue", "black"]
@@ -25,30 +25,30 @@ meta_title = ""
 social_image = ""
 [shipping]
 shipping_details = ""
-weight = 3
+weight = "3"
 [[sizes]]
-price_change = 0
+price_change = "0"
 size = "Extra Small"
 [[sizes]]
-price_change = 0
+price_change = "0"
 size = "Small"
 [[sizes]]
-price_change = 0
+price_change = "0"
 size = "Medium"
 [[sizes]]
-price_change = 0
+price_change = "0"
 size = "Large"
 [[sizes]]
-price_change = 0
+price_change = "0"
 size = "Extra Large"
 [[variations]]
 required = true
 variant_name = "Gender"
 [[variations.options]]
 option_name = "Male"
-price_change = 0
+price_change = "0"
 [[variations.options]]
 option_name = "Female"
-price_change = 0
+price_change = "0"
 
 +++
