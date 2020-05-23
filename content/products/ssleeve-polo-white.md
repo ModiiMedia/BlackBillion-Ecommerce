@@ -2,10 +2,10 @@
 age = "adults"
 date = "2018-08-01T01:38:08-05:00"
 discount = 0
-gender = ["female", "male"]
+gender = ["male"]
 id = ""
 layout = "default"
-price = 40
+price = 45
 related_products = []
 title = "Short Sleeve Polo (White)"
 [categories_and_tags]
@@ -14,7 +14,7 @@ colors = ["red", "white"]
 subcategory = "subcategories/t-shirts.md"
 [photos]
 hover_image = ""
-main_image = "/uploads/IMG_23981.jpg"
+main_image = "/uploads/2cddc99d-7c9e-4544-8afa-f00733ed1c76.jpeg"
 product_gallery = []
 [product_info]
 description = ""
@@ -25,30 +25,30 @@ meta_title = ""
 social_image = ""
 [shipping]
 shipping_details = ""
-weight = "4"
+weight = 4
 [[sizes]]
-price_change = "0"
+price_change = 0
 size = "Extra Small"
 [[sizes]]
-price_change = "0"
+price_change = 0
 size = "Small"
 [[sizes]]
-price_change = "0"
+price_change = 0
 size = "Medium"
 [[sizes]]
-price_change = "0"
+price_change = 0
 size = "Large"
 [[sizes]]
-price_change = "0"
+price_change = 0
 size = "Extra Large"
 [[variations]]
 required = true
 variant_name = "Gender"
 [[variations.options]]
 option_name = "Male"
-price_change = "0"
+price_change = 0
 [[variations.options]]
 option_name = "Female"
-price_change = "0"
+price_change = 0
 
 +++
