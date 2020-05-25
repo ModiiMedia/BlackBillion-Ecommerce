@@ -14,19 +14,22 @@ meta_description = ""
 meta_title = ""
 social_image = ""
 [[featuredBlocks]]
+external_link = ""
 link = "categories/tops.md"
 photo = "/uploads/IMG_24071 (1).jpg"
 text = "Shop T-Shirts"
 [[featuredBlocks]]
+external_link = ""
 link = "categories/hats.md"
 photo = "/uploads/IMG_22111.jpg"
 text = "Shop Hats"
 [[sliderSlides]]
+buttonExternalLink = ""
 buttonLink = "categories/hats.md"
 buttonText = "Shop Now"
 heading = ""
 linkSettings = "Internal Link"
-photo = "/uploads/Image-11.jpg"
+photo = "/uploads/blackbillion-hero-img-tm.jpg"
 show_button = false
 text = ""
 
