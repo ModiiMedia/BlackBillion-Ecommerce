@@ -11,9 +11,9 @@ title = "Rise Logo Tee - Short Sleeve"
 category = "categories/tops.md"
 colors = ["yellow", "orange", "red", "white", "black"]
 [photos]
-hover_image = "/uploads/img_2257.JPEG"
-main_image = "/uploads/img_2249.JPEG"
-product_gallery = ["/uploads/img_2249.JPEG", "/uploads/img_2403.JPEG", "/uploads/img_6580.JPEG", "/uploads/img_6584.jpg", "/uploads/img_2404.JPEG", "/uploads/img_2257.JPEG"]
+hover_image = "/uploads/img_2257.jpg"
+main_image = "/uploads/img_2249.jpg"
+product_gallery = ["/uploads/img_2249.jpg", "/uploads/img_2257.jpg", "/uploads/img_6580.jpg", "/uploads/img_6584.jpg", "/uploads/img_2403.jpg", "/uploads/img_2404.jpg"]
 [product_info]
 description = "Comfortable soft 100% cotton t shirt. Available in a variety of colors. Made in the USA."
 details = ""
