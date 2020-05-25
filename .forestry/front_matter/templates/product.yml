@@ -11,3 +11,5 @@ fields:
   label: Seo
   description: ''
   template: seo-fields
+pages:
+- content/products/rise-logo-tee-short-sleeve.md
