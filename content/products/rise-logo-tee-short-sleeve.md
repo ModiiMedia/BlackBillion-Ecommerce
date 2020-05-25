@@ -20,7 +20,7 @@ details = ""
 [seo]
 meta_description = "Comfortable soft 100% cotton t shirt. Available in a variety of colors. Made in the USA."
 meta_title = "Rise Logo Tee Unisex Clothing | Black Billion Clothing"
-social_image = ""
+social_image = "/uploads/img_2249.jpg"
 [shipping]
 shipping_details = ""
 weight = 156
