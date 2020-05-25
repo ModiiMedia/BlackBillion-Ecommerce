@@ -13,7 +13,7 @@ colors = ["yellow", "orange", "red", "white", "black"]
 [photos]
 hover_image = "/uploads/img_2257.JPEG"
 main_image = "/uploads/img_2249.JPEG"
-product_gallery = ["/uploads/img_6584.jpg", "/uploads/img_6580.JPEG", "/uploads/img_2404.JPEG", "/uploads/img_2403.JPEG", "/uploads/img_2257.JPEG", "/uploads/img_2249.JPEG"]
+product_gallery = ["/uploads/img_2249.JPEG", "/uploads/img_2403.JPEG", "/uploads/img_6580.JPEG", "/uploads/img_6584.jpg", "/uploads/img_2404.JPEG", "/uploads/img_2257.JPEG"]
 [product_info]
 description = "Comfortable soft 100% cotton t shirt. Available in a variety of colors. Made in the USA."
 details = ""
