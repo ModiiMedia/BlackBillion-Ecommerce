@@ -19,8 +19,8 @@ product_gallery = ["/uploads/img_6584.jpg", "/uploads/img_6580.JPEG", "/uploads/
 description = ""
 details = ""
 [seo]
-meta_description = ""
-meta_title = ""
+meta_description = "Comfortable soft 100% cotton t shirt. "
+meta_title = "Rise Logo Tee Unisex Clothing | Black Billion Clothing"
 social_image = ""
 [shipping]
 shipping_details = ""
