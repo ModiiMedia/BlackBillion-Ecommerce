@@ -9,8 +9,8 @@ price = 35
 related_products = []
 title = "Rise Logo Tee - Short Sleeve"
 [categories_and_tags]
-category = ""
-colors = []
+category = "categories/tops.md"
+colors = ["yellow", "orange", "red", "white", "black"]
 [photos]
 hover_image = "/uploads/img_2257.JPEG"
 main_image = "/uploads/img_2249.JPEG"
