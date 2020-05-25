@@ -12,9 +12,9 @@ title = "Rise Logo Tee - Short Sleeve"
 category = ""
 colors = []
 [photos]
-hover_image = ""
-main_image = ""
-product_gallery = []
+hover_image = "/uploads/img_2257.JPEG"
+main_image = "/uploads/img_2249.JPEG"
+product_gallery = ["/uploads/img_6584.jpg", "/uploads/img_6580.JPEG", "/uploads/img_2469.JPG", "/uploads/img_2404.JPEG", "/uploads/img_2403.JPEG", "/uploads/img_2362.JPEG", "/uploads/img_2361.JPEG", "/uploads/img_2360.JPEG", "/uploads/img_2359.JPEG", "/uploads/img_2358.JPEG", "/uploads/img_2357.JPEG", "/uploads/img_2314.JPEG", "/uploads/img_2307.JPEG", "/uploads/img_2260.JPEG", "/uploads/img_2259.JPEG", "/uploads/img_2258.JPEG", "/uploads/img_2257.JPEG", "/uploads/img_2249.JPEG", "/uploads/6829d96450bf405bbff8f801919af04b.mov"]
 [product_info]
 description = ""
 details = ""
