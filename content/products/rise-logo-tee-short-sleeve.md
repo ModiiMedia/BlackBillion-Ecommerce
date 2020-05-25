@@ -2,7 +2,6 @@
 age = "adults"
 date = "2020-05-25T10:34:35-05:00"
 discount = 0
-draft = true
 gender = ["female", "male"]
 id = ""
 price = 35
@@ -16,10 +15,10 @@ hover_image = "/uploads/img_2257.JPEG"
 main_image = "/uploads/img_2249.JPEG"
 product_gallery = ["/uploads/img_6584.jpg", "/uploads/img_6580.JPEG", "/uploads/img_2404.JPEG", "/uploads/img_2403.JPEG", "/uploads/img_2257.JPEG", "/uploads/img_2249.JPEG"]
 [product_info]
-description = ""
+description = "Comfortable soft 100% cotton t shirt. Available in a variety of colors. Made in the USA."
 details = ""
 [seo]
-meta_description = "Comfortable soft 100% cotton t shirt. "
+meta_description = "Comfortable soft 100% cotton t shirt. Available in a variety of colors. Made in the USA."
 meta_title = "Rise Logo Tee Unisex Clothing | Black Billion Clothing"
 social_image = ""
 [shipping]
