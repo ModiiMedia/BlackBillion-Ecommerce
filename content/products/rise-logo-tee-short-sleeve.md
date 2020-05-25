@@ -14,7 +14,7 @@ colors = []
 [photos]
 hover_image = "/uploads/img_2257.JPEG"
 main_image = "/uploads/img_2249.JPEG"
-product_gallery = []
+product_gallery = ["/uploads/img_6584.jpg", "/uploads/img_6580.JPEG", "/uploads/img_2404.JPEG", "/uploads/img_2403.JPEG", "/uploads/img_2257.JPEG", "/uploads/img_2249.JPEG"]
 [product_info]
 description = ""
 details = ""
@@ -51,6 +51,9 @@ option_name = "Black"
 price_change = 0
 [[variations.options]]
 option_name = "Canary Yellow"
+price_change = 0
+[[variations.options]]
+option_name = "Burnt Orange"
 price_change = 0
 [[variations.options]]
 option_name = "Royal Blue"
